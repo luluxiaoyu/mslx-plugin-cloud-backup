@@ -316,6 +316,12 @@ const handleSave = async () => {
         </div>
 
         <div class="space-y-4">
+          <!-- 防浏览器自动嗅探并填充账号密码的蜜罐字段 -->
+          <div style="position: absolute; top: -9999px; left: -9999px; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+            <input type="text" name="fake_username_remember" tabindex="-1" autocomplete="username" />
+            <input type="password" name="fake_password_remember" tabindex="-1" autocomplete="current-password" />
+          </div>
+
           <!-- 策略名称 -->
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
             <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">策略友好名称 <span class="text-red-500">*</span></span>
@@ -360,6 +366,8 @@ const handleSave = async () => {
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">Access Key ID</span>
               <t-input
                 v-model="currentForm.s3AccessKey"
+                name="cloud_storage_s3_key"
+                autocomplete="new-password"
                 :placeholder="currentForm.hasS3Credentials ? '已加密存储（若不修改请留空）' : '输入访问密钥 Access Key'"
                 class="flex-1"
               />
@@ -370,6 +378,8 @@ const handleSave = async () => {
               <t-input
                 v-model="currentForm.s3SecretKey"
                 type="password"
+                name="cloud_storage_s3_secret"
+                autocomplete="new-password"
                 :placeholder="currentForm.hasS3Credentials ? '已加密存储（若不修改请留空）' : '输入私有访问密钥 Secret Key'"
                 class="flex-1"
               />
@@ -400,6 +410,8 @@ const handleSave = async () => {
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">用户名</span>
               <t-input
                 v-model="currentForm.webDavUsername"
+                name="cloud_storage_webdav_user"
+                autocomplete="new-password"
                 :placeholder="currentForm.hasWebDavCredentials ? '已加密存储（若不修改请留空）' : 'WebDAV 登录用户名'"
                 class="flex-1"
               />
@@ -410,6 +422,8 @@ const handleSave = async () => {
               <t-input
                 v-model="currentForm.webDavPassword"
                 type="password"
+                name="cloud_storage_webdav_pass"
+                autocomplete="new-password"
                 :placeholder="currentForm.hasWebDavCredentials ? '已加密存储（若不修改请留空）' : 'WebDAV 登录密码'"
                 class="flex-1"
               />
@@ -437,6 +451,8 @@ const handleSave = async () => {
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">账号</span>
               <t-input
                 v-model="currentForm.ftpUsername"
+                name="cloud_storage_ftp_user"
+                autocomplete="new-password"
                 :placeholder="currentForm.hasFtpCredentials ? '已加密存储（若不修改请留空）' : 'FTP 账号'"
                 class="flex-1"
               />
@@ -447,6 +463,8 @@ const handleSave = async () => {
               <t-input
                 v-model="currentForm.ftpPassword"
                 type="password"
+                name="cloud_storage_ftp_pass"
+                autocomplete="new-password"
                 :placeholder="currentForm.hasFtpCredentials ? '已加密存储（若不修改请留空）' : 'FTP 密码'"
                 class="flex-1"
               />

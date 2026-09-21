@@ -1,4 +1,4 @@
-(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("@keyframes t-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.t-icon{display:inline-block;vertical-align:middle;width:1em;height:1em}.t-icon:before{font-family:unset}.t-icon-loading{animation:t-spin 1s linear infinite}.t-icon.t-size-s,i.t-size-s{font-size:14px}.t-icon.t-size-m,i.t-size-m{font-size:16px}.t-icon.t-size-l,i.t-size-l{font-size:18px}.visible[data-v-96b5ceb3]{visibility:visible}.grid[data-v-96b5ceb3]{display:grid}.grid-cols-1[data-v-96b5ceb3]{grid-template-columns:repeat(1,minmax(0,1fr))}.mb-2[data-v-96b5ceb3]{margin-bottom:.5rem}.mb-3[data-v-96b5ceb3]{margin-bottom:.75rem}.mb-4[data-v-96b5ceb3]{margin-bottom:1rem}.mt-0\\.5[data-v-96b5ceb3]{margin-top:.125rem}.mt-1[data-v-96b5ceb3]{margin-top:.25rem}.mt-4[data-v-96b5ceb3]{margin-top:1rem}.\\!h-4\\.5[data-v-96b5ceb3]{height:1.125rem!important}.\\!w-32[data-v-96b5ceb3]{width:8rem!important}.\\!w-auto[data-v-96b5ceb3]{width:auto!important}.h-8[data-v-96b5ceb3]{height:2rem}.max-w-\\[150px\\][data-v-96b5ceb3]{max-width:150px}.max-w-sm[data-v-96b5ceb3]{max-width:24rem}.min-h-\\[380px\\][data-v-96b5ceb3]{min-height:380px}.min-w-0[data-v-96b5ceb3]{min-width:0}.w-32[data-v-96b5ceb3]{width:8rem}.w-8[data-v-96b5ceb3]{width:2rem}.flex[data-v-96b5ceb3]{display:flex}.\\!inline-flex[data-v-96b5ceb3]{display:inline-flex!important}.flex-1[data-v-96b5ceb3]{flex:1 1 0%}.shrink-0[data-v-96b5ceb3]{flex-shrink:0}.flex-col[data-v-96b5ceb3]{flex-direction:column}.flex-wrap[data-v-96b5ceb3]{flex-wrap:wrap}.items-start[data-v-96b5ceb3]{align-items:flex-start}.items-center[data-v-96b5ceb3]{align-items:center}.justify-center[data-v-96b5ceb3]{justify-content:center}.justify-between[data-v-96b5ceb3]{justify-content:space-between}.gap-1[data-v-96b5ceb3]{gap:.25rem}.gap-1\\.5[data-v-96b5ceb3]{gap:.375rem}.gap-2[data-v-96b5ceb3]{gap:.5rem}.gap-2\\.5[data-v-96b5ceb3]{gap:.625rem}.gap-3[data-v-96b5ceb3]{gap:.75rem}.space-y-1[data-v-96b5ceb3]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(.25rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(.25rem * var(--un-space-y-reverse))}.space-y-4[data-v-96b5ceb3]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(1rem * var(--un-space-y-reverse))}.truncate[data-v-96b5ceb3]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.border[data-v-96b5ceb3]{border-width:1px}.border-b[data-v-96b5ceb3]{border-bottom-width:1px}.border-t[data-v-96b5ceb3]{border-top-width:1px}.border-emerald-300\\/80[data-v-96b5ceb3]{border-color:#6ee7b7cc}.border-red-300\\/80[data-v-96b5ceb3]{border-color:#fca5a5cc}.border-zinc-100[data-v-96b5ceb3]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-96b5ceb3]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-96b5ceb3]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-96b5ceb3]{border-color:#04785780}.dark .dark\\:border-red-700\\/50[data-v-96b5ceb3]{border-color:#b91c1c80}.dark .dark\\:border-zinc-700\\/40[data-v-96b5ceb3]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/60[data-v-96b5ceb3]{border-color:#3f3f4699}.hover\\:border-\\[var\\(--color-primary\\)\\][data-v-96b5ceb3]:hover{border-color:var(--color-primary)}.\\!rounded-lg[data-v-96b5ceb3]{border-radius:.5rem!important}.\\!rounded-md[data-v-96b5ceb3]{border-radius:.375rem!important}.rounded-lg[data-v-96b5ceb3]{border-radius:.5rem}.rounded-xl[data-v-96b5ceb3]{border-radius:.75rem}.bg-amber-50[data-v-96b5ceb3]{--un-bg-opacity:1;background-color:rgb(255 251 235 / var(--un-bg-opacity))}.bg-blue-50[data-v-96b5ceb3]{--un-bg-opacity:1;background-color:rgb(239 246 255 / var(--un-bg-opacity))}.bg-emerald-50[data-v-96b5ceb3]{--un-bg-opacity:1;background-color:rgb(236 253 245 / var(--un-bg-opacity))}.bg-emerald-50\\/70[data-v-96b5ceb3]{background-color:#ecfdf5b3}.bg-red-50\\/70[data-v-96b5ceb3]{background-color:#fef2f2b3}.bg-white\\/60[data-v-96b5ceb3]{background-color:#fff9}.dark .dark\\:bg-amber-950\\/40[data-v-96b5ceb3]{background-color:#451a0366}.dark .dark\\:bg-blue-950\\/40[data-v-96b5ceb3]{background-color:#17255466}.dark .dark\\:bg-emerald-950\\/30[data-v-96b5ceb3]{background-color:#022c224d}.dark .dark\\:bg-emerald-950\\/40[data-v-96b5ceb3]{background-color:#022c2266}.dark .dark\\:bg-red-950\\/30[data-v-96b5ceb3]{background-color:#450a0a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-96b5ceb3]{background-color:#27272a66}.hover\\:\\!bg-red-500\\/10[data-v-96b5ceb3]:hover{background-color:#ef44441a!important}.p-3[data-v-96b5ceb3]{padding:.75rem}.p-3\\.5[data-v-96b5ceb3]{padding:.875rem}.\\!px-1\\.5[data-v-96b5ceb3]{padding-left:.375rem!important;padding-right:.375rem!important}.\\!px-2[data-v-96b5ceb3]{padding-left:.5rem!important;padding-right:.5rem!important}.py-12[data-v-96b5ceb3]{padding-top:3rem;padding-bottom:3rem}.py-2[data-v-96b5ceb3]{padding-top:.5rem;padding-bottom:.5rem}.pb-3[data-v-96b5ceb3]{padding-bottom:.75rem}.pr-2[data-v-96b5ceb3]{padding-right:.5rem}.pt-1\\.5[data-v-96b5ceb3]{padding-top:.375rem}.pt-2[data-v-96b5ceb3]{padding-top:.5rem}.pt-4[data-v-96b5ceb3]{padding-top:1rem}.text-center[data-v-96b5ceb3]{text-align:center}.\\!text-\\[10px\\][data-v-96b5ceb3]{font-size:10px!important}.text-\\[11px\\][data-v-96b5ceb3]{font-size:11px}.text-4xl[data-v-96b5ceb3]{font-size:2.25rem;line-height:2.5rem}.text-base[data-v-96b5ceb3]{font-size:1rem;line-height:1.5rem}.text-lg[data-v-96b5ceb3]{font-size:1.125rem;line-height:1.75rem}.text-sm[data-v-96b5ceb3]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-96b5ceb3]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-blue-400[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(96 165 250 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-red-300[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(252 165 165 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-96b5ceb3],.text-zinc-300[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-96b5ceb3],.text-zinc-400[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.dark .dark\\:text-zinc-600[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-\\[var\\(--td-text-color-placeholder\\)\\][data-v-96b5ceb3]{color:var(--td-text-color-placeholder)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-96b5ceb3]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-96b5ceb3]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-blue-600[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(37 99 235 / var(--un-text-opacity))}.text-emerald-500[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-red-500[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(239 68 68 / var(--un-text-opacity))}.text-red-800[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(153 27 27 / var(--un-text-opacity))}.text-zinc-500[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-700[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.font-bold[data-v-96b5ceb3]{font-weight:700}.font-medium[data-v-96b5ceb3]{font-weight:500}.\\!leading-4\\.5[data-v-96b5ceb3]{line-height:1.125rem!important}.leading-relaxed[data-v-96b5ceb3]{line-height:1.625}.leading-snug[data-v-96b5ceb3]{line-height:1.375}.font-mono[data-v-96b5ceb3]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.opacity-90[data-v-96b5ceb3]{opacity:.9}.shadow-sm[data-v-96b5ceb3]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-96b5ceb3]{outline-style:solid}.transition-all[data-v-96b5ceb3]{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-2[data-v-96b5ceb3]{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:flex-row[data-v-96b5ceb3]{flex-direction:row}.md\\:items-start[data-v-96b5ceb3]{align-items:flex-start}.md\\:items-center[data-v-96b5ceb3]{align-items:center}}.fixed[data-v-465f3268]{position:fixed}.grid[data-v-465f3268]{display:grid}.grid-cols-1[data-v-465f3268]{grid-template-columns:repeat(1,minmax(0,1fr))}.m-0[data-v-465f3268]{margin:0}.mx-auto[data-v-465f3268]{margin-left:auto;margin-right:auto}.my-2[data-v-465f3268]{margin-top:.5rem;margin-bottom:.5rem}.mb-1\\.5[data-v-465f3268]{margin-bottom:.375rem}.mb-3[data-v-465f3268]{margin-bottom:.75rem}.mb-4[data-v-465f3268]{margin-bottom:1rem}.ml-1[data-v-465f3268]{margin-left:.25rem}.mr-1\\.5[data-v-465f3268]{margin-right:.375rem}.mt-0\\.5[data-v-465f3268]{margin-top:.125rem}.mt-1[data-v-465f3268]{margin-top:.25rem}.mt-2[data-v-465f3268]{margin-top:.5rem}.mt-3[data-v-465f3268]{margin-top:.75rem}.mt-5[data-v-465f3268]{margin-top:1.25rem}.mt-8[data-v-465f3268]{margin-top:2rem}.\\!w-24[data-v-465f3268]{width:6rem!important}.\\!w-28[data-v-465f3268]{width:7rem!important}.\\!w-48[data-v-465f3268]{width:12rem!important}.\\!w-auto[data-v-465f3268]{width:auto!important}.h-4[data-v-465f3268]{height:1rem}.min-w-\\[200px\\][data-v-465f3268]{min-width:200px}.w-\\[120px\\][data-v-465f3268]{width:120px}.w-1[data-v-465f3268]{width:.25rem}.w-full[data-v-465f3268]{width:100%}.flex[data-v-465f3268]{display:flex}.\\!inline-flex[data-v-465f3268]{display:inline-flex!important}.flex-1[data-v-465f3268]{flex:1 1 0%}.shrink-0[data-v-465f3268]{flex-shrink:0}.flex-col[data-v-465f3268]{flex-direction:column}.flex-wrap[data-v-465f3268]{flex-wrap:wrap}.cursor-help[data-v-465f3268]{cursor:help}.\\!cursor-pointer[data-v-465f3268]{cursor:pointer!important}.items-start[data-v-465f3268]{align-items:flex-start}.\\!items-center[data-v-465f3268]{align-items:center!important}.items-center[data-v-465f3268]{align-items:center}.justify-start[data-v-465f3268]{justify-content:flex-start}.justify-end[data-v-465f3268]{justify-content:flex-end}.\\!justify-center[data-v-465f3268]{justify-content:center!important}.justify-between[data-v-465f3268]{justify-content:space-between}.gap-1[data-v-465f3268]{gap:.25rem}.gap-1\\.5[data-v-465f3268]{gap:.375rem}.gap-2[data-v-465f3268]{gap:.5rem}.gap-3[data-v-465f3268]{gap:.75rem}.overflow-hidden[data-v-465f3268]{overflow:hidden}.break-all[data-v-465f3268]{word-break:break-all}.border[data-v-465f3268]{border-width:1px}.border-b[data-v-465f3268]{border-bottom-width:1px}.border-t[data-v-465f3268]{border-top-width:1px}.border-emerald-300\\/80[data-v-465f3268]{border-color:#6ee7b7cc}.border-zinc-100[data-v-465f3268]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-465f3268]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-465f3268]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-465f3268]{border-color:#04785780}.dark .dark\\:border-zinc-700\\/40[data-v-465f3268]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/50[data-v-465f3268]{border-color:#3f3f4680}.dark .dark\\:border-zinc-700\\/60[data-v-465f3268]{border-color:#3f3f4699}.dark .dark\\:border-zinc-800\\/60[data-v-465f3268]{border-color:#27272a99}.hover\\:\\!border-\\[var\\(--color-primary\\)\\][data-v-465f3268]:hover{border-color:var(--color-primary)!important}.\\!rounded-lg[data-v-465f3268]{border-radius:.5rem!important}.\\!rounded-md[data-v-465f3268]{border-radius:.375rem!important}.rounded-full[data-v-465f3268]{border-radius:9999px}.rounded-xl[data-v-465f3268]{border-radius:.75rem}.border-dashed[data-v-465f3268]{border-style:dashed}.bg-\\[var\\(--color-primary\\)\\][data-v-465f3268]{background-color:var(--color-primary)}.bg-emerald-50\\/70[data-v-465f3268]{background-color:#ecfdf5b3}.bg-white\\/50[data-v-465f3268]{background-color:#ffffff80}.bg-white\\/60[data-v-465f3268]{background-color:#fff9}.bg-zinc-50\\/70[data-v-465f3268]{background-color:#fafafab3}.dark .dark\\:bg-emerald-950\\/30[data-v-465f3268]{background-color:#022c224d}.dark .dark\\:bg-zinc-800\\/30[data-v-465f3268]{background-color:#27272a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-465f3268]{background-color:#27272a66}.dark .dark\\:bg-zinc-900\\/20[data-v-465f3268]{background-color:#18181b33}.dark .dark\\:hover\\:bg-zinc-800\\/20[data-v-465f3268]:hover{background-color:#27272a33}.hover\\:\\!bg-red-500\\/10[data-v-465f3268]:hover{background-color:#ef44441a!important}.hover\\:bg-zinc-50\\/50[data-v-465f3268]:hover{background-color:#fafafa80}.p-3[data-v-465f3268]{padding:.75rem}.p-3\\.5[data-v-465f3268]{padding:.875rem}.p-8[data-v-465f3268]{padding:2rem}.\\!px-2\\.5[data-v-465f3268]{padding-left:.625rem!important;padding-right:.625rem!important}.px-4[data-v-465f3268]{padding-left:1rem;padding-right:1rem}.py-2[data-v-465f3268]{padding-top:.5rem;padding-bottom:.5rem}.pb-2[data-v-465f3268]{padding-bottom:.5rem}.pb-8[data-v-465f3268]{padding-bottom:2rem}.pr-0[data-v-465f3268]{padding-right:0}.pt-2[data-v-465f3268]{padding-top:.5rem}.text-center[data-v-465f3268]{text-align:center}.text-\\[11px\\][data-v-465f3268]{font-size:11px}.text-\\[13px\\][data-v-465f3268]{font-size:13px}.text-base[data-v-465f3268]{font-size:1rem;line-height:1.5rem}.text-sm[data-v-465f3268]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-465f3268]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-zinc-200[data-v-465f3268]{--un-text-opacity:1;color:rgb(228 228 231 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-465f3268],.text-zinc-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.text-\\[var\\(--color-primary\\)\\][data-v-465f3268]{color:var(--color-primary)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-465f3268]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-465f3268]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-emerald-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-zinc-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-zinc-700[data-v-465f3268]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.text-zinc-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(39 39 42 / var(--un-text-opacity))}.hover\\:text-zinc-500[data-v-465f3268]:hover{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.\\!font-medium[data-v-465f3268]{font-weight:500!important}.font-bold[data-v-465f3268]{font-weight:700}.font-medium[data-v-465f3268]{font-weight:500}.leading-relaxed[data-v-465f3268]{line-height:1.625}.leading-snug[data-v-465f3268]{line-height:1.375}.font-mono[data-v-465f3268]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.shadow-sm[data-v-465f3268]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-465f3268]{outline-style:solid}.transition-colors[data-v-465f3268]{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-3[data-v-465f3268]{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:mb-0[data-v-465f3268]{margin-bottom:0}.md\\:mt-0[data-v-465f3268]{margin-top:0}.md\\:w-\\[340px\\][data-v-465f3268]{width:340px}.md\\:w-\\[360px\\][data-v-465f3268]{width:360px}.md\\:w-\\[380px\\][data-v-465f3268]{width:380px}.md\\:flex-row[data-v-465f3268]{flex-direction:row}.md\\:items-start[data-v-465f3268]{align-items:flex-start}.md\\:items-center[data-v-465f3268]{align-items:center}.md\\:justify-end[data-v-465f3268]{justify-content:flex-end}.md\\:justify-between[data-v-465f3268]{justify-content:space-between}.md\\:p-4[data-v-465f3268]{padding:1rem}.md\\:pr-2[data-v-465f3268]{padding-right:.5rem}.md\\:pr-8[data-v-465f3268]{padding-right:2rem}}")),document.head.appendChild(a)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
+(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("@keyframes t-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.t-icon{display:inline-block;vertical-align:middle;width:1em;height:1em}.t-icon:before{font-family:unset}.t-icon-loading{animation:t-spin 1s linear infinite}.t-icon.t-size-s,i.t-size-s{font-size:14px}.t-icon.t-size-m,i.t-size-m{font-size:16px}.t-icon.t-size-l,i.t-size-l{font-size:18px}.visible[data-v-a3d50b0b]{visibility:visible}.absolute[data-v-a3d50b0b]{position:absolute}.grid[data-v-a3d50b0b]{display:grid}.grid-cols-1[data-v-a3d50b0b]{grid-template-columns:repeat(1,minmax(0,1fr))}.mb-2[data-v-a3d50b0b]{margin-bottom:.5rem}.mb-3[data-v-a3d50b0b]{margin-bottom:.75rem}.mb-4[data-v-a3d50b0b]{margin-bottom:1rem}.mt-0\\.5[data-v-a3d50b0b]{margin-top:.125rem}.mt-1[data-v-a3d50b0b]{margin-top:.25rem}.mt-4[data-v-a3d50b0b]{margin-top:1rem}.hidden[data-v-a3d50b0b]{display:none}.\\!h-4\\.5[data-v-a3d50b0b]{height:1.125rem!important}.\\!w-32[data-v-a3d50b0b]{width:8rem!important}.\\!w-auto[data-v-a3d50b0b]{width:auto!important}.h-8[data-v-a3d50b0b]{height:2rem}.max-w-\\[150px\\][data-v-a3d50b0b]{max-width:150px}.max-w-sm[data-v-a3d50b0b]{max-width:24rem}.min-h-\\[380px\\][data-v-a3d50b0b]{min-height:380px}.min-w-0[data-v-a3d50b0b]{min-width:0}.w-32[data-v-a3d50b0b]{width:8rem}.w-8[data-v-a3d50b0b]{width:2rem}.flex[data-v-a3d50b0b]{display:flex}.\\!inline-flex[data-v-a3d50b0b]{display:inline-flex!important}.flex-1[data-v-a3d50b0b]{flex:1 1 0%}.shrink-0[data-v-a3d50b0b]{flex-shrink:0}.flex-col[data-v-a3d50b0b]{flex-direction:column}.flex-wrap[data-v-a3d50b0b]{flex-wrap:wrap}.items-start[data-v-a3d50b0b]{align-items:flex-start}.items-center[data-v-a3d50b0b]{align-items:center}.justify-center[data-v-a3d50b0b]{justify-content:center}.justify-between[data-v-a3d50b0b]{justify-content:space-between}.gap-1[data-v-a3d50b0b]{gap:.25rem}.gap-1\\.5[data-v-a3d50b0b]{gap:.375rem}.gap-2[data-v-a3d50b0b]{gap:.5rem}.gap-2\\.5[data-v-a3d50b0b]{gap:.625rem}.gap-3[data-v-a3d50b0b]{gap:.75rem}.space-y-1[data-v-a3d50b0b]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(.25rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(.25rem * var(--un-space-y-reverse))}.space-y-4[data-v-a3d50b0b]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(1rem * var(--un-space-y-reverse))}.truncate[data-v-a3d50b0b]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.border[data-v-a3d50b0b]{border-width:1px}.border-b[data-v-a3d50b0b]{border-bottom-width:1px}.border-t[data-v-a3d50b0b]{border-top-width:1px}.border-emerald-300\\/80[data-v-a3d50b0b]{border-color:#6ee7b7cc}.border-red-300\\/80[data-v-a3d50b0b]{border-color:#fca5a5cc}.border-zinc-100[data-v-a3d50b0b]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-a3d50b0b]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-a3d50b0b]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-a3d50b0b]{border-color:#04785780}.dark .dark\\:border-red-700\\/50[data-v-a3d50b0b]{border-color:#b91c1c80}.dark .dark\\:border-zinc-700\\/40[data-v-a3d50b0b]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/60[data-v-a3d50b0b]{border-color:#3f3f4699}.hover\\:border-\\[var\\(--color-primary\\)\\][data-v-a3d50b0b]:hover{border-color:var(--color-primary)}.\\!rounded-lg[data-v-a3d50b0b]{border-radius:.5rem!important}.\\!rounded-md[data-v-a3d50b0b]{border-radius:.375rem!important}.rounded-lg[data-v-a3d50b0b]{border-radius:.5rem}.rounded-xl[data-v-a3d50b0b]{border-radius:.75rem}.bg-amber-50[data-v-a3d50b0b]{--un-bg-opacity:1;background-color:rgb(255 251 235 / var(--un-bg-opacity))}.bg-blue-50[data-v-a3d50b0b]{--un-bg-opacity:1;background-color:rgb(239 246 255 / var(--un-bg-opacity))}.bg-emerald-50[data-v-a3d50b0b]{--un-bg-opacity:1;background-color:rgb(236 253 245 / var(--un-bg-opacity))}.bg-emerald-50\\/70[data-v-a3d50b0b]{background-color:#ecfdf5b3}.bg-red-50\\/70[data-v-a3d50b0b]{background-color:#fef2f2b3}.bg-white\\/60[data-v-a3d50b0b]{background-color:#fff9}.dark .dark\\:bg-amber-950\\/40[data-v-a3d50b0b]{background-color:#451a0366}.dark .dark\\:bg-blue-950\\/40[data-v-a3d50b0b]{background-color:#17255466}.dark .dark\\:bg-emerald-950\\/30[data-v-a3d50b0b]{background-color:#022c224d}.dark .dark\\:bg-emerald-950\\/40[data-v-a3d50b0b]{background-color:#022c2266}.dark .dark\\:bg-red-950\\/30[data-v-a3d50b0b]{background-color:#450a0a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-a3d50b0b]{background-color:#27272a66}.hover\\:\\!bg-red-500\\/10[data-v-a3d50b0b]:hover{background-color:#ef44441a!important}.p-3[data-v-a3d50b0b]{padding:.75rem}.p-3\\.5[data-v-a3d50b0b]{padding:.875rem}.\\!px-1\\.5[data-v-a3d50b0b]{padding-left:.375rem!important;padding-right:.375rem!important}.\\!px-2[data-v-a3d50b0b]{padding-left:.5rem!important;padding-right:.5rem!important}.py-12[data-v-a3d50b0b]{padding-top:3rem;padding-bottom:3rem}.py-2[data-v-a3d50b0b]{padding-top:.5rem;padding-bottom:.5rem}.pb-3[data-v-a3d50b0b]{padding-bottom:.75rem}.pr-2[data-v-a3d50b0b]{padding-right:.5rem}.pt-1\\.5[data-v-a3d50b0b]{padding-top:.375rem}.pt-2[data-v-a3d50b0b]{padding-top:.5rem}.pt-4[data-v-a3d50b0b]{padding-top:1rem}.text-center[data-v-a3d50b0b]{text-align:center}.\\!text-\\[10px\\][data-v-a3d50b0b]{font-size:10px!important}.text-\\[11px\\][data-v-a3d50b0b]{font-size:11px}.text-4xl[data-v-a3d50b0b]{font-size:2.25rem;line-height:2.5rem}.text-base[data-v-a3d50b0b]{font-size:1rem;line-height:1.5rem}.text-lg[data-v-a3d50b0b]{font-size:1.125rem;line-height:1.75rem}.text-sm[data-v-a3d50b0b]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-a3d50b0b]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-blue-400[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(96 165 250 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-red-300[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(252 165 165 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-a3d50b0b],.text-zinc-300[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-a3d50b0b],.text-zinc-400[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.dark .dark\\:text-zinc-600[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-\\[var\\(--td-text-color-placeholder\\)\\][data-v-a3d50b0b]{color:var(--td-text-color-placeholder)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-a3d50b0b]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-a3d50b0b]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-blue-600[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(37 99 235 / var(--un-text-opacity))}.text-emerald-500[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-red-500[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(239 68 68 / var(--un-text-opacity))}.text-red-800[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(153 27 27 / var(--un-text-opacity))}.text-zinc-500[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-700[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.font-bold[data-v-a3d50b0b]{font-weight:700}.font-medium[data-v-a3d50b0b]{font-weight:500}.\\!leading-4\\.5[data-v-a3d50b0b]{line-height:1.125rem!important}.leading-relaxed[data-v-a3d50b0b]{line-height:1.625}.leading-snug[data-v-a3d50b0b]{line-height:1.375}.font-mono[data-v-a3d50b0b]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.opacity-90[data-v-a3d50b0b]{opacity:.9}.shadow-sm[data-v-a3d50b0b]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-a3d50b0b]{outline-style:solid}.transition-all[data-v-a3d50b0b]{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-2[data-v-a3d50b0b]{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:flex-row[data-v-a3d50b0b]{flex-direction:row}.md\\:items-start[data-v-a3d50b0b]{align-items:flex-start}.md\\:items-center[data-v-a3d50b0b]{align-items:center}}.fixed[data-v-465f3268]{position:fixed}.grid[data-v-465f3268]{display:grid}.grid-cols-1[data-v-465f3268]{grid-template-columns:repeat(1,minmax(0,1fr))}.m-0[data-v-465f3268]{margin:0}.mx-auto[data-v-465f3268]{margin-left:auto;margin-right:auto}.my-2[data-v-465f3268]{margin-top:.5rem;margin-bottom:.5rem}.mb-1\\.5[data-v-465f3268]{margin-bottom:.375rem}.mb-3[data-v-465f3268]{margin-bottom:.75rem}.mb-4[data-v-465f3268]{margin-bottom:1rem}.ml-1[data-v-465f3268]{margin-left:.25rem}.mr-1\\.5[data-v-465f3268]{margin-right:.375rem}.mt-0\\.5[data-v-465f3268]{margin-top:.125rem}.mt-1[data-v-465f3268]{margin-top:.25rem}.mt-2[data-v-465f3268]{margin-top:.5rem}.mt-3[data-v-465f3268]{margin-top:.75rem}.mt-5[data-v-465f3268]{margin-top:1.25rem}.mt-8[data-v-465f3268]{margin-top:2rem}.\\!w-24[data-v-465f3268]{width:6rem!important}.\\!w-28[data-v-465f3268]{width:7rem!important}.\\!w-48[data-v-465f3268]{width:12rem!important}.\\!w-auto[data-v-465f3268]{width:auto!important}.h-4[data-v-465f3268]{height:1rem}.min-w-\\[200px\\][data-v-465f3268]{min-width:200px}.w-\\[120px\\][data-v-465f3268]{width:120px}.w-1[data-v-465f3268]{width:.25rem}.w-full[data-v-465f3268]{width:100%}.flex[data-v-465f3268]{display:flex}.\\!inline-flex[data-v-465f3268]{display:inline-flex!important}.flex-1[data-v-465f3268]{flex:1 1 0%}.shrink-0[data-v-465f3268]{flex-shrink:0}.flex-col[data-v-465f3268]{flex-direction:column}.flex-wrap[data-v-465f3268]{flex-wrap:wrap}.cursor-help[data-v-465f3268]{cursor:help}.\\!cursor-pointer[data-v-465f3268]{cursor:pointer!important}.items-start[data-v-465f3268]{align-items:flex-start}.\\!items-center[data-v-465f3268]{align-items:center!important}.items-center[data-v-465f3268]{align-items:center}.justify-start[data-v-465f3268]{justify-content:flex-start}.justify-end[data-v-465f3268]{justify-content:flex-end}.\\!justify-center[data-v-465f3268]{justify-content:center!important}.justify-between[data-v-465f3268]{justify-content:space-between}.gap-1[data-v-465f3268]{gap:.25rem}.gap-1\\.5[data-v-465f3268]{gap:.375rem}.gap-2[data-v-465f3268]{gap:.5rem}.gap-3[data-v-465f3268]{gap:.75rem}.overflow-hidden[data-v-465f3268]{overflow:hidden}.break-all[data-v-465f3268]{word-break:break-all}.border[data-v-465f3268]{border-width:1px}.border-b[data-v-465f3268]{border-bottom-width:1px}.border-t[data-v-465f3268]{border-top-width:1px}.border-emerald-300\\/80[data-v-465f3268]{border-color:#6ee7b7cc}.border-zinc-100[data-v-465f3268]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-465f3268]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-465f3268]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-465f3268]{border-color:#04785780}.dark .dark\\:border-zinc-700\\/40[data-v-465f3268]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/50[data-v-465f3268]{border-color:#3f3f4680}.dark .dark\\:border-zinc-700\\/60[data-v-465f3268]{border-color:#3f3f4699}.dark .dark\\:border-zinc-800\\/60[data-v-465f3268]{border-color:#27272a99}.hover\\:\\!border-\\[var\\(--color-primary\\)\\][data-v-465f3268]:hover{border-color:var(--color-primary)!important}.\\!rounded-lg[data-v-465f3268]{border-radius:.5rem!important}.\\!rounded-md[data-v-465f3268]{border-radius:.375rem!important}.rounded-full[data-v-465f3268]{border-radius:9999px}.rounded-xl[data-v-465f3268]{border-radius:.75rem}.border-dashed[data-v-465f3268]{border-style:dashed}.bg-\\[var\\(--color-primary\\)\\][data-v-465f3268]{background-color:var(--color-primary)}.bg-emerald-50\\/70[data-v-465f3268]{background-color:#ecfdf5b3}.bg-white\\/50[data-v-465f3268]{background-color:#ffffff80}.bg-white\\/60[data-v-465f3268]{background-color:#fff9}.bg-zinc-50\\/70[data-v-465f3268]{background-color:#fafafab3}.dark .dark\\:bg-emerald-950\\/30[data-v-465f3268]{background-color:#022c224d}.dark .dark\\:bg-zinc-800\\/30[data-v-465f3268]{background-color:#27272a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-465f3268]{background-color:#27272a66}.dark .dark\\:bg-zinc-900\\/20[data-v-465f3268]{background-color:#18181b33}.dark .dark\\:hover\\:bg-zinc-800\\/20[data-v-465f3268]:hover{background-color:#27272a33}.hover\\:\\!bg-red-500\\/10[data-v-465f3268]:hover{background-color:#ef44441a!important}.hover\\:bg-zinc-50\\/50[data-v-465f3268]:hover{background-color:#fafafa80}.p-3[data-v-465f3268]{padding:.75rem}.p-3\\.5[data-v-465f3268]{padding:.875rem}.p-8[data-v-465f3268]{padding:2rem}.\\!px-2\\.5[data-v-465f3268]{padding-left:.625rem!important;padding-right:.625rem!important}.px-4[data-v-465f3268]{padding-left:1rem;padding-right:1rem}.py-2[data-v-465f3268]{padding-top:.5rem;padding-bottom:.5rem}.pb-2[data-v-465f3268]{padding-bottom:.5rem}.pb-8[data-v-465f3268]{padding-bottom:2rem}.pr-0[data-v-465f3268]{padding-right:0}.pt-2[data-v-465f3268]{padding-top:.5rem}.text-center[data-v-465f3268]{text-align:center}.text-\\[11px\\][data-v-465f3268]{font-size:11px}.text-\\[13px\\][data-v-465f3268]{font-size:13px}.text-base[data-v-465f3268]{font-size:1rem;line-height:1.5rem}.text-sm[data-v-465f3268]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-465f3268]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-zinc-200[data-v-465f3268]{--un-text-opacity:1;color:rgb(228 228 231 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-465f3268],.text-zinc-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.text-\\[var\\(--color-primary\\)\\][data-v-465f3268]{color:var(--color-primary)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-465f3268]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-465f3268]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-emerald-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-zinc-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-zinc-700[data-v-465f3268]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.text-zinc-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(39 39 42 / var(--un-text-opacity))}.hover\\:text-zinc-500[data-v-465f3268]:hover{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.\\!font-medium[data-v-465f3268]{font-weight:500!important}.font-bold[data-v-465f3268]{font-weight:700}.font-medium[data-v-465f3268]{font-weight:500}.leading-relaxed[data-v-465f3268]{line-height:1.625}.leading-snug[data-v-465f3268]{line-height:1.375}.font-mono[data-v-465f3268]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.shadow-sm[data-v-465f3268]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-465f3268]{outline-style:solid}.transition-colors[data-v-465f3268]{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-3[data-v-465f3268]{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:mb-0[data-v-465f3268]{margin-bottom:0}.md\\:mt-0[data-v-465f3268]{margin-top:0}.md\\:w-\\[340px\\][data-v-465f3268]{width:340px}.md\\:w-\\[360px\\][data-v-465f3268]{width:360px}.md\\:w-\\[380px\\][data-v-465f3268]{width:380px}.md\\:flex-row[data-v-465f3268]{flex-direction:row}.md\\:items-start[data-v-465f3268]{align-items:flex-start}.md\\:items-center[data-v-465f3268]{align-items:center}.md\\:justify-end[data-v-465f3268]{justify-content:flex-end}.md\\:justify-between[data-v-465f3268]{justify-content:space-between}.md\\:p-4[data-v-465f3268]{padding:1rem}.md\\:pr-2[data-v-465f3268]{padding-right:.5rem}.md\\:pr-8[data-v-465f3268]{padding-right:2rem}}")),document.head.appendChild(a)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
 function F(t) {
   "@babel/helpers - typeof";
   return F = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(o) {
@@ -1375,7 +1375,7 @@ var zt = {
       }
     }]
   }]
-}, $e = e.defineComponent({
+}, _e = e.defineComponent({
   name: "HelpCircleIcon",
   props: {
     size: {
@@ -1427,7 +1427,7 @@ var zt = {
     return () => w(zt, y.value);
   }
 });
-function De(t, o) {
+function $e(t, o) {
   var r = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
     var l = Object.getOwnPropertySymbols(t);
@@ -1437,18 +1437,18 @@ function De(t, o) {
   }
   return r;
 }
-function _e(t) {
+function De(t) {
   for (var o = 1; o < arguments.length; o++) {
     var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? De(Object(r), !0).forEach(function(l) {
+    o % 2 ? $e(Object(r), !0).forEach(function(l) {
       N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : De(Object(r)).forEach(function(l) {
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : $e(Object(r)).forEach(function(l) {
       Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
     });
   }
   return t;
 }
-var $t = {
+var _t = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1472,7 +1472,7 @@ var $t = {
       }
     }]
   }]
-}, Dt = e.defineComponent({
+}, $t = e.defineComponent({
   name: "HistoryIcon",
   props: {
     size: {
@@ -1503,7 +1503,7 @@ var $t = {
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-history", m.value]), g = e.computed(() => _e(_e({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-history", m.value]), g = e.computed(() => De(De({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1521,7 +1521,7 @@ var $t = {
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
     }));
-    return () => w($t, y.value);
+    return () => w(_t, y.value);
   }
 });
 function Be(t, o) {
@@ -1545,7 +1545,7 @@ function We(t) {
   }
   return t;
 }
-var _t = {
+var Dt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1618,7 +1618,7 @@ var _t = {
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
     }));
-    return () => w(_t, y.value);
+    return () => w(Dt, y.value);
   }
 });
 function Me(t, o) {
@@ -2121,30 +2121,30 @@ function It() {
   return qe || (qe = 1, te = mslxRequest), te;
 }
 var Ht = It();
-const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
+const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
   // 用户存储策略
-  getUserProfiles: async () => await $.get({ url: `${D}/user/profiles` }) || [],
-  saveUserProfile: async (t) => await $.post({
-    url: `${D}/user/profile`,
+  getUserProfiles: async () => await _.get({ url: `${$}/user/profiles` }) || [],
+  saveUserProfile: async (t) => await _.post({
+    url: `${$}/user/profile`,
     data: t
   }),
-  deleteUserProfile: async (t) => (await $.delete({ url: `${D}/user/profile/${t}` }), !0),
-  testConnection: async (t) => await $.post({
-    url: `${D}/test-connection`,
+  deleteUserProfile: async (t) => (await _.delete({ url: `${$}/user/profile/${t}` }), !0),
+  testConnection: async (t) => await _.post({
+    url: `${$}/test-connection`,
     data: t
   }),
   // 探测 GFS 状态
-  getGfsStatus: async (t) => await $.get({ url: `${D}/instance/gfs-status?instanceId=${t}` }) || { isInstalled: !1, enabled: !1, keepDailyDays: 7, keepWeeklyWeeks: 4, keepMonthlyMonths: 12 },
+  getGfsStatus: async (t) => await _.get({ url: `${$}/instance/gfs-status?instanceId=${t}` }) || { isInstalled: !1, enabled: !1, keepDailyDays: 7, keepWeeklyWeeks: 4, keepMonthlyMonths: 12 },
   // 实例云同步配置
-  getInstanceConfig: async (t) => await $.get({ url: `${D}/instance/config?instanceId=${t}` }),
-  saveInstanceConfig: async (t, o) => await $.post({
-    url: `${D}/instance/config?instanceId=${t}`,
+  getInstanceConfig: async (t) => await _.get({ url: `${$}/instance/config?instanceId=${t}` }),
+  saveInstanceConfig: async (t, o) => await _.post({
+    url: `${$}/instance/config?instanceId=${t}`,
     data: o
   }),
   // 远端文件管理
-  getRemoteBackups: async (t) => await $.get({ url: `${D}/instance/remote-backups?instanceId=${t}` }) || [],
-  deleteRemoteBackup: async (t, o) => (await $.post({
-    url: `${D}/instance/delete-remote-backup?instanceId=${t}`,
+  getRemoteBackups: async (t) => await _.get({ url: `${$}/instance/remote-backups?instanceId=${t}` }) || [],
+  deleteRemoteBackup: async (t, o) => (await _.post({
+    url: `${$}/instance/delete-remote-backup?instanceId=${t}`,
     data: { fullPath: o }
   }), !0)
 }, A = (t) => t === "WebDAV" || t === 1 || t === "1" ? "WebDAV" : t === "FTP" || t === 2 || t === "2" ? "FTP" : "S3Compatible", Ge = (t) => t === "Both" || t === 2 || t === "2" ? "Both" : t === "RegularOnly" || t === 0 || t === "0" ? "RegularOnly" : "GfsOnly", Rt = /* @__PURE__ */ e.defineComponent({
@@ -2268,7 +2268,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
       }
     };
     return (h, u) => {
-      const B = e.resolveComponent("t-tag"), P = e.resolveComponent("t-button"), U = e.resolveComponent("t-loading"), j = e.resolveComponent("t-input"), M = e.resolveComponent("t-radio-button"), _ = e.resolveComponent("t-radio-group"), L = e.resolveComponent("t-switch"), q = e.resolveComponent("t-input-number"), G = e.resolveComponent("t-dialog");
+      const B = e.resolveComponent("t-tag"), P = e.resolveComponent("t-button"), U = e.resolveComponent("t-loading"), j = e.resolveComponent("t-input"), M = e.resolveComponent("t-radio-button"), D = e.resolveComponent("t-radio-group"), L = e.resolveComponent("t-switch"), q = e.resolveComponent("t-input-number"), G = e.resolveComponent("t-dialog");
       return e.openBlock(), e.createBlock(G, {
         attach: "body",
         visible: t.visible,
@@ -2301,6 +2301,23 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                 })
               ]),
               e.createElementVNode("div", { class: "space-y-4" }, [
+                e.createElementVNode("div", {
+                  style: { position: "absolute", top: "-9999px", left: "-9999px", width: "0", height: "0", overflow: "hidden" },
+                  "aria-hidden": "true"
+                }, [
+                  e.createElementVNode("input", {
+                    type: "text",
+                    name: "fake_username_remember",
+                    tabindex: "-1",
+                    autocomplete: "username"
+                  }),
+                  e.createElementVNode("input", {
+                    type: "password",
+                    name: "fake_password_remember",
+                    tabindex: "-1",
+                    autocomplete: "current-password"
+                  })
+                ]),
                 e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                   e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, [
                     e.createTextVNode("策略友好名称 "),
@@ -2318,7 +2335,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createTextVNode("存储协议类型 "),
                     e.createElementVNode("span", { class: "text-red-500" }, "*")
                   ]),
-                  e.createVNode(_, {
+                  e.createVNode(D, {
                     modelValue: n.value.providerType,
                     "onUpdate:modelValue": u[2] || (u[2] = (d) => n.value.providerType = d),
                     variant: "default-filled",
@@ -2387,6 +2404,8 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createVNode(j, {
                       modelValue: n.value.s3AccessKey,
                       "onUpdate:modelValue": u[6] || (u[6] = (d) => n.value.s3AccessKey = d),
+                      name: "cloud_storage_s3_key",
+                      autocomplete: "new-password",
                       placeholder: n.value.hasS3Credentials ? "已加密存储（若不修改请留空）" : "输入访问密钥 Access Key",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
@@ -2397,6 +2416,8 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                       modelValue: n.value.s3SecretKey,
                       "onUpdate:modelValue": u[7] || (u[7] = (d) => n.value.s3SecretKey = d),
                       type: "password",
+                      name: "cloud_storage_s3_secret",
+                      autocomplete: "new-password",
                       placeholder: n.value.hasS3Credentials ? "已加密存储（若不修改请留空）" : "输入私有访问密钥 Secret Key",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
@@ -2438,6 +2459,8 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createVNode(j, {
                       modelValue: n.value.webDavUsername,
                       "onUpdate:modelValue": u[11] || (u[11] = (d) => n.value.webDavUsername = d),
+                      name: "cloud_storage_webdav_user",
+                      autocomplete: "new-password",
                       placeholder: n.value.hasWebDavCredentials ? "已加密存储（若不修改请留空）" : "WebDAV 登录用户名",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
@@ -2448,6 +2471,8 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                       modelValue: n.value.webDavPassword,
                       "onUpdate:modelValue": u[12] || (u[12] = (d) => n.value.webDavPassword = d),
                       type: "password",
+                      name: "cloud_storage_webdav_pass",
+                      autocomplete: "new-password",
                       placeholder: n.value.hasWebDavCredentials ? "已加密存储（若不修改请留空）" : "WebDAV 登录密码",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
@@ -2490,6 +2515,8 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createVNode(j, {
                       modelValue: n.value.ftpUsername,
                       "onUpdate:modelValue": u[16] || (u[16] = (d) => n.value.ftpUsername = d),
+                      name: "cloud_storage_ftp_user",
+                      autocomplete: "new-password",
                       placeholder: n.value.hasFtpCredentials ? "已加密存储（若不修改请留空）" : "FTP 账号",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
@@ -2500,6 +2527,8 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                       modelValue: n.value.ftpPassword,
                       "onUpdate:modelValue": u[17] || (u[17] = (d) => n.value.ftpPassword = d),
                       type: "password",
+                      name: "cloud_storage_ftp_pass",
+                      autocomplete: "new-password",
                       placeholder: n.value.hasFtpCredentials ? "已加密存储（若不修改请留空）" : "FTP 密码",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
@@ -2731,7 +2760,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
   for (const [l, i] of o)
     r[l] = i;
   return r;
-}, Zt = /* @__PURE__ */ tt(Rt, [["__scopeId", "data-v-96b5ceb3"]]), qt = /* @__PURE__ */ e.defineComponent({
+}, Zt = /* @__PURE__ */ tt(Rt, [["__scopeId", "data-v-a3d50b0b"]]), qt = /* @__PURE__ */ e.defineComponent({
   __name: "InstanceCloudSyncTab",
   props: {
     serverId: {},
@@ -2827,7 +2856,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
         } catch (c) {
           console.error("[CloudBackup] 获取实例云同步配置失败:", c);
         }
-    }, _ = async () => {
+    }, D = async () => {
       if (r.value) {
         k.value = !0;
         try {
@@ -2842,7 +2871,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
       if (r.value) {
         l.value = !0;
         try {
-          await Promise.all([U(), j(), M()]), n.value.profileId && await _();
+          await Promise.all([U(), j(), M()]), n.value.profileId && await D();
         } finally {
           l.value = !1;
         }
@@ -2859,7 +2888,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
           ...n.value,
           ...c,
           syncMode: Ge(c?.syncMode ?? n.value.syncMode)
-        }, n.value.profileId && await _();
+        }, n.value.profileId && await D();
       } catch (c) {
         V.MessagePlugin.error(c?.message || "保存配置失败");
       } finally {
@@ -2874,7 +2903,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
         onConfirm: async () => {
           E.hide();
           try {
-            await z.deleteRemoteBackup(r.value, c.fullPath), V.MessagePlugin.success("远端备份已删除"), await _();
+            await z.deleteRemoteBackup(r.value, c.fullPath), V.MessagePlugin.success("远端备份已删除"), await D();
           } catch (X) {
             V.MessagePlugin.error(X?.message || "删除远端文件失败");
           }
@@ -2882,7 +2911,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
         onClose: () => E.hide()
       });
     }, d = async () => {
-      await U(), n.value.profileId && await _();
+      await U(), n.value.profileId && await D();
     };
     e.watch(() => r.value, () => L()), e.onMounted(() => L());
     const J = [
@@ -2950,7 +2979,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                   e.createVNode(X, { content: "支持 S3 兼容对象存储、WebDAV 与 FTP / FTPS 协议。" }, {
                     default: e.withCtx(() => [
                       e.createElementVNode("span", { class: "text-xs text-zinc-400 hover:text-zinc-500 cursor-help flex items-center gap-1" }, [
-                        e.createVNode(e.unref($e))
+                        e.createVNode(e.unref(_e))
                       ])
                     ]),
                     _: 1
@@ -3025,7 +3054,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
             }, [
               e.createElementVNode("div", { class: "flex-1 pr-0 md:pr-8 mb-3 md:mb-0 min-w-[200px]" }, [
                 e.createElementVNode("div", { class: "text-sm font-medium text-[var(--td-text-color-primary)] leading-snug flex items-center gap-1.5" }, [
-                  e.createVNode(e.unref(Dt), { class: "text-[var(--color-primary)]" }),
+                  e.createVNode(e.unref($t), { class: "text-[var(--color-primary)]" }),
                   e.createTextVNode(" GFS 分层归档同步模式 "),
                   p.value.enabled ? (e.openBlock(), e.createBlock(S, {
                     key: 0,
@@ -3286,7 +3315,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
               class: "p-3 md:p-4 border-b border-dashed border-zinc-100 dark:border-zinc-800/60 rounded-xl text-xs text-[var(--td-text-color-secondary)] leading-relaxed"
             }, [
               e.createElementVNode("div", { class: "flex items-center gap-2 text-zinc-600 dark:text-zinc-400" }, [
-                e.createVNode(e.unref($e), { class: "text-sm text-[var(--color-primary)] shrink-0" }),
+                e.createVNode(e.unref(_e), { class: "text-sm text-[var(--color-primary)] shrink-0" }),
                 e.createElementVNode("span", null, "当前为「仅 GFS 归档」模式：仅将日/周/月长线归档快照同步至云端，常规定时备份不上传至云端，本地文件不受云端滚动策略影响。如需同步常规备份，请在上方切换为「双轨同步」或「仅常规备份」。")
               ])
             ])),
@@ -3338,7 +3367,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
               size: "small",
               class: "!rounded-lg shadow-sm",
               loading: k.value,
-              onClick: _
+              onClick: D
             }, {
               icon: e.withCtx(() => [
                 e.createVNode(e.unref(et))
