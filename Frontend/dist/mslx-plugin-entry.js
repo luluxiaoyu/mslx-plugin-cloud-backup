@@ -1,4 +1,4 @@
-(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("@keyframes t-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.t-icon{display:inline-block;vertical-align:middle;width:1em;height:1em}.t-icon:before{font-family:unset}.t-icon-loading{animation:t-spin 1s linear infinite}.t-icon.t-size-s,i.t-size-s{font-size:14px}.t-icon.t-size-m,i.t-size-m{font-size:16px}.t-icon.t-size-l,i.t-size-l{font-size:18px}.visible[data-v-efa09a54]{visibility:visible}.grid[data-v-efa09a54]{display:grid}.grid-cols-1[data-v-efa09a54]{grid-template-columns:repeat(1,minmax(0,1fr))}.mb-2[data-v-efa09a54]{margin-bottom:.5rem}.mb-3[data-v-efa09a54]{margin-bottom:.75rem}.mb-4[data-v-efa09a54]{margin-bottom:1rem}.mt-0\\.5[data-v-efa09a54]{margin-top:.125rem}.mt-1[data-v-efa09a54]{margin-top:.25rem}.mt-4[data-v-efa09a54]{margin-top:1rem}.\\!h-4\\.5[data-v-efa09a54]{height:1.125rem!important}.\\!w-32[data-v-efa09a54]{width:8rem!important}.\\!w-auto[data-v-efa09a54]{width:auto!important}.h-8[data-v-efa09a54]{height:2rem}.max-w-\\[150px\\][data-v-efa09a54]{max-width:150px}.max-w-sm[data-v-efa09a54]{max-width:24rem}.min-h-\\[380px\\][data-v-efa09a54]{min-height:380px}.min-w-0[data-v-efa09a54]{min-width:0}.w-32[data-v-efa09a54]{width:8rem}.w-8[data-v-efa09a54]{width:2rem}.flex[data-v-efa09a54]{display:flex}.\\!inline-flex[data-v-efa09a54]{display:inline-flex!important}.flex-1[data-v-efa09a54]{flex:1 1 0%}.shrink-0[data-v-efa09a54]{flex-shrink:0}.flex-col[data-v-efa09a54]{flex-direction:column}.flex-wrap[data-v-efa09a54]{flex-wrap:wrap}.items-start[data-v-efa09a54]{align-items:flex-start}.items-center[data-v-efa09a54]{align-items:center}.justify-center[data-v-efa09a54]{justify-content:center}.justify-between[data-v-efa09a54]{justify-content:space-between}.gap-1[data-v-efa09a54]{gap:.25rem}.gap-1\\.5[data-v-efa09a54]{gap:.375rem}.gap-2[data-v-efa09a54]{gap:.5rem}.gap-2\\.5[data-v-efa09a54]{gap:.625rem}.gap-3[data-v-efa09a54]{gap:.75rem}.space-y-1[data-v-efa09a54]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(.25rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(.25rem * var(--un-space-y-reverse))}.space-y-4[data-v-efa09a54]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(1rem * var(--un-space-y-reverse))}.truncate[data-v-efa09a54]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.border[data-v-efa09a54]{border-width:1px}.border-b[data-v-efa09a54]{border-bottom-width:1px}.border-t[data-v-efa09a54]{border-top-width:1px}.border-emerald-300\\/80[data-v-efa09a54]{border-color:#6ee7b7cc}.border-red-300\\/80[data-v-efa09a54]{border-color:#fca5a5cc}.border-zinc-100[data-v-efa09a54]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-efa09a54]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-efa09a54]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-efa09a54]{border-color:#04785780}.dark .dark\\:border-red-700\\/50[data-v-efa09a54]{border-color:#b91c1c80}.dark .dark\\:border-zinc-700\\/40[data-v-efa09a54]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/60[data-v-efa09a54]{border-color:#3f3f4699}.hover\\:border-\\[var\\(--color-primary\\)\\][data-v-efa09a54]:hover{border-color:var(--color-primary)}.\\!rounded-lg[data-v-efa09a54]{border-radius:.5rem!important}.\\!rounded-md[data-v-efa09a54]{border-radius:.375rem!important}.rounded-lg[data-v-efa09a54]{border-radius:.5rem}.rounded-xl[data-v-efa09a54]{border-radius:.75rem}.bg-amber-50[data-v-efa09a54]{--un-bg-opacity:1;background-color:rgb(255 251 235 / var(--un-bg-opacity))}.bg-blue-50[data-v-efa09a54]{--un-bg-opacity:1;background-color:rgb(239 246 255 / var(--un-bg-opacity))}.bg-emerald-50[data-v-efa09a54]{--un-bg-opacity:1;background-color:rgb(236 253 245 / var(--un-bg-opacity))}.bg-emerald-50\\/70[data-v-efa09a54]{background-color:#ecfdf5b3}.bg-red-50\\/70[data-v-efa09a54]{background-color:#fef2f2b3}.bg-white\\/60[data-v-efa09a54]{background-color:#fff9}.dark .dark\\:bg-amber-950\\/40[data-v-efa09a54]{background-color:#451a0366}.dark .dark\\:bg-blue-950\\/40[data-v-efa09a54]{background-color:#17255466}.dark .dark\\:bg-emerald-950\\/30[data-v-efa09a54]{background-color:#022c224d}.dark .dark\\:bg-emerald-950\\/40[data-v-efa09a54]{background-color:#022c2266}.dark .dark\\:bg-red-950\\/30[data-v-efa09a54]{background-color:#450a0a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-efa09a54]{background-color:#27272a66}.hover\\:\\!bg-red-500\\/10[data-v-efa09a54]:hover{background-color:#ef44441a!important}.p-3[data-v-efa09a54]{padding:.75rem}.p-3\\.5[data-v-efa09a54]{padding:.875rem}.\\!px-1\\.5[data-v-efa09a54]{padding-left:.375rem!important;padding-right:.375rem!important}.\\!px-2[data-v-efa09a54]{padding-left:.5rem!important;padding-right:.5rem!important}.py-12[data-v-efa09a54]{padding-top:3rem;padding-bottom:3rem}.py-2[data-v-efa09a54]{padding-top:.5rem;padding-bottom:.5rem}.pb-3[data-v-efa09a54]{padding-bottom:.75rem}.pr-2[data-v-efa09a54]{padding-right:.5rem}.pt-1\\.5[data-v-efa09a54]{padding-top:.375rem}.pt-2[data-v-efa09a54]{padding-top:.5rem}.pt-4[data-v-efa09a54]{padding-top:1rem}.text-center[data-v-efa09a54]{text-align:center}.\\!text-\\[10px\\][data-v-efa09a54]{font-size:10px!important}.text-\\[11px\\][data-v-efa09a54]{font-size:11px}.text-4xl[data-v-efa09a54]{font-size:2.25rem;line-height:2.5rem}.text-base[data-v-efa09a54]{font-size:1rem;line-height:1.5rem}.text-lg[data-v-efa09a54]{font-size:1.125rem;line-height:1.75rem}.text-sm[data-v-efa09a54]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-efa09a54]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-efa09a54]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-blue-400[data-v-efa09a54]{--un-text-opacity:1;color:rgb(96 165 250 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-efa09a54]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-efa09a54]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-red-300[data-v-efa09a54]{--un-text-opacity:1;color:rgb(252 165 165 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-efa09a54],.text-zinc-300[data-v-efa09a54]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-efa09a54],.text-zinc-400[data-v-efa09a54]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.dark .dark\\:text-zinc-600[data-v-efa09a54]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-\\[var\\(--td-text-color-placeholder\\)\\][data-v-efa09a54]{color:var(--td-text-color-placeholder)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-efa09a54]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-efa09a54]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-efa09a54]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-blue-600[data-v-efa09a54]{--un-text-opacity:1;color:rgb(37 99 235 / var(--un-text-opacity))}.text-emerald-500[data-v-efa09a54]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-efa09a54]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-efa09a54]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-red-500[data-v-efa09a54]{--un-text-opacity:1;color:rgb(239 68 68 / var(--un-text-opacity))}.text-red-800[data-v-efa09a54]{--un-text-opacity:1;color:rgb(153 27 27 / var(--un-text-opacity))}.text-zinc-500[data-v-efa09a54]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-700[data-v-efa09a54]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.font-bold[data-v-efa09a54]{font-weight:700}.font-medium[data-v-efa09a54]{font-weight:500}.\\!leading-4\\.5[data-v-efa09a54]{line-height:1.125rem!important}.leading-relaxed[data-v-efa09a54]{line-height:1.625}.leading-snug[data-v-efa09a54]{line-height:1.375}.font-mono[data-v-efa09a54]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.opacity-90[data-v-efa09a54]{opacity:.9}.shadow-sm[data-v-efa09a54]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-efa09a54]{outline-style:solid}.transition-all[data-v-efa09a54]{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-2[data-v-efa09a54]{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:flex-row[data-v-efa09a54]{flex-direction:row}.md\\:items-start[data-v-efa09a54]{align-items:flex-start}.md\\:items-center[data-v-efa09a54]{align-items:center}}.fixed[data-v-465f3268]{position:fixed}.grid[data-v-465f3268]{display:grid}.grid-cols-1[data-v-465f3268]{grid-template-columns:repeat(1,minmax(0,1fr))}.m-0[data-v-465f3268]{margin:0}.mx-auto[data-v-465f3268]{margin-left:auto;margin-right:auto}.my-2[data-v-465f3268]{margin-top:.5rem;margin-bottom:.5rem}.mb-1\\.5[data-v-465f3268]{margin-bottom:.375rem}.mb-3[data-v-465f3268]{margin-bottom:.75rem}.mb-4[data-v-465f3268]{margin-bottom:1rem}.ml-1[data-v-465f3268]{margin-left:.25rem}.mr-1\\.5[data-v-465f3268]{margin-right:.375rem}.mt-0\\.5[data-v-465f3268]{margin-top:.125rem}.mt-1[data-v-465f3268]{margin-top:.25rem}.mt-2[data-v-465f3268]{margin-top:.5rem}.mt-3[data-v-465f3268]{margin-top:.75rem}.mt-5[data-v-465f3268]{margin-top:1.25rem}.mt-8[data-v-465f3268]{margin-top:2rem}.\\!w-24[data-v-465f3268]{width:6rem!important}.\\!w-28[data-v-465f3268]{width:7rem!important}.\\!w-48[data-v-465f3268]{width:12rem!important}.\\!w-auto[data-v-465f3268]{width:auto!important}.h-4[data-v-465f3268]{height:1rem}.min-w-\\[200px\\][data-v-465f3268]{min-width:200px}.w-\\[120px\\][data-v-465f3268]{width:120px}.w-1[data-v-465f3268]{width:.25rem}.w-full[data-v-465f3268]{width:100%}.flex[data-v-465f3268]{display:flex}.\\!inline-flex[data-v-465f3268]{display:inline-flex!important}.flex-1[data-v-465f3268]{flex:1 1 0%}.shrink-0[data-v-465f3268]{flex-shrink:0}.flex-col[data-v-465f3268]{flex-direction:column}.flex-wrap[data-v-465f3268]{flex-wrap:wrap}.cursor-help[data-v-465f3268]{cursor:help}.\\!cursor-pointer[data-v-465f3268]{cursor:pointer!important}.items-start[data-v-465f3268]{align-items:flex-start}.\\!items-center[data-v-465f3268]{align-items:center!important}.items-center[data-v-465f3268]{align-items:center}.justify-start[data-v-465f3268]{justify-content:flex-start}.justify-end[data-v-465f3268]{justify-content:flex-end}.\\!justify-center[data-v-465f3268]{justify-content:center!important}.justify-between[data-v-465f3268]{justify-content:space-between}.gap-1[data-v-465f3268]{gap:.25rem}.gap-1\\.5[data-v-465f3268]{gap:.375rem}.gap-2[data-v-465f3268]{gap:.5rem}.gap-3[data-v-465f3268]{gap:.75rem}.overflow-hidden[data-v-465f3268]{overflow:hidden}.break-all[data-v-465f3268]{word-break:break-all}.border[data-v-465f3268]{border-width:1px}.border-b[data-v-465f3268]{border-bottom-width:1px}.border-t[data-v-465f3268]{border-top-width:1px}.border-emerald-300\\/80[data-v-465f3268]{border-color:#6ee7b7cc}.border-zinc-100[data-v-465f3268]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-465f3268]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-465f3268]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-465f3268]{border-color:#04785780}.dark .dark\\:border-zinc-700\\/40[data-v-465f3268]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/50[data-v-465f3268]{border-color:#3f3f4680}.dark .dark\\:border-zinc-700\\/60[data-v-465f3268]{border-color:#3f3f4699}.dark .dark\\:border-zinc-800\\/60[data-v-465f3268]{border-color:#27272a99}.hover\\:\\!border-\\[var\\(--color-primary\\)\\][data-v-465f3268]:hover{border-color:var(--color-primary)!important}.\\!rounded-lg[data-v-465f3268]{border-radius:.5rem!important}.\\!rounded-md[data-v-465f3268]{border-radius:.375rem!important}.rounded-full[data-v-465f3268]{border-radius:9999px}.rounded-xl[data-v-465f3268]{border-radius:.75rem}.border-dashed[data-v-465f3268]{border-style:dashed}.bg-\\[var\\(--color-primary\\)\\][data-v-465f3268]{background-color:var(--color-primary)}.bg-emerald-50\\/70[data-v-465f3268]{background-color:#ecfdf5b3}.bg-white\\/50[data-v-465f3268]{background-color:#ffffff80}.bg-white\\/60[data-v-465f3268]{background-color:#fff9}.bg-zinc-50\\/70[data-v-465f3268]{background-color:#fafafab3}.dark .dark\\:bg-emerald-950\\/30[data-v-465f3268]{background-color:#022c224d}.dark .dark\\:bg-zinc-800\\/30[data-v-465f3268]{background-color:#27272a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-465f3268]{background-color:#27272a66}.dark .dark\\:bg-zinc-900\\/20[data-v-465f3268]{background-color:#18181b33}.dark .dark\\:hover\\:bg-zinc-800\\/20[data-v-465f3268]:hover{background-color:#27272a33}.hover\\:\\!bg-red-500\\/10[data-v-465f3268]:hover{background-color:#ef44441a!important}.hover\\:bg-zinc-50\\/50[data-v-465f3268]:hover{background-color:#fafafa80}.p-3[data-v-465f3268]{padding:.75rem}.p-3\\.5[data-v-465f3268]{padding:.875rem}.p-8[data-v-465f3268]{padding:2rem}.\\!px-2\\.5[data-v-465f3268]{padding-left:.625rem!important;padding-right:.625rem!important}.px-4[data-v-465f3268]{padding-left:1rem;padding-right:1rem}.py-2[data-v-465f3268]{padding-top:.5rem;padding-bottom:.5rem}.pb-2[data-v-465f3268]{padding-bottom:.5rem}.pb-8[data-v-465f3268]{padding-bottom:2rem}.pr-0[data-v-465f3268]{padding-right:0}.pt-2[data-v-465f3268]{padding-top:.5rem}.text-center[data-v-465f3268]{text-align:center}.text-\\[11px\\][data-v-465f3268]{font-size:11px}.text-\\[13px\\][data-v-465f3268]{font-size:13px}.text-base[data-v-465f3268]{font-size:1rem;line-height:1.5rem}.text-sm[data-v-465f3268]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-465f3268]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-zinc-200[data-v-465f3268]{--un-text-opacity:1;color:rgb(228 228 231 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-465f3268],.text-zinc-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.text-\\[var\\(--color-primary\\)\\][data-v-465f3268]{color:var(--color-primary)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-465f3268]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-465f3268]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-emerald-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-zinc-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-zinc-700[data-v-465f3268]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.text-zinc-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(39 39 42 / var(--un-text-opacity))}.hover\\:text-zinc-500[data-v-465f3268]:hover{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.\\!font-medium[data-v-465f3268]{font-weight:500!important}.font-bold[data-v-465f3268]{font-weight:700}.font-medium[data-v-465f3268]{font-weight:500}.leading-relaxed[data-v-465f3268]{line-height:1.625}.leading-snug[data-v-465f3268]{line-height:1.375}.font-mono[data-v-465f3268]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.shadow-sm[data-v-465f3268]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-465f3268]{outline-style:solid}.transition-colors[data-v-465f3268]{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-3[data-v-465f3268]{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:mb-0[data-v-465f3268]{margin-bottom:0}.md\\:mt-0[data-v-465f3268]{margin-top:0}.md\\:w-\\[340px\\][data-v-465f3268]{width:340px}.md\\:w-\\[360px\\][data-v-465f3268]{width:360px}.md\\:w-\\[380px\\][data-v-465f3268]{width:380px}.md\\:flex-row[data-v-465f3268]{flex-direction:row}.md\\:items-start[data-v-465f3268]{align-items:flex-start}.md\\:items-center[data-v-465f3268]{align-items:center}.md\\:justify-end[data-v-465f3268]{justify-content:flex-end}.md\\:justify-between[data-v-465f3268]{justify-content:space-between}.md\\:p-4[data-v-465f3268]{padding:1rem}.md\\:pr-2[data-v-465f3268]{padding-right:.5rem}.md\\:pr-8[data-v-465f3268]{padding-right:2rem}}")),document.head.appendChild(a)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
+(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("@keyframes t-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.t-icon{display:inline-block;vertical-align:middle;width:1em;height:1em}.t-icon:before{font-family:unset}.t-icon-loading{animation:t-spin 1s linear infinite}.t-icon.t-size-s,i.t-size-s{font-size:14px}.t-icon.t-size-m,i.t-size-m{font-size:16px}.t-icon.t-size-l,i.t-size-l{font-size:18px}.visible[data-v-96b5ceb3]{visibility:visible}.grid[data-v-96b5ceb3]{display:grid}.grid-cols-1[data-v-96b5ceb3]{grid-template-columns:repeat(1,minmax(0,1fr))}.mb-2[data-v-96b5ceb3]{margin-bottom:.5rem}.mb-3[data-v-96b5ceb3]{margin-bottom:.75rem}.mb-4[data-v-96b5ceb3]{margin-bottom:1rem}.mt-0\\.5[data-v-96b5ceb3]{margin-top:.125rem}.mt-1[data-v-96b5ceb3]{margin-top:.25rem}.mt-4[data-v-96b5ceb3]{margin-top:1rem}.\\!h-4\\.5[data-v-96b5ceb3]{height:1.125rem!important}.\\!w-32[data-v-96b5ceb3]{width:8rem!important}.\\!w-auto[data-v-96b5ceb3]{width:auto!important}.h-8[data-v-96b5ceb3]{height:2rem}.max-w-\\[150px\\][data-v-96b5ceb3]{max-width:150px}.max-w-sm[data-v-96b5ceb3]{max-width:24rem}.min-h-\\[380px\\][data-v-96b5ceb3]{min-height:380px}.min-w-0[data-v-96b5ceb3]{min-width:0}.w-32[data-v-96b5ceb3]{width:8rem}.w-8[data-v-96b5ceb3]{width:2rem}.flex[data-v-96b5ceb3]{display:flex}.\\!inline-flex[data-v-96b5ceb3]{display:inline-flex!important}.flex-1[data-v-96b5ceb3]{flex:1 1 0%}.shrink-0[data-v-96b5ceb3]{flex-shrink:0}.flex-col[data-v-96b5ceb3]{flex-direction:column}.flex-wrap[data-v-96b5ceb3]{flex-wrap:wrap}.items-start[data-v-96b5ceb3]{align-items:flex-start}.items-center[data-v-96b5ceb3]{align-items:center}.justify-center[data-v-96b5ceb3]{justify-content:center}.justify-between[data-v-96b5ceb3]{justify-content:space-between}.gap-1[data-v-96b5ceb3]{gap:.25rem}.gap-1\\.5[data-v-96b5ceb3]{gap:.375rem}.gap-2[data-v-96b5ceb3]{gap:.5rem}.gap-2\\.5[data-v-96b5ceb3]{gap:.625rem}.gap-3[data-v-96b5ceb3]{gap:.75rem}.space-y-1[data-v-96b5ceb3]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(.25rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(.25rem * var(--un-space-y-reverse))}.space-y-4[data-v-96b5ceb3]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(1rem * var(--un-space-y-reverse))}.truncate[data-v-96b5ceb3]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.border[data-v-96b5ceb3]{border-width:1px}.border-b[data-v-96b5ceb3]{border-bottom-width:1px}.border-t[data-v-96b5ceb3]{border-top-width:1px}.border-emerald-300\\/80[data-v-96b5ceb3]{border-color:#6ee7b7cc}.border-red-300\\/80[data-v-96b5ceb3]{border-color:#fca5a5cc}.border-zinc-100[data-v-96b5ceb3]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-96b5ceb3]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-96b5ceb3]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-96b5ceb3]{border-color:#04785780}.dark .dark\\:border-red-700\\/50[data-v-96b5ceb3]{border-color:#b91c1c80}.dark .dark\\:border-zinc-700\\/40[data-v-96b5ceb3]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/60[data-v-96b5ceb3]{border-color:#3f3f4699}.hover\\:border-\\[var\\(--color-primary\\)\\][data-v-96b5ceb3]:hover{border-color:var(--color-primary)}.\\!rounded-lg[data-v-96b5ceb3]{border-radius:.5rem!important}.\\!rounded-md[data-v-96b5ceb3]{border-radius:.375rem!important}.rounded-lg[data-v-96b5ceb3]{border-radius:.5rem}.rounded-xl[data-v-96b5ceb3]{border-radius:.75rem}.bg-amber-50[data-v-96b5ceb3]{--un-bg-opacity:1;background-color:rgb(255 251 235 / var(--un-bg-opacity))}.bg-blue-50[data-v-96b5ceb3]{--un-bg-opacity:1;background-color:rgb(239 246 255 / var(--un-bg-opacity))}.bg-emerald-50[data-v-96b5ceb3]{--un-bg-opacity:1;background-color:rgb(236 253 245 / var(--un-bg-opacity))}.bg-emerald-50\\/70[data-v-96b5ceb3]{background-color:#ecfdf5b3}.bg-red-50\\/70[data-v-96b5ceb3]{background-color:#fef2f2b3}.bg-white\\/60[data-v-96b5ceb3]{background-color:#fff9}.dark .dark\\:bg-amber-950\\/40[data-v-96b5ceb3]{background-color:#451a0366}.dark .dark\\:bg-blue-950\\/40[data-v-96b5ceb3]{background-color:#17255466}.dark .dark\\:bg-emerald-950\\/30[data-v-96b5ceb3]{background-color:#022c224d}.dark .dark\\:bg-emerald-950\\/40[data-v-96b5ceb3]{background-color:#022c2266}.dark .dark\\:bg-red-950\\/30[data-v-96b5ceb3]{background-color:#450a0a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-96b5ceb3]{background-color:#27272a66}.hover\\:\\!bg-red-500\\/10[data-v-96b5ceb3]:hover{background-color:#ef44441a!important}.p-3[data-v-96b5ceb3]{padding:.75rem}.p-3\\.5[data-v-96b5ceb3]{padding:.875rem}.\\!px-1\\.5[data-v-96b5ceb3]{padding-left:.375rem!important;padding-right:.375rem!important}.\\!px-2[data-v-96b5ceb3]{padding-left:.5rem!important;padding-right:.5rem!important}.py-12[data-v-96b5ceb3]{padding-top:3rem;padding-bottom:3rem}.py-2[data-v-96b5ceb3]{padding-top:.5rem;padding-bottom:.5rem}.pb-3[data-v-96b5ceb3]{padding-bottom:.75rem}.pr-2[data-v-96b5ceb3]{padding-right:.5rem}.pt-1\\.5[data-v-96b5ceb3]{padding-top:.375rem}.pt-2[data-v-96b5ceb3]{padding-top:.5rem}.pt-4[data-v-96b5ceb3]{padding-top:1rem}.text-center[data-v-96b5ceb3]{text-align:center}.\\!text-\\[10px\\][data-v-96b5ceb3]{font-size:10px!important}.text-\\[11px\\][data-v-96b5ceb3]{font-size:11px}.text-4xl[data-v-96b5ceb3]{font-size:2.25rem;line-height:2.5rem}.text-base[data-v-96b5ceb3]{font-size:1rem;line-height:1.5rem}.text-lg[data-v-96b5ceb3]{font-size:1.125rem;line-height:1.75rem}.text-sm[data-v-96b5ceb3]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-96b5ceb3]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-blue-400[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(96 165 250 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-red-300[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(252 165 165 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-96b5ceb3],.text-zinc-300[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-96b5ceb3],.text-zinc-400[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.dark .dark\\:text-zinc-600[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-\\[var\\(--td-text-color-placeholder\\)\\][data-v-96b5ceb3]{color:var(--td-text-color-placeholder)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-96b5ceb3]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-96b5ceb3]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-blue-600[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(37 99 235 / var(--un-text-opacity))}.text-emerald-500[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-red-500[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(239 68 68 / var(--un-text-opacity))}.text-red-800[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(153 27 27 / var(--un-text-opacity))}.text-zinc-500[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-700[data-v-96b5ceb3]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.font-bold[data-v-96b5ceb3]{font-weight:700}.font-medium[data-v-96b5ceb3]{font-weight:500}.\\!leading-4\\.5[data-v-96b5ceb3]{line-height:1.125rem!important}.leading-relaxed[data-v-96b5ceb3]{line-height:1.625}.leading-snug[data-v-96b5ceb3]{line-height:1.375}.font-mono[data-v-96b5ceb3]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.opacity-90[data-v-96b5ceb3]{opacity:.9}.shadow-sm[data-v-96b5ceb3]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-96b5ceb3]{outline-style:solid}.transition-all[data-v-96b5ceb3]{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-2[data-v-96b5ceb3]{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:flex-row[data-v-96b5ceb3]{flex-direction:row}.md\\:items-start[data-v-96b5ceb3]{align-items:flex-start}.md\\:items-center[data-v-96b5ceb3]{align-items:center}}.fixed[data-v-465f3268]{position:fixed}.grid[data-v-465f3268]{display:grid}.grid-cols-1[data-v-465f3268]{grid-template-columns:repeat(1,minmax(0,1fr))}.m-0[data-v-465f3268]{margin:0}.mx-auto[data-v-465f3268]{margin-left:auto;margin-right:auto}.my-2[data-v-465f3268]{margin-top:.5rem;margin-bottom:.5rem}.mb-1\\.5[data-v-465f3268]{margin-bottom:.375rem}.mb-3[data-v-465f3268]{margin-bottom:.75rem}.mb-4[data-v-465f3268]{margin-bottom:1rem}.ml-1[data-v-465f3268]{margin-left:.25rem}.mr-1\\.5[data-v-465f3268]{margin-right:.375rem}.mt-0\\.5[data-v-465f3268]{margin-top:.125rem}.mt-1[data-v-465f3268]{margin-top:.25rem}.mt-2[data-v-465f3268]{margin-top:.5rem}.mt-3[data-v-465f3268]{margin-top:.75rem}.mt-5[data-v-465f3268]{margin-top:1.25rem}.mt-8[data-v-465f3268]{margin-top:2rem}.\\!w-24[data-v-465f3268]{width:6rem!important}.\\!w-28[data-v-465f3268]{width:7rem!important}.\\!w-48[data-v-465f3268]{width:12rem!important}.\\!w-auto[data-v-465f3268]{width:auto!important}.h-4[data-v-465f3268]{height:1rem}.min-w-\\[200px\\][data-v-465f3268]{min-width:200px}.w-\\[120px\\][data-v-465f3268]{width:120px}.w-1[data-v-465f3268]{width:.25rem}.w-full[data-v-465f3268]{width:100%}.flex[data-v-465f3268]{display:flex}.\\!inline-flex[data-v-465f3268]{display:inline-flex!important}.flex-1[data-v-465f3268]{flex:1 1 0%}.shrink-0[data-v-465f3268]{flex-shrink:0}.flex-col[data-v-465f3268]{flex-direction:column}.flex-wrap[data-v-465f3268]{flex-wrap:wrap}.cursor-help[data-v-465f3268]{cursor:help}.\\!cursor-pointer[data-v-465f3268]{cursor:pointer!important}.items-start[data-v-465f3268]{align-items:flex-start}.\\!items-center[data-v-465f3268]{align-items:center!important}.items-center[data-v-465f3268]{align-items:center}.justify-start[data-v-465f3268]{justify-content:flex-start}.justify-end[data-v-465f3268]{justify-content:flex-end}.\\!justify-center[data-v-465f3268]{justify-content:center!important}.justify-between[data-v-465f3268]{justify-content:space-between}.gap-1[data-v-465f3268]{gap:.25rem}.gap-1\\.5[data-v-465f3268]{gap:.375rem}.gap-2[data-v-465f3268]{gap:.5rem}.gap-3[data-v-465f3268]{gap:.75rem}.overflow-hidden[data-v-465f3268]{overflow:hidden}.break-all[data-v-465f3268]{word-break:break-all}.border[data-v-465f3268]{border-width:1px}.border-b[data-v-465f3268]{border-bottom-width:1px}.border-t[data-v-465f3268]{border-top-width:1px}.border-emerald-300\\/80[data-v-465f3268]{border-color:#6ee7b7cc}.border-zinc-100[data-v-465f3268]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-465f3268]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-465f3268]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-465f3268]{border-color:#04785780}.dark .dark\\:border-zinc-700\\/40[data-v-465f3268]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/50[data-v-465f3268]{border-color:#3f3f4680}.dark .dark\\:border-zinc-700\\/60[data-v-465f3268]{border-color:#3f3f4699}.dark .dark\\:border-zinc-800\\/60[data-v-465f3268]{border-color:#27272a99}.hover\\:\\!border-\\[var\\(--color-primary\\)\\][data-v-465f3268]:hover{border-color:var(--color-primary)!important}.\\!rounded-lg[data-v-465f3268]{border-radius:.5rem!important}.\\!rounded-md[data-v-465f3268]{border-radius:.375rem!important}.rounded-full[data-v-465f3268]{border-radius:9999px}.rounded-xl[data-v-465f3268]{border-radius:.75rem}.border-dashed[data-v-465f3268]{border-style:dashed}.bg-\\[var\\(--color-primary\\)\\][data-v-465f3268]{background-color:var(--color-primary)}.bg-emerald-50\\/70[data-v-465f3268]{background-color:#ecfdf5b3}.bg-white\\/50[data-v-465f3268]{background-color:#ffffff80}.bg-white\\/60[data-v-465f3268]{background-color:#fff9}.bg-zinc-50\\/70[data-v-465f3268]{background-color:#fafafab3}.dark .dark\\:bg-emerald-950\\/30[data-v-465f3268]{background-color:#022c224d}.dark .dark\\:bg-zinc-800\\/30[data-v-465f3268]{background-color:#27272a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-465f3268]{background-color:#27272a66}.dark .dark\\:bg-zinc-900\\/20[data-v-465f3268]{background-color:#18181b33}.dark .dark\\:hover\\:bg-zinc-800\\/20[data-v-465f3268]:hover{background-color:#27272a33}.hover\\:\\!bg-red-500\\/10[data-v-465f3268]:hover{background-color:#ef44441a!important}.hover\\:bg-zinc-50\\/50[data-v-465f3268]:hover{background-color:#fafafa80}.p-3[data-v-465f3268]{padding:.75rem}.p-3\\.5[data-v-465f3268]{padding:.875rem}.p-8[data-v-465f3268]{padding:2rem}.\\!px-2\\.5[data-v-465f3268]{padding-left:.625rem!important;padding-right:.625rem!important}.px-4[data-v-465f3268]{padding-left:1rem;padding-right:1rem}.py-2[data-v-465f3268]{padding-top:.5rem;padding-bottom:.5rem}.pb-2[data-v-465f3268]{padding-bottom:.5rem}.pb-8[data-v-465f3268]{padding-bottom:2rem}.pr-0[data-v-465f3268]{padding-right:0}.pt-2[data-v-465f3268]{padding-top:.5rem}.text-center[data-v-465f3268]{text-align:center}.text-\\[11px\\][data-v-465f3268]{font-size:11px}.text-\\[13px\\][data-v-465f3268]{font-size:13px}.text-base[data-v-465f3268]{font-size:1rem;line-height:1.5rem}.text-sm[data-v-465f3268]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-465f3268]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-zinc-200[data-v-465f3268]{--un-text-opacity:1;color:rgb(228 228 231 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-465f3268],.text-zinc-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.text-\\[var\\(--color-primary\\)\\][data-v-465f3268]{color:var(--color-primary)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-465f3268]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-465f3268]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-emerald-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-zinc-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-zinc-700[data-v-465f3268]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.text-zinc-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(39 39 42 / var(--un-text-opacity))}.hover\\:text-zinc-500[data-v-465f3268]:hover{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.\\!font-medium[data-v-465f3268]{font-weight:500!important}.font-bold[data-v-465f3268]{font-weight:700}.font-medium[data-v-465f3268]{font-weight:500}.leading-relaxed[data-v-465f3268]{line-height:1.625}.leading-snug[data-v-465f3268]{line-height:1.375}.font-mono[data-v-465f3268]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.shadow-sm[data-v-465f3268]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-465f3268]{outline-style:solid}.transition-colors[data-v-465f3268]{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-3[data-v-465f3268]{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:mb-0[data-v-465f3268]{margin-bottom:0}.md\\:mt-0[data-v-465f3268]{margin-top:0}.md\\:w-\\[340px\\][data-v-465f3268]{width:340px}.md\\:w-\\[360px\\][data-v-465f3268]{width:360px}.md\\:w-\\[380px\\][data-v-465f3268]{width:380px}.md\\:flex-row[data-v-465f3268]{flex-direction:row}.md\\:items-start[data-v-465f3268]{align-items:flex-start}.md\\:items-center[data-v-465f3268]{align-items:center}.md\\:justify-end[data-v-465f3268]{justify-content:flex-end}.md\\:justify-between[data-v-465f3268]{justify-content:space-between}.md\\:p-4[data-v-465f3268]{padding:1rem}.md\\:pr-2[data-v-465f3268]{padding-right:.5rem}.md\\:pr-8[data-v-465f3268]{padding-right:2rem}}")),document.head.appendChild(a)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
 function F(t) {
   "@babel/helpers - typeof";
   return F = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(o) {
@@ -49,8 +49,8 @@ var e = dt(), ae = (t) => {
       } else
         r[ae(l)] = i;
   t.tag === "svg" && (r.class = o.class, r.style = o.style, r.onClick = o.onClick);
-  var u = t.children ? t.children.map((C) => w(C, o)) : [];
-  return e.h(t.tag, r, u);
+  var f = t.children ? t.children.map((C) => w(C, o)) : [];
+  return e.h(t.tag, r, f);
 }, ut = "t", ft = {
   classPrefix: ut
 };
@@ -165,13 +165,13 @@ var vt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-add", f.value]), g = e.computed(() => ie(ie({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-add", m.value]), g = e.computed(() => ie(ie({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -184,7 +184,7 @@ var vt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -275,13 +275,13 @@ var Ct = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-calendar", f.value]), g = e.computed(() => de(de({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-calendar", m.value]), g = e.computed(() => de(de({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -294,7 +294,7 @@ var Ct = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -363,13 +363,13 @@ var yt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-check-circle-filled", f.value]), g = e.computed(() => fe(fe({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-check-circle-filled", m.value]), g = e.computed(() => fe(fe({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -382,7 +382,7 @@ var yt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -460,13 +460,13 @@ var kt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-check", f.value]), g = e.computed(() => ve(ve({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-check", m.value]), g = e.computed(() => ve(ve({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -479,7 +479,7 @@ var kt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -557,13 +557,13 @@ var gt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-close", f.value]), g = e.computed(() => ye(ye({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-close", m.value]), g = e.computed(() => ye(ye({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -576,7 +576,7 @@ var gt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -663,13 +663,13 @@ var bt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-cloud-upload", f.value]), g = e.computed(() => pe(pe({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-cloud-upload", m.value]), g = e.computed(() => pe(pe({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -682,7 +682,7 @@ var bt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -766,13 +766,13 @@ var ht = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-cloud", f.value]), g = e.computed(() => xe(xe({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-cloud", m.value]), g = e.computed(() => xe(xe({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -785,7 +785,7 @@ var ht = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -879,13 +879,13 @@ var wt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-delete", f.value]), g = e.computed(() => he(he({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-delete", m.value]), g = e.computed(() => he(he({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -898,7 +898,7 @@ var wt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -992,13 +992,13 @@ var Nt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-edit", f.value]), g = e.computed(() => we(we({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-edit", m.value]), g = e.computed(() => we(we({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1011,7 +1011,7 @@ var Nt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -1080,13 +1080,13 @@ var jt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-error-circle-filled", f.value]), g = e.computed(() => Oe(Oe({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-error-circle-filled", m.value]), g = e.computed(() => Oe(Oe({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1099,7 +1099,7 @@ var jt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -1183,13 +1183,13 @@ var St = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-file", f.value]), g = e.computed(() => Se(Se({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-file", m.value]), g = e.computed(() => Se(Se({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1202,7 +1202,7 @@ var St = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -1287,13 +1287,13 @@ var Pt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-hard-drive", f.value]), g = e.computed(() => Pe(Pe({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-hard-drive", m.value]), g = e.computed(() => Pe(Pe({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1306,7 +1306,7 @@ var Pt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -1400,13 +1400,13 @@ var zt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-help-circle", f.value]), g = e.computed(() => ze(ze({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-help-circle", m.value]), g = e.computed(() => ze(ze({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1419,7 +1419,7 @@ var zt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -1497,13 +1497,13 @@ var $t = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-history", f.value]), g = e.computed(() => _e(_e({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-history", m.value]), g = e.computed(() => _e(_e({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1516,7 +1516,7 @@ var $t = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -1594,13 +1594,13 @@ var _t = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-refresh", f.value]), g = e.computed(() => We(We({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-refresh", m.value]), g = e.computed(() => We(We({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1613,7 +1613,7 @@ var _t = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -1707,13 +1707,13 @@ var Bt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-search", f.value]), g = e.computed(() => Le(Le({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-search", m.value]), g = e.computed(() => Le(Le({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1726,7 +1726,7 @@ var Bt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -1851,13 +1851,13 @@ var Mt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-server", f.value]), g = e.computed(() => Ke(Ke({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-server", m.value]), g = e.computed(() => Ke(Ke({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1870,7 +1870,7 @@ var Mt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -1878,7 +1878,7 @@ var Mt = {
     return () => w(Mt, y.value);
   }
 });
-function Ie(t, o) {
+function Ue(t, o) {
   var r = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
     var l = Object.getOwnPropertySymbols(t);
@@ -1888,12 +1888,12 @@ function Ie(t, o) {
   }
   return r;
 }
-function Ue(t) {
+function Ie(t) {
   for (var o = 1; o < arguments.length; o++) {
     var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Ie(Object(r), !0).forEach(function(l) {
+    o % 2 ? Ue(Object(r), !0).forEach(function(l) {
       N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Ie(Object(r)).forEach(function(l) {
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Ue(Object(r)).forEach(function(l) {
       Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
     });
   }
@@ -1973,13 +1973,13 @@ var Lt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-setting", f.value]), g = e.computed(() => Ue(Ue({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-setting", m.value]), g = e.computed(() => Ie(Ie({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -1992,7 +1992,7 @@ var Lt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -2086,13 +2086,13 @@ var Kt = {
     } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
       var a;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), u = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
       var a;
       return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
     }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: f,
+      className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-time", f.value]), g = e.computed(() => Re(Re({
+    } = O(l), n = e.computed(() => ["t-icon", "t-icon-time", m.value]), g = e.computed(() => Re(Re({
       fill: "none"
     }, p.value), r.style)), y = e.computed(() => ({
       class: n.value,
@@ -2105,7 +2105,7 @@ var Kt = {
       },
       strokeColor1: i.value,
       strokeColor2: k.value,
-      fillColor1: u.value,
+      fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
       filledColor: x.value
@@ -2113,14 +2113,14 @@ var Kt = {
     return () => w(Kt, y.value);
   }
 }), ee, Ze;
-function It() {
+function Ut() {
   return Ze || (Ze = 1, ee = TDesign), ee;
 }
-var V = It(), te, qe;
-function Ut() {
+var V = Ut(), te, qe;
+function It() {
   return qe || (qe = 1, te = mslxRequest), te;
 }
-var Ht = Ut();
+var Ht = It();
 const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
   // 用户存储策略
   getUserProfiles: async () => await $.get({ url: `${D}/user/profiles` }) || [],
@@ -2154,7 +2154,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
   },
   emits: ["update:visible", "changed"],
   setup(t, { emit: o }) {
-    const r = t, l = o, i = e.ref([]), k = e.ref(!1), u = e.ref(!1), C = e.ref(!1), x = e.ref(!1), f = e.ref(null), p = () => ({
+    const r = t, l = o, i = e.ref([]), k = e.ref(!1), f = e.ref(!1), C = e.ref(!1), x = e.ref(!1), m = e.ref(null), p = () => ({
       id: "",
       name: "",
       providerType: "S3Compatible",
@@ -2173,14 +2173,17 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
       ftpUsername: "",
       ftpPassword: "",
       ftpUseSsl: !1,
-      ftpBasePath: "/"
+      ftpBasePath: "/",
+      hasS3Credentials: !1,
+      hasWebDavCredentials: !1,
+      hasFtpCredentials: !1
     }), n = e.ref(p()), g = async () => {
       k.value = !0;
       try {
         const h = await z.getUserProfiles();
-        i.value = h.map((m) => ({
-          ...m,
-          providerType: A(m.providerType)
+        i.value = h.map((u) => ({
+          ...u,
+          providerType: A(u.providerType)
         }));
       } catch (h) {
         V.MessagePlugin.error(h?.message || "获取存储策略列表失败");
@@ -2191,44 +2194,44 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
     e.watch(
       () => r.visible,
       (h) => {
-        h && (u.value = !1, f.value = null, g());
+        h && (f.value = !1, m.value = null, g());
       },
       { immediate: !0 }
     );
     const y = () => {
       l("update:visible", !1);
     }, a = () => {
-      n.value = p(), n.value.providerType = "S3Compatible", f.value = null, u.value = !0;
+      n.value = p(), n.value.providerType = "S3Compatible", m.value = null, f.value = !0;
     }, s = (h) => {
-      const m = JSON.parse(JSON.stringify(h));
-      m.providerType = A(m.providerType), n.value = m, f.value = null, u.value = !0;
+      const u = JSON.parse(JSON.stringify(h));
+      u.providerType = A(u.providerType), u.s3AccessKey = "", u.s3SecretKey = "", u.webDavUsername = "", u.webDavPassword = "", u.ftpUsername = "", u.ftpPassword = "", n.value = u, m.value = null, f.value = !0;
     }, H = (h) => {
-      const m = V.DialogPlugin.confirm({
+      const u = V.DialogPlugin.confirm({
         header: "确认删除存储策略?",
         body: `确定要删除存储策略「${h.name}」吗？已绑定此策略的实例将暂停自动云端备份。`,
         theme: "danger",
         confirmBtn: { content: "确认删除", theme: "danger" },
         onConfirm: async () => {
-          m.hide();
+          u.hide();
           try {
-            await z.deleteUserProfile(h.id), V.MessagePlugin.success("策略已成功删除"), await g(), l("changed"), u.value && n.value.id === h.id && (u.value = !1);
+            await z.deleteUserProfile(h.id), V.MessagePlugin.success("策略已成功删除"), await g(), l("changed"), f.value && n.value.id === h.id && (f.value = !1);
           } catch (B) {
             V.MessagePlugin.error(B?.message || "删除策略失败");
           }
         },
-        onClose: () => m.hide()
+        onClose: () => u.hide()
       });
     }, R = async () => {
       if (!n.value.name) {
         V.MessagePlugin.warning("请先填写策略名称");
         return;
       }
-      x.value = !0, f.value = null;
+      x.value = !0, m.value = null;
       try {
         const h = await z.testConnection(n.value);
-        f.value = h, h.success ? V.MessagePlugin.success(h.message || "连接测试成功！") : V.MessagePlugin.error(h.message || "连接测试未成功");
+        m.value = h, h.success ? V.MessagePlugin.success(h.message || "连接测试成功！") : V.MessagePlugin.error(h.message || "连接测试未成功");
       } catch (h) {
-        f.value = {
+        m.value = {
           success: !1,
           message: h?.message || "连接测试异常",
           latencyMs: 0
@@ -2257,15 +2260,15 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
       }
       C.value = !0;
       try {
-        await z.saveUserProfile(n.value), V.MessagePlugin.success("存储策略保存成功！"), u.value = !1, await g(), l("changed");
+        await z.saveUserProfile(n.value), V.MessagePlugin.success("存储策略保存成功！"), f.value = !1, await g(), l("changed");
       } catch (h) {
         V.MessagePlugin.error(h?.message || "保存存储策略失败");
       } finally {
         C.value = !1;
       }
     };
-    return (h, m) => {
-      const B = e.resolveComponent("t-tag"), P = e.resolveComponent("t-button"), I = e.resolveComponent("t-loading"), j = e.resolveComponent("t-input"), M = e.resolveComponent("t-radio-button"), _ = e.resolveComponent("t-radio-group"), L = e.resolveComponent("t-switch"), q = e.resolveComponent("t-input-number"), G = e.resolveComponent("t-dialog");
+    return (h, u) => {
+      const B = e.resolveComponent("t-tag"), P = e.resolveComponent("t-button"), U = e.resolveComponent("t-loading"), j = e.resolveComponent("t-input"), M = e.resolveComponent("t-radio-button"), _ = e.resolveComponent("t-radio-group"), L = e.resolveComponent("t-switch"), q = e.resolveComponent("t-input-number"), G = e.resolveComponent("t-dialog");
       return e.openBlock(), e.createBlock(G, {
         attach: "body",
         visible: t.visible,
@@ -2276,7 +2279,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
       }, {
         default: e.withCtx(() => [
           e.createElementVNode("div", { class: "py-2 min-h-[380px]" }, [
-            u.value ? (e.openBlock(), e.createElementBlock("div", {
+            f.value ? (e.openBlock(), e.createElementBlock("div", {
               key: 1,
               class: "flex flex-col"
             }, [
@@ -2286,7 +2289,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                   variant: "text",
                   size: "small",
                   class: "!rounded-lg",
-                  onClick: m[0] || (m[0] = (d) => u.value = !1)
+                  onClick: u[0] || (u[0] = (d) => f.value = !1)
                 }, {
                   icon: e.withCtx(() => [
                     e.createVNode(e.unref(xt))
@@ -2305,7 +2308,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                   ]),
                   e.createVNode(j, {
                     modelValue: n.value.name,
-                    "onUpdate:modelValue": m[1] || (m[1] = (d) => n.value.name = d),
+                    "onUpdate:modelValue": u[1] || (u[1] = (d) => n.value.name = d),
                     placeholder: "例如：我的 Cloudflare R2 / 家用群晖 WebDAV",
                     class: "flex-1"
                   }, null, 8, ["modelValue"])
@@ -2317,7 +2320,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                   ]),
                   e.createVNode(_, {
                     modelValue: n.value.providerType,
-                    "onUpdate:modelValue": m[2] || (m[2] = (d) => n.value.providerType = d),
+                    "onUpdate:modelValue": u[2] || (u[2] = (d) => n.value.providerType = d),
                     variant: "default-filled",
                     class: "flex-1"
                   }, {
@@ -2352,7 +2355,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createElementVNode("div", { class: "flex-1" }, [
                       e.createVNode(j, {
                         modelValue: n.value.s3Endpoint,
-                        "onUpdate:modelValue": m[3] || (m[3] = (d) => n.value.s3Endpoint = d),
+                        "onUpdate:modelValue": u[3] || (u[3] = (d) => n.value.s3Endpoint = d),
                         placeholder: "原生 AWS S3 可留空；第三方 R2 / MinIO / COS 等需填写"
                       }, null, 8, ["modelValue"]),
                       e.createElementVNode("div", { class: "text-[11px] text-[var(--td-text-color-placeholder)] mt-1" }, " 原生 AWS S3 可留空（自动按区域解析）；第三方（如 Cloudflare R2、自建 MinIO、腾讯云 COS 等）需填入完整的终结点 URL。 ")
@@ -2365,7 +2368,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     ]),
                     e.createVNode(j, {
                       modelValue: n.value.s3BucketName,
-                      "onUpdate:modelValue": m[4] || (m[4] = (d) => n.value.s3BucketName = d),
+                      "onUpdate:modelValue": u[4] || (u[4] = (d) => n.value.s3BucketName = d),
                       placeholder: "例如：mslx-backups",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
@@ -2374,7 +2377,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "区域 (Region)"),
                     e.createVNode(j, {
                       modelValue: n.value.s3Region,
-                      "onUpdate:modelValue": m[5] || (m[5] = (d) => n.value.s3Region = d),
+                      "onUpdate:modelValue": u[5] || (u[5] = (d) => n.value.s3Region = d),
                       placeholder: "R2/MinIO 填 auto，AWS 填 us-east-1 等",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
@@ -2383,27 +2386,27 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "Access Key ID"),
                     e.createVNode(j, {
                       modelValue: n.value.s3AccessKey,
-                      "onUpdate:modelValue": m[6] || (m[6] = (d) => n.value.s3AccessKey = d),
-                      placeholder: "输入访问密钥 Access Key",
+                      "onUpdate:modelValue": u[6] || (u[6] = (d) => n.value.s3AccessKey = d),
+                      placeholder: n.value.hasS3Credentials ? "已加密存储（若不修改请留空）" : "输入访问密钥 Access Key",
                       class: "flex-1"
-                    }, null, 8, ["modelValue"])
+                    }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "Secret Access Key"),
                     e.createVNode(j, {
                       modelValue: n.value.s3SecretKey,
-                      "onUpdate:modelValue": m[7] || (m[7] = (d) => n.value.s3SecretKey = d),
+                      "onUpdate:modelValue": u[7] || (u[7] = (d) => n.value.s3SecretKey = d),
                       type: "password",
-                      placeholder: "输入私有访问密钥 Secret Key",
+                      placeholder: n.value.hasS3Credentials ? "已加密存储（若不修改请留空）" : "输入私有访问密钥 Secret Key",
                       class: "flex-1"
-                    }, null, 8, ["modelValue"])
+                    }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "路径样式 (PathStyle)"),
                     e.createElementVNode("div", { class: "flex-1 flex items-center gap-2" }, [
                       e.createVNode(L, {
                         modelValue: n.value.s3ForcePathStyle,
-                        "onUpdate:modelValue": m[8] || (m[8] = (d) => n.value.s3ForcePathStyle = d)
+                        "onUpdate:modelValue": u[8] || (u[8] = (d) => n.value.s3ForcePathStyle = d)
                       }, null, 8, ["modelValue"]),
                       e.createElementVNode("span", { class: "text-xs text-zinc-400" }, "适用于 MinIO、Cloudflare R2 等兼容 S3 协议的自建端")
                     ])
@@ -2416,7 +2419,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     ]),
                     e.createVNode(j, {
                       modelValue: n.value.webDavUrl,
-                      "onUpdate:modelValue": m[9] || (m[9] = (d) => n.value.webDavUrl = d),
+                      "onUpdate:modelValue": u[9] || (u[9] = (d) => n.value.webDavUrl = d),
                       placeholder: "例如：https://pan.example.com/dav 或 http://192.168.1.20:5005",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
@@ -2425,7 +2428,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "根路径"),
                     e.createVNode(j, {
                       modelValue: n.value.webDavBasePath,
-                      "onUpdate:modelValue": m[10] || (m[10] = (d) => n.value.webDavBasePath = d),
+                      "onUpdate:modelValue": u[10] || (u[10] = (d) => n.value.webDavBasePath = d),
                       placeholder: "默认 /，如 /MinecraftBackups",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
@@ -2434,20 +2437,20 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "用户名"),
                     e.createVNode(j, {
                       modelValue: n.value.webDavUsername,
-                      "onUpdate:modelValue": m[11] || (m[11] = (d) => n.value.webDavUsername = d),
-                      placeholder: "WebDAV 登录用户名",
+                      "onUpdate:modelValue": u[11] || (u[11] = (d) => n.value.webDavUsername = d),
+                      placeholder: n.value.hasWebDavCredentials ? "已加密存储（若不修改请留空）" : "WebDAV 登录用户名",
                       class: "flex-1"
-                    }, null, 8, ["modelValue"])
+                    }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "密码"),
                     e.createVNode(j, {
                       modelValue: n.value.webDavPassword,
-                      "onUpdate:modelValue": m[12] || (m[12] = (d) => n.value.webDavPassword = d),
+                      "onUpdate:modelValue": u[12] || (u[12] = (d) => n.value.webDavPassword = d),
                       type: "password",
-                      placeholder: "WebDAV 登录密码",
+                      placeholder: n.value.hasWebDavCredentials ? "已加密存储（若不修改请留空）" : "WebDAV 登录密码",
                       class: "flex-1"
-                    }, null, 8, ["modelValue"])
+                    }, null, 8, ["modelValue", "placeholder"])
                   ])
                 ], 64)) : (e.openBlock(), e.createElementBlock(e.Fragment, { key: 2 }, [
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
@@ -2457,7 +2460,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     ]),
                     e.createVNode(j, {
                       modelValue: n.value.ftpHost,
-                      "onUpdate:modelValue": m[13] || (m[13] = (d) => n.value.ftpHost = d),
+                      "onUpdate:modelValue": u[13] || (u[13] = (d) => n.value.ftpHost = d),
                       placeholder: "例如：192.168.1.100 或 ftp.example.com",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
@@ -2466,7 +2469,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "FTP 端口"),
                     e.createVNode(q, {
                       modelValue: n.value.ftpPort,
-                      "onUpdate:modelValue": m[14] || (m[14] = (d) => n.value.ftpPort = d),
+                      "onUpdate:modelValue": u[14] || (u[14] = (d) => n.value.ftpPort = d),
                       min: 1,
                       max: 65535,
                       size: "small",
@@ -2477,7 +2480,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "基础存放目录"),
                     e.createVNode(j, {
                       modelValue: n.value.ftpBasePath,
-                      "onUpdate:modelValue": m[15] || (m[15] = (d) => n.value.ftpBasePath = d),
+                      "onUpdate:modelValue": u[15] || (u[15] = (d) => n.value.ftpBasePath = d),
                       placeholder: "默认 /，如 /backups",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
@@ -2486,36 +2489,36 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "账号"),
                     e.createVNode(j, {
                       modelValue: n.value.ftpUsername,
-                      "onUpdate:modelValue": m[16] || (m[16] = (d) => n.value.ftpUsername = d),
-                      placeholder: "FTP 账号",
+                      "onUpdate:modelValue": u[16] || (u[16] = (d) => n.value.ftpUsername = d),
+                      placeholder: n.value.hasFtpCredentials ? "已加密存储（若不修改请留空）" : "FTP 账号",
                       class: "flex-1"
-                    }, null, 8, ["modelValue"])
+                    }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "密码"),
                     e.createVNode(j, {
                       modelValue: n.value.ftpPassword,
-                      "onUpdate:modelValue": m[17] || (m[17] = (d) => n.value.ftpPassword = d),
+                      "onUpdate:modelValue": u[17] || (u[17] = (d) => n.value.ftpPassword = d),
                       type: "password",
-                      placeholder: "FTP 密码",
+                      placeholder: n.value.hasFtpCredentials ? "已加密存储（若不修改请留空）" : "FTP 密码",
                       class: "flex-1"
-                    }, null, 8, ["modelValue"])
+                    }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "FTPS / SSL 加密"),
                     e.createElementVNode("div", { class: "flex-1" }, [
                       e.createVNode(L, {
                         modelValue: n.value.ftpUseSsl,
-                        "onUpdate:modelValue": m[18] || (m[18] = (d) => n.value.ftpUseSsl = d)
+                        "onUpdate:modelValue": u[18] || (u[18] = (d) => n.value.ftpUseSsl = d)
                       }, null, 8, ["modelValue"])
                     ])
                   ])
                 ], 64)),
-                f.value ? (e.openBlock(), e.createElementBlock("div", {
+                m.value ? (e.openBlock(), e.createElementBlock("div", {
                   key: 3,
-                  class: e.normalizeClass(["flex items-start gap-2.5 p-3 rounded-xl border text-xs leading-relaxed", f.value.success ? "border-emerald-300/80 bg-emerald-50/70 text-emerald-800 dark:bg-emerald-950/30 dark:border-emerald-700/50 dark:text-emerald-300" : "border-red-300/80 bg-red-50/70 text-red-800 dark:bg-red-950/30 dark:border-red-700/50 dark:text-red-300"])
+                  class: e.normalizeClass(["flex items-start gap-2.5 p-3 rounded-xl border text-xs leading-relaxed", m.value.success ? "border-emerald-300/80 bg-emerald-50/70 text-emerald-800 dark:bg-emerald-950/30 dark:border-emerald-700/50 dark:text-emerald-300" : "border-red-300/80 bg-red-50/70 text-red-800 dark:bg-red-950/30 dark:border-red-700/50 dark:text-red-300"])
                 }, [
-                  f.value.success ? (e.openBlock(), e.createBlock(e.unref(Je), {
+                  m.value.success ? (e.openBlock(), e.createBlock(e.unref(Je), {
                     key: 0,
                     class: "text-base text-emerald-500 shrink-0 mt-0.5"
                   })) : (e.openBlock(), e.createBlock(e.unref(Ye), {
@@ -2523,8 +2526,8 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                     class: "text-base text-red-500 shrink-0 mt-0.5"
                   })),
                   e.createElementVNode("div", null, [
-                    e.createElementVNode("div", { class: "font-bold" }, e.toDisplayString(f.value.success ? "连通性测试成功" : "连通性测试未通过"), 1),
-                    e.createElementVNode("div", { class: "mt-0.5 opacity-90" }, e.toDisplayString(f.value.message), 1)
+                    e.createElementVNode("div", { class: "font-bold" }, e.toDisplayString(m.value.success ? "连通性测试成功" : "连通性测试未通过"), 1),
+                    e.createElementVNode("div", { class: "mt-0.5 opacity-90" }, e.toDisplayString(m.value.message), 1)
                   ])
                 ], 2)) : e.createCommentVNode("", !0),
                 e.createElementVNode("div", { class: "flex items-center justify-between pt-4 border-t border-zinc-200/60 dark:border-zinc-700/60" }, [
@@ -2548,7 +2551,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                       variant: "base",
                       size: "small",
                       class: "!rounded-lg",
-                      onClick: m[19] || (m[19] = (d) => u.value = !1)
+                      onClick: u[19] || (u[19] = (d) => f.value = !1)
                     }, {
                       default: e.withCtx(() => [
                         e.createTextVNode(" 取消 ")
@@ -2607,7 +2610,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                   _: 1
                 })
               ]),
-              e.createVNode(I, { loading: k.value }, {
+              e.createVNode(U, { loading: k.value }, {
                 default: e.withCtx(() => [
                   i.value.length === 0 ? (e.openBlock(), e.createElementBlock("div", {
                     key: 0,
@@ -2728,14 +2731,14 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
   for (const [l, i] of o)
     r[l] = i;
   return r;
-}, Zt = /* @__PURE__ */ tt(Rt, [["__scopeId", "data-v-efa09a54"]]), qt = /* @__PURE__ */ e.defineComponent({
+}, Zt = /* @__PURE__ */ tt(Rt, [["__scopeId", "data-v-96b5ceb3"]]), qt = /* @__PURE__ */ e.defineComponent({
   __name: "InstanceCloudSyncTab",
   props: {
     serverId: {},
     instanceId: {}
   },
   setup(t) {
-    const o = t, r = e.computed(() => o.instanceId || o.serverId || 0), l = e.ref(!1), i = e.ref(!1), k = e.ref(!1), u = e.ref(!1), C = e.ref(""), x = e.ref("all"), f = e.ref([]), p = e.ref({
+    const o = t, r = e.computed(() => o.instanceId || o.serverId || 0), l = e.ref(!1), i = e.ref(!1), k = e.ref(!1), f = e.ref(!1), C = e.ref(""), x = e.ref("all"), m = e.ref([]), p = e.ref({
       isInstalled: !1,
       enabled: !1,
       keepDailyDays: 7,
@@ -2770,7 +2773,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
       } catch {
         return String(c);
       }
-    }, m = e.computed(() => {
+    }, u = e.computed(() => {
       let c = y.value;
       if (x.value !== "all" && (c = c.filter((b) => b.tier === x.value)), C.value.trim()) {
         const b = C.value.trim().toLowerCase();
@@ -2788,10 +2791,10 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
       { label: "{day}", desc: "日" }
     ], P = (c) => {
       n.value.remotePathPattern = (n.value.remotePathPattern || "") + c;
-    }, I = async () => {
+    }, U = async () => {
       try {
         const c = await z.getUserProfiles();
-        f.value = c.map((b) => ({
+        m.value = c.map((b) => ({
           ...b,
           providerType: A(b.providerType)
         }));
@@ -2839,7 +2842,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
       if (r.value) {
         l.value = !0;
         try {
-          await Promise.all([I(), j(), M()]), n.value.profileId && await _();
+          await Promise.all([U(), j(), M()]), n.value.profileId && await _();
         } finally {
           l.value = !1;
         }
@@ -2879,7 +2882,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
         onClose: () => E.hide()
       });
     }, d = async () => {
-      await I(), n.value.profileId && await _();
+      await U(), n.value.profileId && await _();
     };
     e.watch(() => r.value, () => L()), e.onMounted(() => L());
     const J = [
@@ -2890,7 +2893,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
       { colKey: "op", title: "操作", width: 70, fixed: "right" }
     ];
     return (c, b) => {
-      const E = e.resolveComponent("t-switch"), X = e.resolveComponent("t-tooltip"), rt = e.resolveComponent("t-option"), lt = e.resolveComponent("t-select"), U = e.resolveComponent("t-button"), S = e.resolveComponent("t-tag"), re = e.resolveComponent("t-input"), W = e.resolveComponent("t-radio-button"), le = e.resolveComponent("t-radio-group"), T = e.resolveComponent("t-input-number"), K = e.resolveComponent("t-tab-panel"), ot = e.resolveComponent("t-tabs"), at = e.resolveComponent("t-table");
+      const E = e.resolveComponent("t-switch"), X = e.resolveComponent("t-tooltip"), rt = e.resolveComponent("t-option"), lt = e.resolveComponent("t-select"), I = e.resolveComponent("t-button"), S = e.resolveComponent("t-tag"), re = e.resolveComponent("t-input"), W = e.resolveComponent("t-radio-button"), le = e.resolveComponent("t-radio-group"), T = e.resolveComponent("t-input-number"), K = e.resolveComponent("t-tab-panel"), ot = e.resolveComponent("t-tabs"), at = e.resolveComponent("t-table");
       return e.openBlock(), e.createElementBlock("div", { class: "flex flex-col mx-auto w-full pb-8" }, [
         e.createElementVNode("div", { class: "flex items-center gap-2 mt-5 mb-4 pb-2 border-b border-zinc-200/60 dark:border-zinc-700/60" }, [
           e.createElementVNode("div", { class: "w-1 h-4 bg-[var(--color-primary)] rounded-full" }),
@@ -2964,7 +2967,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                   class: "flex-1"
                 }, {
                   default: e.withCtx(() => [
-                    (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(f.value, (v) => (e.openBlock(), e.createBlock(rt, {
+                    (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(m.value, (v) => (e.openBlock(), e.createBlock(rt, {
                       key: v.id,
                       value: v.id,
                       label: `${v.name} (${e.unref(A)(v.providerType) === "S3Compatible" ? "S3 兼容" : e.unref(A)(v.providerType) === "WebDAV" ? "WebDAV" : "FTP / FTPS"})`
@@ -2972,11 +2975,11 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
                   ]),
                   _: 1
                 }, 8, ["modelValue"]),
-                e.createVNode(U, {
+                e.createVNode(I, {
                   variant: "outline",
                   theme: "primary",
                   class: "!rounded-lg shrink-0",
-                  onClick: b[2] || (b[2] = (v) => u.value = !0)
+                  onClick: b[2] || (b[2] = (v) => f.value = !0)
                 }, {
                   icon: e.withCtx(() => [
                     e.createVNode(e.unref(Tt))
@@ -3288,7 +3291,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
               ])
             ])),
             e.createElementVNode("div", { class: "flex justify-end p-3 md:p-4" }, [
-              e.createVNode(U, {
+              e.createVNode(I, {
                 theme: "primary",
                 loading: i.value,
                 class: "!rounded-lg shadow-sm",
@@ -3329,7 +3332,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
               ]),
               _: 1
             }, 8, ["modelValue"]),
-            e.createVNode(U, {
+            e.createVNode(I, {
               theme: "primary",
               variant: "outline",
               size: "small",
@@ -3452,7 +3455,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
         e.createElementVNode("div", { class: "mt-2 border border-zinc-200/60 dark:border-zinc-700/60 rounded-xl overflow-hidden shadow-sm bg-white/50 dark:bg-zinc-900/20" }, [
           e.createVNode(at, {
             "row-key": "fullPath",
-            data: m.value,
+            data: u.value,
             columns: J,
             loading: k.value,
             stripe: "",
@@ -3521,7 +3524,7 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
               ])
             ]),
             op: e.withCtx(({ row: v }) => [
-              e.createVNode(U, {
+              e.createVNode(I, {
                 variant: "text",
                 shape: "square",
                 theme: "danger",
@@ -3543,8 +3546,8 @@ const $ = /* @__PURE__ */ ct(Ht), D = "/api/plugins/cloud-backup", z = {
           }, 8, ["data", "loading"])
         ]),
         e.createVNode(Zt, {
-          visible: u.value,
-          "onUpdate:visible": b[14] || (b[14] = (v) => u.value = v),
+          visible: f.value,
+          "onUpdate:visible": b[14] || (b[14] = (v) => f.value = v),
           onChanged: d
         }, null, 8, ["visible"])
       ]);

@@ -1,6 +1,7 @@
 using System.Text.RegularExpressions;
 using MSLX.Plugin.Cloud.Backup.Models;
 using MSLX.Plugin.Cloud.Backup.Services.Providers;
+using MSLX.Plugin.Cloud.Backup.Services.Security;
 using MSLX.SDK;
 using MSLX.SDK.Events;
 using Newtonsoft.Json;
@@ -59,17 +60,22 @@ public class CloudBackupEngine
     public static void SaveUserConfig(string userId, UserCloudStorageConfig config)
     {
         config.UserId = userId;
+        foreach (var profile in config.Profiles)
+        {
+            PluginCryptoService.EncryptProfileInPlace(profile);
+        }
         MSLXPluginEntry.Instance.Config().WriteConfigKey(GetUserConfigKey(userId), JObject.FromObject(config, _jsonSerializer));
     }
 
     /// <summary>
-    /// 获取指定用户的某个特定存储策略（确保用户隔离性）
+    /// 获取指定用户的某个特定存储策略（解密凭据供内部驱动使用）
     /// </summary>
     public static CloudStorageProfile? GetUserProfile(string userId, string profileId)
     {
         if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(profileId)) return null;
         var userConfig = GetUserConfig(userId);
-        return userConfig.Profiles.FirstOrDefault(p => p.Id == profileId);
+        var profile = userConfig.Profiles.FirstOrDefault(p => p.Id == profileId);
+        return profile != null ? PluginCryptoService.DecryptProfileClone(profile) : null;
     }
 
     /// <summary>
@@ -106,6 +112,59 @@ public class CloudBackupEngine
     {
         config.InstanceId = instanceId;
         MSLXPluginEntry.Instance.Config().WriteConfigKey(GetInstanceConfigKey(instanceId), JObject.FromObject(config, _jsonSerializer));
+    }
+
+    /// <summary>
+    /// 扫描并自动将未加密的历史明文凭据加密升级落盘
+    /// </summary>
+    public static void MigrateLegacyPlaintextCredentials()
+    {
+        try
+        {
+            var allConfig = MSLXPluginEntry.Instance.Config().ReadConfig();
+            if (allConfig == null) return;
+
+            int migratedCount = 0;
+            foreach (var prop in allConfig.Properties())
+            {
+                if (prop.Name.StartsWith("user_cloud_storage_", StringComparison.OrdinalIgnoreCase))
+                {
+                    string userId = prop.Name.Substring("user_cloud_storage_".Length);
+                    var userConfig = GetUserConfig(userId);
+                    if (userConfig.Profiles == null || userConfig.Profiles.Count == 0) continue;
+
+                    bool needsMigration = false;
+                    foreach (var profile in userConfig.Profiles)
+                    {
+                        if (PluginCryptoService.IsPlaintext(profile.S3AccessKey) ||
+                            PluginCryptoService.IsPlaintext(profile.S3SecretKey) ||
+                            PluginCryptoService.IsPlaintext(profile.WebDavUsername) ||
+                            PluginCryptoService.IsPlaintext(profile.WebDavPassword) ||
+                            PluginCryptoService.IsPlaintext(profile.FtpUsername) ||
+                            PluginCryptoService.IsPlaintext(profile.FtpPassword))
+                        {
+                            needsMigration = true;
+                            break;
+                        }
+                    }
+
+                    if (needsMigration)
+                    {
+                        SaveUserConfig(userId, userConfig);
+                        migratedCount++;
+                    }
+                }
+            }
+
+            if (migratedCount > 0)
+            {
+                SDK.MSLX.Logger.Info($"[CloudBackup] 启动检查：已自动将 {migratedCount} 个用户的历史明文存储凭据加密落盘。");
+            }
+        }
+        catch (Exception ex)
+        {
+            SDK.MSLX.Logger.Warn($"[CloudBackup] 检查迁移历史明文凭据异常: {ex.Message}");
+        }
     }
     #endregion
 

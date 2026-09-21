@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MSLX.Plugin.Cloud.Backup.Models;
 using MSLX.Plugin.Cloud.Backup.Services;
+using MSLX.Plugin.Cloud.Backup.Services.Security;
 using MSLX.SDK;
 using MSLX.SDK.Models;
 using Newtonsoft.Json.Linq;
@@ -30,16 +31,18 @@ public class CloudBackupController : ControllerBase
         }
 
         var config = CloudBackupEngine.GetUserConfig(userId);
+        var maskedList = config.Profiles.Select(PluginCryptoService.MaskProfileForFrontend).ToList();
+
         return Ok(new ApiResponse<List<CloudStorageProfile>>
         {
             Code = 200,
             Message = "获取成功",
-            Data = config.Profiles
+            Data = maskedList
         });
     }
 
     /// <summary>
-    /// 保存/新增用户云存储策略
+    /// 保存/新增用户云存储策略（置空即不修改已有凭据）
     /// </summary>
     [HttpPost("user/profile")]
     public IActionResult SaveUserProfile([FromBody] CloudStorageProfile profile)
@@ -61,6 +64,19 @@ public class CloudBackupController : ControllerBase
         int existingIndex = config.Profiles.FindIndex(p => p.Id == profile.Id);
         if (existingIndex >= 0)
         {
+            var existing = config.Profiles[existingIndex];
+
+            // 置空则保留已有加密凭据
+            if (string.IsNullOrWhiteSpace(profile.S3AccessKey)) profile.S3AccessKey = existing.S3AccessKey;
+            if (string.IsNullOrWhiteSpace(profile.S3SecretKey)) profile.S3SecretKey = existing.S3SecretKey;
+
+            if (string.IsNullOrWhiteSpace(profile.WebDavUsername)) profile.WebDavUsername = existing.WebDavUsername;
+            if (string.IsNullOrWhiteSpace(profile.WebDavPassword)) profile.WebDavPassword = existing.WebDavPassword;
+
+            if (string.IsNullOrWhiteSpace(profile.FtpUsername)) profile.FtpUsername = existing.FtpUsername;
+            if (string.IsNullOrWhiteSpace(profile.FtpPassword)) profile.FtpPassword = existing.FtpPassword;
+
+            profile.CreatedAt = existing.CreatedAt;
             profile.UpdatedAt = DateTime.UtcNow;
             config.Profiles[existingIndex] = profile;
         }
@@ -81,7 +97,7 @@ public class CloudBackupController : ControllerBase
         {
             Code = 200,
             Message = "存储策略保存成功",
-            Data = profile
+            Data = PluginCryptoService.MaskProfileForFrontend(profile)
         });
     }
 
@@ -121,6 +137,23 @@ public class CloudBackupController : ControllerBase
             return Unauthorized(new ApiResponse<object> { Code = 401, Message = "未登录或登录凭证已过期" });
         }
 
+        // 若测试已有策略且凭据留空，自动合并库中凭据
+        if (!string.IsNullOrWhiteSpace(profile.Id))
+        {
+            var existing = CloudBackupEngine.GetUserProfile(userId, profile.Id);
+            if (existing != null)
+            {
+                if (string.IsNullOrWhiteSpace(profile.S3AccessKey)) profile.S3AccessKey = existing.S3AccessKey;
+                if (string.IsNullOrWhiteSpace(profile.S3SecretKey)) profile.S3SecretKey = existing.S3SecretKey;
+
+                if (string.IsNullOrWhiteSpace(profile.WebDavUsername)) profile.WebDavUsername = existing.WebDavUsername;
+                if (string.IsNullOrWhiteSpace(profile.WebDavPassword)) profile.WebDavPassword = existing.WebDavPassword;
+
+                if (string.IsNullOrWhiteSpace(profile.FtpUsername)) profile.FtpUsername = existing.FtpUsername;
+                if (string.IsNullOrWhiteSpace(profile.FtpPassword)) profile.FtpPassword = existing.FtpPassword;
+            }
+        }
+
         // SSRF 防范：禁止访问云元数据服务及私有敏感保留地址
         if (!IsEndpointSafe(profile))
         {
@@ -134,8 +167,9 @@ public class CloudBackupController : ControllerBase
 
         try
         {
-            var provider = StorageProviderFactory.GetProvider(profile.ProviderType);
-            var result = await provider.TestConnectionAsync(profile);
+            var decryptedProfile = PluginCryptoService.DecryptProfileClone(profile);
+            var provider = StorageProviderFactory.GetProvider(decryptedProfile.ProviderType);
+            var result = await provider.TestConnectionAsync(decryptedProfile);
 
             return Ok(new ApiResponse<TestConnectionResult>
             {

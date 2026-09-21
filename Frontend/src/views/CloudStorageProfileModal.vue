@@ -53,6 +53,9 @@ const defaultProfile = (): CloudStorageProfile => ({
   ftpPassword: '',
   ftpUseSsl: false,
   ftpBasePath: '/',
+  hasS3Credentials: false,
+  hasWebDavCredentials: false,
+  hasFtpCredentials: false,
 });
 
 const currentForm = ref<CloudStorageProfile>(defaultProfile());
@@ -98,6 +101,12 @@ const handleCreateNew = () => {
 const handleEdit = (profile: CloudStorageProfile) => {
   const cloned = JSON.parse(JSON.stringify(profile));
   cloned.providerType = normalizeProviderType(cloned.providerType);
+  cloned.s3AccessKey = '';
+  cloned.s3SecretKey = '';
+  cloned.webDavUsername = '';
+  cloned.webDavPassword = '';
+  cloned.ftpUsername = '';
+  cloned.ftpPassword = '';
   currentForm.value = cloned;
   testResult.value = null;
   isEditing.value = true;
@@ -349,12 +358,21 @@ const handleSave = async () => {
 
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">Access Key ID</span>
-              <t-input v-model="currentForm.s3AccessKey" placeholder="输入访问密钥 Access Key" class="flex-1" />
+              <t-input
+                v-model="currentForm.s3AccessKey"
+                :placeholder="currentForm.hasS3Credentials ? '已加密存储（若不修改请留空）' : '输入访问密钥 Access Key'"
+                class="flex-1"
+              />
             </div>
 
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">Secret Access Key</span>
-              <t-input v-model="currentForm.s3SecretKey" type="password" placeholder="输入私有访问密钥 Secret Key" class="flex-1" />
+              <t-input
+                v-model="currentForm.s3SecretKey"
+                type="password"
+                :placeholder="currentForm.hasS3Credentials ? '已加密存储（若不修改请留空）' : '输入私有访问密钥 Secret Key'"
+                class="flex-1"
+              />
             </div>
 
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
@@ -380,12 +398,21 @@ const handleSave = async () => {
 
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">用户名</span>
-              <t-input v-model="currentForm.webDavUsername" placeholder="WebDAV 登录用户名" class="flex-1" />
+              <t-input
+                v-model="currentForm.webDavUsername"
+                :placeholder="currentForm.hasWebDavCredentials ? '已加密存储（若不修改请留空）' : 'WebDAV 登录用户名'"
+                class="flex-1"
+              />
             </div>
 
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">密码</span>
-              <t-input v-model="currentForm.webDavPassword" type="password" placeholder="WebDAV 登录密码" class="flex-1" />
+              <t-input
+                v-model="currentForm.webDavPassword"
+                type="password"
+                :placeholder="currentForm.hasWebDavCredentials ? '已加密存储（若不修改请留空）' : 'WebDAV 登录密码'"
+                class="flex-1"
+              />
             </div>
           </template>
 
@@ -408,12 +435,21 @@ const handleSave = async () => {
 
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">账号</span>
-              <t-input v-model="currentForm.ftpUsername" placeholder="FTP 账号" class="flex-1" />
+              <t-input
+                v-model="currentForm.ftpUsername"
+                :placeholder="currentForm.hasFtpCredentials ? '已加密存储（若不修改请留空）' : 'FTP 账号'"
+                class="flex-1"
+              />
             </div>
 
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">密码</span>
-              <t-input v-model="currentForm.ftpPassword" type="password" placeholder="FTP 密码" class="flex-1" />
+              <t-input
+                v-model="currentForm.ftpPassword"
+                type="password"
+                :placeholder="currentForm.hasFtpCredentials ? '已加密存储（若不修改请留空）' : 'FTP 密码'"
+                class="flex-1"
+              />
             </div>
 
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">

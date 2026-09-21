@@ -46,6 +46,10 @@ public class CloudStorageProfile
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+
+    public bool HasS3Credentials { get; set; }
+    public bool HasWebDavCredentials { get; set; }
+    public bool HasFtpCredentials { get; set; }
 }
 
 /// <summary>

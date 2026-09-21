@@ -43,6 +43,10 @@ export interface CloudStorageProfile {
 
   createdAt?: string;
   updatedAt?: string;
+
+  hasS3Credentials?: boolean;
+  hasWebDavCredentials?: boolean;
+  hasFtpCredentials?: boolean;
 }
 
 export interface InstanceCloudSyncConfig {
