@@ -13,7 +13,7 @@ public class MSLXPluginEntry : IPlugin
     public string Id => "mslx-plugin-cloud-backup";
     public string Name => "存档云端备份同步";
     public string Description => "备份自动同步至云端对象存储与远端主机（支持 S3兼容、WebDAV、FTP/FTPS），支持联动GFS备份插件管理，支持用户策略隔离与本地/远端超额自动滚动清理。";
-    public string Version => "1.0.1.3";
+    public string Version => "1.0.2";
     public string Icon => "icon.png";
     public string MinSDKVersion => "1.6.4";
     public string Developer => "xiaoyu";
