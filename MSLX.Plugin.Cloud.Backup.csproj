@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>MSLX.Plugin.Cloud.Backup</AssemblyName>
+    <RootNamespace>MSLX.Plugin.Cloud.Backup</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+    <OutputType>Library</OutputType>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <Generate>false</Generate>
+    <DebugType>none</DebugType>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="4.0.103.3" />
+    <PackageReference Include="FluentFTP" Version="55.0.0" />
+    <PackageReference Include="ILRepack.Lib.MSBuild.Task" Version="2.0.44.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="10.0.7" />
+    <PackageReference Include="MSLX.SDK" Version="1.6.3.3-dev-202609171123" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Frontend\dist\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Frontend\**" />
+    <None Remove="Frontend\**" />
+
+    <None Include="Frontend\**">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Frontend\dist\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <Target Name="MergeDependencies" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <ItemGroup>
+      <AllDlls Include="$(OutputPath)*.dll" />
+      <DependenciesToMerge Include="@(AllDlls)" Exclude="$(OutputPath)$(AssemblyName).dll" />
+      <FinalInputAssemblies Include="$(OutputPath)$(AssemblyName).dll" />
+      <FinalInputAssemblies Include="@(DependenciesToMerge)" />
+
+      <GarbageFiles Include="$(OutputPath)$(AssemblyName).staticwebassets.endpoints.json" />
+      <GarbageFiles Include="$(OutputPath)appsettings*.json" />
+      <GarbageFiles Include="$(OutputPath)$(AssemblyName).deps.json" />
+    </ItemGroup>
+
+    <ILRepack Condition="'@(DependenciesToMerge)' != ''" Parallel="true" Internalize="false" CopyAttributes="true" InputAssemblies="@(FinalInputAssemblies)" TargetKind="SameAsPrimaryAssembly" OutputFile="$(OutputPath)$(AssemblyName).dll" LibraryPath="$(OutputPath);$(NuGetPackageRoot)newtonsoft.json/13.0.4/lib/net6.0;$(NuGetPackageRoot)newtonsoft.json/13.0.3/lib/net6.0" />
+
+    <Delete Files="@(DependenciesToMerge)" Condition="'@(DependenciesToMerge)' != ''" />
+    <Delete Files="@(GarbageFiles)" />
+  </Target>
+
+</Project>
