@@ -47,6 +47,28 @@ public class FtpStorageProvider : ICloudStorageProvider
         return $"{basePath}/{relativePath}";
     }
 
+    private static string ResolveTargetRemotePath(string? basePath, string? relativePath)
+    {
+        string cleanBase = (basePath ?? "").TrimEnd('/');
+        string cleanRel = (relativePath ?? "").Replace('\\', '/').TrimStart('/');
+
+        string segBase = cleanBase.Trim('/');
+        if (string.IsNullOrEmpty(segBase))
+        {
+            return $"/{cleanRel}";
+        }
+
+        string normBase = "/" + segBase + "/";
+        string normRel = "/" + cleanRel.Trim('/') + "/";
+
+        if (normRel.StartsWith(normBase, StringComparison.OrdinalIgnoreCase))
+        {
+            return $"/{cleanRel.TrimStart('/')}";
+        }
+
+        return $"{cleanBase}/{cleanRel}";
+    }
+
     public async Task<TestConnectionResult> TestConnectionAsync(CloudStorageProfile profile, CancellationToken ct = default)
     {
         var sw = Stopwatch.StartNew();
@@ -161,7 +183,10 @@ public class FtpStorageProvider : ICloudStorageProvider
                     // 规范化相对路径
                     string cleanRelativePath;
                     string normalizedFullName = (item.FullName ?? item.Name).Replace('\\', '/').Trim('/');
-                    if (!string.IsNullOrEmpty(cleanBasePath) && normalizedFullName.StartsWith(cleanBasePath, StringComparison.OrdinalIgnoreCase))
+                    string normBase = "/" + cleanBasePath + "/";
+                    string normItem = "/" + normalizedFullName + "/";
+
+                    if (!string.IsNullOrEmpty(cleanBasePath) && normItem.StartsWith(normBase, StringComparison.OrdinalIgnoreCase))
                     {
                         cleanRelativePath = normalizedFullName.Substring(cleanBasePath.Length).TrimStart('/');
                     }
@@ -196,19 +221,7 @@ public class FtpStorageProvider : ICloudStorageProvider
             await using var client = CreateFtpClient(profile);
             await client.AutoConnect(ct);
 
-            string basePath = (profile.FtpBasePath ?? "").TrimEnd('/');
-            string relative = (remoteFilePath ?? "").Replace('\\', '/').TrimStart('/');
-
-            string targetRemotePath;
-            string cleanBasePath = basePath.Trim('/');
-            if (!string.IsNullOrEmpty(cleanBasePath) && relative.StartsWith(cleanBasePath, StringComparison.OrdinalIgnoreCase))
-            {
-                targetRemotePath = $"/{relative.TrimStart('/')}";
-            }
-            else
-            {
-                targetRemotePath = CombineFtpPath(basePath, relative);
-            }
+            string targetRemotePath = ResolveTargetRemotePath(profile.FtpBasePath, remoteFilePath);
 
             await client.DeleteFile(targetRemotePath, ct);
             return true;

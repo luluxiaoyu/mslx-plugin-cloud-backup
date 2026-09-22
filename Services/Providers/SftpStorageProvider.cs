@@ -51,15 +51,29 @@ public class SftpStorageProvider : ICloudStorageProvider
         return new SftpClient(connectionInfo);
     }
 
-    private static string CombineSftpPath(string basePath, string relativePath)
+    /// <summary>
+    /// 解析目标远程路径，按路径段边界严格判断是否已包含根目录，防止子串误匹配
+    /// </summary>
+    private static string ResolveTargetRemotePath(string? basePath, string? relativePath)
     {
-        basePath = (basePath ?? "/").TrimEnd('/');
-        relativePath = (relativePath ?? "").Replace('\\', '/').TrimStart('/');
-        if (string.IsNullOrEmpty(basePath))
+        string cleanBase = (basePath ?? "").TrimEnd('/');
+        string cleanRel = (relativePath ?? "").Replace('\\', '/').TrimStart('/');
+
+        string segBase = cleanBase.Trim('/');
+        if (string.IsNullOrEmpty(segBase))
         {
-            return $"/{relativePath}";
+            return $"/{cleanRel}";
         }
-        return $"{basePath}/{relativePath}";
+
+        string normBase = "/" + segBase + "/";
+        string normRel = "/" + cleanRel.Trim('/') + "/";
+
+        if (normRel.StartsWith(normBase, StringComparison.OrdinalIgnoreCase))
+        {
+            return $"/{cleanRel.TrimStart('/')}";
+        }
+
+        return $"{cleanBase}/{cleanRel}";
     }
 
     private static void EnsureDirectoryRecursive(SftpClient client, string remoteDir)
@@ -103,15 +117,22 @@ public class SftpStorageProvider : ICloudStorageProvider
                 sw.Stop();
 
                 string dir = profile.SftpBasePath ?? "/";
+                bool dirExists = false;
                 if (!string.IsNullOrWhiteSpace(dir) && dir != "/")
                 {
-                    EnsureDirectoryRecursive(client, dir);
+                    dirExists = client.Exists(dir);
+                }
+                else
+                {
+                    dirExists = true;
                 }
 
                 return new TestConnectionResult
                 {
                     Success = true,
-                    Message = $"SFTP 连接成功！目标根目录: {dir}，耗时: {sw.ElapsedMilliseconds} ms",
+                    Message = dirExists
+                        ? $"SFTP 连接成功！目标根目录: {dir} (已就绪)，耗时: {sw.ElapsedMilliseconds} ms"
+                        : $"SFTP 连接成功！目标根目录: {dir} (尚未创建，首次同步时将自动创建)，耗时: {sw.ElapsedMilliseconds} ms",
                     LatencyMs = sw.ElapsedMilliseconds
                 };
             }, ct);
@@ -150,19 +171,7 @@ public class SftpStorageProvider : ICloudStorageProvider
             using var client = CreateSftpClient(profile);
             client.Connect();
 
-            string basePath = (profile.SftpBasePath ?? "").TrimEnd('/');
-            string relative = (remoteFilePath ?? "").Replace('\\', '/').TrimStart('/');
-
-            string targetRemotePath;
-            string cleanBasePath = basePath.Trim('/');
-            if (!string.IsNullOrEmpty(cleanBasePath) && relative.StartsWith(cleanBasePath, StringComparison.OrdinalIgnoreCase))
-            {
-                targetRemotePath = $"/{relative.TrimStart('/')}";
-            }
-            else
-            {
-                targetRemotePath = CombineSftpPath(basePath, relative);
-            }
+            string targetRemotePath = ResolveTargetRemotePath(profile.SftpBasePath, remoteFilePath);
 
             string? remoteDir = Path.GetDirectoryName(targetRemotePath)?.Replace('\\', '/');
             if (!string.IsNullOrWhiteSpace(remoteDir) && remoteDir != "/")
@@ -197,59 +206,15 @@ public class SftpStorageProvider : ICloudStorageProvider
                 using var client = CreateSftpClient(profile);
                 client.Connect();
 
-                string basePath = (profile.SftpBasePath ?? "").TrimEnd('/');
-                string relative = (remoteDir ?? "").Replace('\\', '/').TrimStart('/');
-
-                string targetDir;
-                string cleanBasePath = basePath.Trim('/');
-                if (!string.IsNullOrEmpty(cleanBasePath) && relative.StartsWith(cleanBasePath, StringComparison.OrdinalIgnoreCase))
-                {
-                    targetDir = $"/{relative.TrimStart('/')}";
-                }
-                else
-                {
-                    targetDir = CombineSftpPath(basePath, relative);
-                }
+                string targetDir = ResolveTargetRemotePath(profile.SftpBasePath, remoteDir);
 
                 if (!client.Exists(targetDir))
                 {
                     return items;
                 }
 
-                var files = client.ListDirectory(targetDir);
-                foreach (var item in files)
-                {
-                    if (item.IsRegularFile && !item.IsDirectory &&
-                        (item.Name.EndsWith(".zip", StringComparison.OrdinalIgnoreCase) ||
-                         item.Name.EndsWith(".tar.gz", StringComparison.OrdinalIgnoreCase)))
-                    {
-                        DateTime? lastMod = item.LastWriteTimeUtc != DateTime.MinValue ? item.LastWriteTimeUtc : null;
-                        if (lastMod == null)
-                        {
-                            lastMod = BackupFilenameParser.ExtractTimestamp(item.Name);
-                        }
-
-                        string normalizedFullName = item.FullName.Replace('\\', '/').Trim('/');
-                        string cleanRelativePath;
-                        if (!string.IsNullOrEmpty(cleanBasePath) && normalizedFullName.StartsWith(cleanBasePath, StringComparison.OrdinalIgnoreCase))
-                        {
-                            cleanRelativePath = normalizedFullName.Substring(cleanBasePath.Length).TrimStart('/');
-                        }
-                        else
-                        {
-                            cleanRelativePath = normalizedFullName;
-                        }
-
-                        items.Add(new RemoteBackupItem
-                        {
-                            FileName = item.Name,
-                            FullPath = cleanRelativePath,
-                            SizeBytes = item.Length,
-                            FormattedSize = FormatSize(item.Length),
-                            LastModified = lastMod
-                        });
-                    }
-                }
+                string cleanBasePath = (profile.SftpBasePath ?? "").Trim('/');
+                CollectFilesRecursive(client, targetDir, cleanBasePath, items, currentDepth: 0);
 
                 return items;
             }, ct);
@@ -262,6 +227,76 @@ public class SftpStorageProvider : ICloudStorageProvider
         return items;
     }
 
+    /// <summary>
+    /// 递归遍历 SFTP 子目录收集备份文件（支持 {date}、{month} 等子目录模板向下钻取）
+    /// </summary>
+    private static void CollectFilesRecursive(
+        SftpClient client,
+        string currentDir,
+        string cleanBasePath,
+        List<RemoteBackupItem> items,
+        int currentDepth,
+        int maxDepth = 4,
+        int maxCount = 2000)
+    {
+        if (currentDepth > maxDepth || items.Count >= maxCount) return;
+
+        IEnumerable<ISftpFile> entries;
+        try
+        {
+            entries = client.ListDirectory(currentDir);
+        }
+        catch
+        {
+            return;
+        }
+
+        foreach (var item in entries)
+        {
+            if (item.Name == "." || item.Name == "..") continue;
+
+            if (item.IsDirectory)
+            {
+                CollectFilesRecursive(client, item.FullName, cleanBasePath, items, currentDepth + 1, maxDepth, maxCount);
+            }
+            else if (item.IsRegularFile &&
+                (item.Name.EndsWith(".zip", StringComparison.OrdinalIgnoreCase) ||
+                 item.Name.EndsWith(".tar.gz", StringComparison.OrdinalIgnoreCase)))
+            {
+                DateTime? lastMod = item.LastWriteTimeUtc != DateTime.MinValue ? item.LastWriteTimeUtc : null;
+                if (lastMod == null)
+                {
+                    lastMod = BackupFilenameParser.ExtractTimestamp(item.Name);
+                }
+
+                string normalizedFullName = item.FullName.Replace('\\', '/').Trim('/');
+                string cleanRelativePath;
+                string normBase = "/" + cleanBasePath + "/";
+                string normItem = "/" + normalizedFullName + "/";
+
+                if (!string.IsNullOrEmpty(cleanBasePath) && normItem.StartsWith(normBase, StringComparison.OrdinalIgnoreCase))
+                {
+                    cleanRelativePath = normalizedFullName.Substring(cleanBasePath.Length).TrimStart('/');
+                }
+                else
+                {
+                    cleanRelativePath = normalizedFullName;
+                }
+
+                items.Add(new RemoteBackupItem
+                {
+                    FileName = item.Name,
+                    FullPath = cleanRelativePath,
+                    SizeBytes = item.Length,
+                    FormattedSize = FormatSize(item.Length),
+                    LastModified = lastMod
+                });
+
+                if (items.Count >= maxCount) return;
+            }
+        }
+    }
+
     public async Task<bool> DeleteFileAsync(CloudStorageProfile profile, string remoteFilePath, CancellationToken ct = default)
     {
         try
@@ -271,19 +306,7 @@ public class SftpStorageProvider : ICloudStorageProvider
                 using var client = CreateSftpClient(profile);
                 client.Connect();
 
-                string basePath = (profile.SftpBasePath ?? "").TrimEnd('/');
-                string relative = (remoteFilePath ?? "").Replace('\\', '/').TrimStart('/');
-
-                string targetRemotePath;
-                string cleanBasePath = basePath.Trim('/');
-                if (!string.IsNullOrEmpty(cleanBasePath) && relative.StartsWith(cleanBasePath, StringComparison.OrdinalIgnoreCase))
-                {
-                    targetRemotePath = $"/{relative.TrimStart('/')}";
-                }
-                else
-                {
-                    targetRemotePath = CombineSftpPath(basePath, relative);
-                }
+                string targetRemotePath = ResolveTargetRemotePath(profile.SftpBasePath, remoteFilePath);
 
                 if (client.Exists(targetRemotePath))
                 {
