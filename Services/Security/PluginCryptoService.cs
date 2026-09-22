@@ -211,6 +211,15 @@ public static class PluginCryptoService
             profile.FtpUsername = Encrypt(profile.FtpUsername);
         if (!string.IsNullOrEmpty(profile.FtpPassword))
             profile.FtpPassword = Encrypt(profile.FtpPassword);
+
+        if (!string.IsNullOrEmpty(profile.SftpUsername))
+            profile.SftpUsername = Encrypt(profile.SftpUsername);
+        if (!string.IsNullOrEmpty(profile.SftpPassword))
+            profile.SftpPassword = Encrypt(profile.SftpPassword);
+        if (!string.IsNullOrEmpty(profile.SftpPrivateKey))
+            profile.SftpPrivateKey = Encrypt(profile.SftpPrivateKey);
+        if (!string.IsNullOrEmpty(profile.SftpPassphrase))
+            profile.SftpPassphrase = Encrypt(profile.SftpPassphrase);
     }
 
     /// <summary>
@@ -244,6 +253,15 @@ public static class PluginCryptoService
             FtpUseSsl = source.FtpUseSsl,
             FtpBasePath = source.FtpBasePath,
 
+            SftpHost = source.SftpHost,
+            SftpPort = source.SftpPort,
+            SftpUsername = Decrypt(source.SftpUsername),
+            SftpAuthType = source.SftpAuthType,
+            SftpPassword = Decrypt(source.SftpPassword),
+            SftpPrivateKey = Decrypt(source.SftpPrivateKey),
+            SftpPassphrase = Decrypt(source.SftpPassphrase),
+            SftpBasePath = source.SftpBasePath,
+
             CreatedAt = source.CreatedAt,
             UpdatedAt = source.UpdatedAt
         };
@@ -276,6 +294,11 @@ public static class PluginCryptoService
             FtpUseSsl = source.FtpUseSsl,
             FtpBasePath = source.FtpBasePath,
 
+            SftpHost = source.SftpHost,
+            SftpPort = source.SftpPort,
+            SftpAuthType = source.SftpAuthType,
+            SftpBasePath = source.SftpBasePath,
+
             CreatedAt = source.CreatedAt,
             UpdatedAt = source.UpdatedAt,
 
@@ -286,11 +309,16 @@ public static class PluginCryptoService
             WebDavPassword = string.Empty,
             FtpUsername = string.Empty,
             FtpPassword = string.Empty,
+            SftpUsername = string.Empty,
+            SftpPassword = string.Empty,
+            SftpPrivateKey = string.Empty,
+            SftpPassphrase = string.Empty,
 
             // 标记凭据是否已配置，供前端展示状态
             HasS3Credentials = !string.IsNullOrWhiteSpace(source.S3AccessKey) || !string.IsNullOrWhiteSpace(source.S3SecretKey),
             HasWebDavCredentials = !string.IsNullOrWhiteSpace(source.WebDavUsername) || !string.IsNullOrWhiteSpace(source.WebDavPassword),
-            HasFtpCredentials = !string.IsNullOrWhiteSpace(source.FtpUsername) || !string.IsNullOrWhiteSpace(source.FtpPassword)
+            HasFtpCredentials = !string.IsNullOrWhiteSpace(source.FtpUsername) || !string.IsNullOrWhiteSpace(source.FtpPassword),
+            HasSftpCredentials = !string.IsNullOrWhiteSpace(source.SftpPassword) || !string.IsNullOrWhiteSpace(source.SftpPrivateKey)
         };
 
         return clone;

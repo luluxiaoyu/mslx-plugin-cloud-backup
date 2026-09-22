@@ -343,7 +343,7 @@ const columns = [
           <div class="flex-1 pr-0 md:pr-8 mb-3 md:mb-0 min-w-[200px]">
             <div class="text-sm font-medium text-[var(--td-text-color-primary)] leading-snug flex items-center gap-1.5">
               关联云存储目标
-              <t-tooltip content="支持 S3 兼容对象存储、WebDAV 与 FTP / FTPS 协议。">
+              <t-tooltip content="支持 S3 兼容对象存储、WebDAV、FTP / FTPS 与 SFTP (SSH) 协议。">
                 <span class="text-xs text-zinc-400 hover:text-zinc-500 cursor-help flex items-center gap-1">
                   <help-circle-icon />
                 </span>
@@ -364,7 +364,7 @@ const columns = [
                 v-for="p in userProfiles"
                 :key="p.id"
                 :value="p.id"
-                :label="`${p.name} (${normalizeProviderType(p.providerType) === 'S3Compatible' ? 'S3 兼容' : normalizeProviderType(p.providerType) === 'WebDAV' ? 'WebDAV' : 'FTP / FTPS'})`"
+                :label="`${p.name} (${normalizeProviderType(p.providerType) === 'S3Compatible' ? 'S3 兼容' : normalizeProviderType(p.providerType) === 'WebDAV' ? 'WebDAV' : normalizeProviderType(p.providerType) === 'SFTP' ? 'SFTP (SSH)' : 'FTP / FTPS'})`"
               />
             </t-select>
 

@@ -76,6 +76,11 @@ public class CloudBackupController : ControllerBase
             if (string.IsNullOrWhiteSpace(profile.FtpUsername)) profile.FtpUsername = existing.FtpUsername;
             if (string.IsNullOrWhiteSpace(profile.FtpPassword)) profile.FtpPassword = existing.FtpPassword;
 
+            if (string.IsNullOrWhiteSpace(profile.SftpUsername)) profile.SftpUsername = existing.SftpUsername;
+            if (string.IsNullOrWhiteSpace(profile.SftpPassword)) profile.SftpPassword = existing.SftpPassword;
+            if (string.IsNullOrWhiteSpace(profile.SftpPrivateKey)) profile.SftpPrivateKey = existing.SftpPrivateKey;
+            if (string.IsNullOrWhiteSpace(profile.SftpPassphrase)) profile.SftpPassphrase = existing.SftpPassphrase;
+
             profile.CreatedAt = existing.CreatedAt;
             profile.UpdatedAt = DateTime.UtcNow;
             config.Profiles[existingIndex] = profile;
@@ -151,6 +156,11 @@ public class CloudBackupController : ControllerBase
 
                 if (string.IsNullOrWhiteSpace(profile.FtpUsername)) profile.FtpUsername = existing.FtpUsername;
                 if (string.IsNullOrWhiteSpace(profile.FtpPassword)) profile.FtpPassword = existing.FtpPassword;
+
+                if (string.IsNullOrWhiteSpace(profile.SftpUsername)) profile.SftpUsername = existing.SftpUsername;
+                if (string.IsNullOrWhiteSpace(profile.SftpPassword)) profile.SftpPassword = existing.SftpPassword;
+                if (string.IsNullOrWhiteSpace(profile.SftpPrivateKey)) profile.SftpPrivateKey = existing.SftpPrivateKey;
+                if (string.IsNullOrWhiteSpace(profile.SftpPassphrase)) profile.SftpPassphrase = existing.SftpPassphrase;
             }
         }
 
@@ -199,6 +209,7 @@ public class CloudBackupController : ControllerBase
                 CloudStorageProviderType.S3Compatible => !string.IsNullOrWhiteSpace(profile.S3Endpoint) ? new Uri(profile.S3Endpoint).Host : null,
                 CloudStorageProviderType.WebDAV => !string.IsNullOrWhiteSpace(profile.WebDavUrl) ? new Uri(profile.WebDavUrl).Host : null,
                 CloudStorageProviderType.FTP => profile.FtpHost,
+                CloudStorageProviderType.SFTP => profile.SftpHost,
                 _ => null
             };
         }

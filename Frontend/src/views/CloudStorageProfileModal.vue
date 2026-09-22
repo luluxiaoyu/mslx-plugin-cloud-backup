@@ -5,6 +5,8 @@ import {
   CloudIcon,
   HardDriveIcon,
   ServerIcon,
+  TerminalIcon,
+  UploadIcon,
   AddIcon,
   EditIcon,
   DeleteIcon,
@@ -33,6 +35,32 @@ const saving = ref(false);
 const testing = ref(false);
 const testResult = ref<TestConnectionResult | null>(null);
 
+const keyFileInputRef = ref<HTMLInputElement | null>(null);
+
+const triggerKeyFileInput = () => {
+  keyFileInputRef.value?.click();
+};
+
+const handleKeyFileSelected = (e: Event) => {
+  const target = e.target as HTMLInputElement;
+  const file = target.files?.[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = (event) => {
+    const content = event.target?.result as string;
+    if (content) {
+      currentForm.value.sftpPrivateKey = content;
+      MessagePlugin.success(`已导入私钥文件: ${file.name}`);
+    }
+  };
+  reader.onerror = () => {
+    MessagePlugin.error('读取私钥文件失败');
+  };
+  reader.readAsText(file);
+  target.value = '';
+};
+
 const defaultProfile = (): CloudStorageProfile => ({
   id: '',
   name: '',
@@ -53,9 +81,18 @@ const defaultProfile = (): CloudStorageProfile => ({
   ftpPassword: '',
   ftpUseSsl: false,
   ftpBasePath: '/',
+  sftpHost: '',
+  sftpPort: 22,
+  sftpUsername: '',
+  sftpAuthType: 'Password',
+  sftpPassword: '',
+  sftpPrivateKey: '',
+  sftpPassphrase: '',
+  sftpBasePath: '/',
   hasS3Credentials: false,
   hasWebDavCredentials: false,
   hasFtpCredentials: false,
+  hasSftpCredentials: false,
 });
 
 const currentForm = ref<CloudStorageProfile>(defaultProfile());
@@ -107,6 +144,11 @@ const handleEdit = (profile: CloudStorageProfile) => {
   cloned.webDavPassword = '';
   cloned.ftpUsername = '';
   cloned.ftpPassword = '';
+  cloned.sftpUsername = '';
+  cloned.sftpPassword = '';
+  cloned.sftpPrivateKey = '';
+  cloned.sftpPassphrase = '';
+  if (!cloned.sftpAuthType) cloned.sftpAuthType = 'Password';
   currentForm.value = cloned;
   testResult.value = null;
   isEditing.value = true;
@@ -185,6 +227,11 @@ const handleSave = async () => {
       MessagePlugin.warning('请输入 FTP 主机地址');
       return;
     }
+  } else if (currentForm.value.providerType === 'SFTP') {
+    if (!currentForm.value.sftpHost) {
+      MessagePlugin.warning('请输入 SFTP 主机地址');
+      return;
+    }
   }
 
   saving.value = true;
@@ -231,7 +278,7 @@ const handleSave = async () => {
             <server-icon class="text-4xl text-zinc-300 dark:text-zinc-600 mb-3" />
             <div class="text-sm font-medium text-zinc-700 dark:text-zinc-300">当前尚未配置任何云存储策略</div>
             <div class="text-xs text-zinc-400 mt-1 max-w-sm">
-              支持 S3 兼容对象存储（Cloudflare R2 / MinIO 等）、WebDAV 与 FTP / FTPS
+              支持 S3 兼容对象存储（Cloudflare R2 / MinIO 等）、WebDAV、FTP / FTPS 与 SFTP (SSH)
             </div>
             <t-button theme="primary" variant="outline" size="small" class="mt-4 !rounded-lg" @click="handleCreateNew">
               <template #icon><add-icon /></template> 立即创建第一条存储策略
@@ -253,10 +300,13 @@ const handleSave = async () => {
                         ? 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400'
                         : normalizeProviderType(item.providerType) === 'WebDAV'
                           ? 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 dark:text-emerald-400'
-                          : 'bg-amber-50 text-amber-600 dark:bg-amber-950/40 dark:text-amber-400'"
+                          : normalizeProviderType(item.providerType) === 'SFTP'
+                            ? 'bg-purple-50 text-purple-600 dark:bg-purple-950/40 dark:text-purple-400'
+                            : 'bg-amber-50 text-amber-600 dark:bg-amber-950/40 dark:text-amber-400'"
                     >
                       <cloud-icon v-if="normalizeProviderType(item.providerType) === 'S3Compatible'" />
                       <hard-drive-icon v-else-if="normalizeProviderType(item.providerType) === 'WebDAV'" />
+                      <terminal-icon v-else-if="normalizeProviderType(item.providerType) === 'SFTP'" />
                       <server-icon v-else />
                     </div>
                     <div class="flex-1 min-w-0">
@@ -267,10 +317,10 @@ const handleSave = async () => {
                         <t-tag
                           size="small"
                           variant="light"
-                          :theme="normalizeProviderType(item.providerType) === 'S3Compatible' ? 'primary' : normalizeProviderType(item.providerType) === 'WebDAV' ? 'success' : 'warning'"
+                          :theme="normalizeProviderType(item.providerType) === 'S3Compatible' ? 'primary' : normalizeProviderType(item.providerType) === 'WebDAV' ? 'success' : normalizeProviderType(item.providerType) === 'SFTP' ? 'danger' : 'warning'"
                           class="!text-[10px] !h-4.5 !leading-4.5 !px-2 !inline-flex items-center justify-center text-center font-medium shrink-0 !w-auto"
                         >
-                          {{ normalizeProviderType(item.providerType) === 'S3Compatible' ? 'S3 兼容' : normalizeProviderType(item.providerType) === 'WebDAV' ? 'WebDAV' : 'FTP / FTPS' }}
+                          {{ normalizeProviderType(item.providerType) === 'S3Compatible' ? 'S3 兼容' : normalizeProviderType(item.providerType) === 'WebDAV' ? 'WebDAV' : normalizeProviderType(item.providerType) === 'SFTP' ? 'SFTP (SSH)' : 'FTP / FTPS' }}
                         </t-tag>
                       </div>
                     </div>
@@ -293,6 +343,9 @@ const handleSave = async () => {
                   </div>
                   <div v-else-if="normalizeProviderType(item.providerType) === 'WebDAV'" class="truncate">
                     {{ item.webDavUrl }}
+                  </div>
+                  <div v-else-if="normalizeProviderType(item.providerType) === 'SFTP'" class="truncate">
+                    {{ item.sftpHost }}:{{ item.sftpPort }} ({{ item.sftpAuthType === 'PrivateKey' ? '私钥认证' : '密码认证' }})
                   </div>
                   <div v-else class="truncate">
                     {{ item.ftpHost }}:{{ item.ftpPort }}
@@ -325,7 +378,7 @@ const handleSave = async () => {
           <!-- 策略名称 -->
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
             <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">策略友好名称 <span class="text-red-500">*</span></span>
-            <t-input v-model="currentForm.name" placeholder="例如：我的 Cloudflare R2 / 家用群晖 WebDAV" class="flex-1" />
+            <t-input v-model="currentForm.name" placeholder="例如：我的 Cloudflare R2 / 家用群晖 WebDAV / 异地 VPS" class="flex-1" />
           </div>
 
           <!-- 协议单选 -->
@@ -335,6 +388,7 @@ const handleSave = async () => {
               <t-radio-button value="S3Compatible">S3 兼容对象存储</t-radio-button>
               <t-radio-button value="WebDAV">WebDAV 网盘</t-radio-button>
               <t-radio-button value="FTP">FTP / FTPS</t-radio-button>
+              <t-radio-button value="SFTP">SFTP (SSH)</t-radio-button>
             </t-radio-group>
           </div>
 
@@ -431,7 +485,7 @@ const handleSave = async () => {
           </template>
 
           <!-- FTP 字段 -->
-          <template v-else>
+          <template v-else-if="currentForm.providerType === 'FTP'">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">FTP 主机地址 <span class="text-red-500">*</span></span>
               <t-input v-model="currentForm.ftpHost" placeholder="例如：192.168.1.100 或 ftp.example.com" class="flex-1" />
@@ -475,6 +529,96 @@ const handleSave = async () => {
               <div class="flex-1">
                 <t-switch v-model="currentForm.ftpUseSsl" />
               </div>
+            </div>
+          </template>
+
+          <!-- SFTP (SSH) 字段 -->
+          <template v-else>
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">SSH 主机地址 <span class="text-red-500">*</span></span>
+              <t-input v-model="currentForm.sftpHost" placeholder="例如：192.168.1.100 或 vps.example.com" class="flex-1" />
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">SSH 端口</span>
+              <t-input-number v-model="currentForm.sftpPort" :min="1" :max="65535" size="small" class="!w-32" />
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">SSH 登录账号</span>
+              <t-input
+                v-model="currentForm.sftpUsername"
+                name="cloud_storage_sftp_user"
+                autocomplete="new-password"
+                :placeholder="currentForm.hasSftpCredentials ? '已加密存储（若不修改请留空）' : '例如：root 或 ubuntu'"
+                class="flex-1"
+              />
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">认证方式</span>
+              <t-radio-group v-model="currentForm.sftpAuthType" variant="default-filled" size="small" class="flex-1">
+                <t-radio-button value="Password">密码认证</t-radio-button>
+                <t-radio-button value="PrivateKey">私钥认证 (Key)</t-radio-button>
+              </t-radio-group>
+            </div>
+
+            <!-- 密码认证模式 -->
+            <div v-if="currentForm.sftpAuthType !== 'PrivateKey'" class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">SSH 密码</span>
+              <t-input
+                v-model="currentForm.sftpPassword"
+                type="password"
+                name="cloud_storage_sftp_pass"
+                autocomplete="new-password"
+                :placeholder="currentForm.hasSftpCredentials ? '已加密存储（若不修改请留空）' : 'SSH 登录密码'"
+                class="flex-1"
+              />
+            </div>
+
+            <!-- 私钥认证模式 -->
+            <template v-else>
+              <div class="flex flex-col md:flex-row md:items-start justify-between gap-2">
+                <div class="w-32 shrink-0 pt-1.5 flex flex-col gap-1.5">
+                  <span class="text-xs font-medium text-[var(--td-text-color-primary)]">SSH 私钥内容</span>
+                  <t-button variant="outline" size="extra-small" class="!text-[11px] !w-fit !rounded-md" @click="triggerKeyFileInput">
+                    <template #icon><upload-icon /></template> 导入私钥文件
+                  </t-button>
+                  <input
+                    ref="keyFileInputRef"
+                    type="file"
+                    class="hidden"
+                    @change="handleKeyFileSelected"
+                  />
+                </div>
+                <div class="flex-1">
+                  <t-textarea
+                    v-model="currentForm.sftpPrivateKey"
+                    name="cloud_storage_sftp_key"
+                    autocomplete="new-password"
+                    :placeholder="currentForm.hasSftpCredentials ? '已加密存储（若不修改请留空）' : '粘贴 OpenSSH / PEM 格式私钥内容（-----BEGIN 开头）'"
+                    :autosize="{ minRows: 3, maxRows: 6 }"
+                    class="font-mono text-xs"
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">私钥密码短语</span>
+                <t-input
+                  v-model="currentForm.sftpPassphrase"
+                  type="password"
+                  name="cloud_storage_sftp_passphrase"
+                  autocomplete="new-password"
+                  :placeholder="currentForm.hasSftpCredentials ? '已加密存储（若不修改请留空）' : '私钥密码短语 Passphrase（无密码可留空）'"
+                  class="flex-1"
+                />
+              </div>
+            </template>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">基础存放目录</span>
+              <t-input v-model="currentForm.sftpBasePath" placeholder="默认 /，如 /backups 或 /home/user/backups" class="flex-1" />
             </div>
           </template>
 

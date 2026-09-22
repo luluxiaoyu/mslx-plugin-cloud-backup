@@ -1,63 +1,63 @@
-(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("@keyframes t-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.t-icon{display:inline-block;vertical-align:middle;width:1em;height:1em}.t-icon:before{font-family:unset}.t-icon-loading{animation:t-spin 1s linear infinite}.t-icon.t-size-s,i.t-size-s{font-size:14px}.t-icon.t-size-m,i.t-size-m{font-size:16px}.t-icon.t-size-l,i.t-size-l{font-size:18px}.visible[data-v-a3d50b0b]{visibility:visible}.absolute[data-v-a3d50b0b]{position:absolute}.grid[data-v-a3d50b0b]{display:grid}.grid-cols-1[data-v-a3d50b0b]{grid-template-columns:repeat(1,minmax(0,1fr))}.mb-2[data-v-a3d50b0b]{margin-bottom:.5rem}.mb-3[data-v-a3d50b0b]{margin-bottom:.75rem}.mb-4[data-v-a3d50b0b]{margin-bottom:1rem}.mt-0\\.5[data-v-a3d50b0b]{margin-top:.125rem}.mt-1[data-v-a3d50b0b]{margin-top:.25rem}.mt-4[data-v-a3d50b0b]{margin-top:1rem}.hidden[data-v-a3d50b0b]{display:none}.\\!h-4\\.5[data-v-a3d50b0b]{height:1.125rem!important}.\\!w-32[data-v-a3d50b0b]{width:8rem!important}.\\!w-auto[data-v-a3d50b0b]{width:auto!important}.h-8[data-v-a3d50b0b]{height:2rem}.max-w-\\[150px\\][data-v-a3d50b0b]{max-width:150px}.max-w-sm[data-v-a3d50b0b]{max-width:24rem}.min-h-\\[380px\\][data-v-a3d50b0b]{min-height:380px}.min-w-0[data-v-a3d50b0b]{min-width:0}.w-32[data-v-a3d50b0b]{width:8rem}.w-8[data-v-a3d50b0b]{width:2rem}.flex[data-v-a3d50b0b]{display:flex}.\\!inline-flex[data-v-a3d50b0b]{display:inline-flex!important}.flex-1[data-v-a3d50b0b]{flex:1 1 0%}.shrink-0[data-v-a3d50b0b]{flex-shrink:0}.flex-col[data-v-a3d50b0b]{flex-direction:column}.flex-wrap[data-v-a3d50b0b]{flex-wrap:wrap}.items-start[data-v-a3d50b0b]{align-items:flex-start}.items-center[data-v-a3d50b0b]{align-items:center}.justify-center[data-v-a3d50b0b]{justify-content:center}.justify-between[data-v-a3d50b0b]{justify-content:space-between}.gap-1[data-v-a3d50b0b]{gap:.25rem}.gap-1\\.5[data-v-a3d50b0b]{gap:.375rem}.gap-2[data-v-a3d50b0b]{gap:.5rem}.gap-2\\.5[data-v-a3d50b0b]{gap:.625rem}.gap-3[data-v-a3d50b0b]{gap:.75rem}.space-y-1[data-v-a3d50b0b]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(.25rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(.25rem * var(--un-space-y-reverse))}.space-y-4[data-v-a3d50b0b]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(1rem * var(--un-space-y-reverse))}.truncate[data-v-a3d50b0b]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.border[data-v-a3d50b0b]{border-width:1px}.border-b[data-v-a3d50b0b]{border-bottom-width:1px}.border-t[data-v-a3d50b0b]{border-top-width:1px}.border-emerald-300\\/80[data-v-a3d50b0b]{border-color:#6ee7b7cc}.border-red-300\\/80[data-v-a3d50b0b]{border-color:#fca5a5cc}.border-zinc-100[data-v-a3d50b0b]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-a3d50b0b]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-a3d50b0b]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-a3d50b0b]{border-color:#04785780}.dark .dark\\:border-red-700\\/50[data-v-a3d50b0b]{border-color:#b91c1c80}.dark .dark\\:border-zinc-700\\/40[data-v-a3d50b0b]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/60[data-v-a3d50b0b]{border-color:#3f3f4699}.hover\\:border-\\[var\\(--color-primary\\)\\][data-v-a3d50b0b]:hover{border-color:var(--color-primary)}.\\!rounded-lg[data-v-a3d50b0b]{border-radius:.5rem!important}.\\!rounded-md[data-v-a3d50b0b]{border-radius:.375rem!important}.rounded-lg[data-v-a3d50b0b]{border-radius:.5rem}.rounded-xl[data-v-a3d50b0b]{border-radius:.75rem}.bg-amber-50[data-v-a3d50b0b]{--un-bg-opacity:1;background-color:rgb(255 251 235 / var(--un-bg-opacity))}.bg-blue-50[data-v-a3d50b0b]{--un-bg-opacity:1;background-color:rgb(239 246 255 / var(--un-bg-opacity))}.bg-emerald-50[data-v-a3d50b0b]{--un-bg-opacity:1;background-color:rgb(236 253 245 / var(--un-bg-opacity))}.bg-emerald-50\\/70[data-v-a3d50b0b]{background-color:#ecfdf5b3}.bg-red-50\\/70[data-v-a3d50b0b]{background-color:#fef2f2b3}.bg-white\\/60[data-v-a3d50b0b]{background-color:#fff9}.dark .dark\\:bg-amber-950\\/40[data-v-a3d50b0b]{background-color:#451a0366}.dark .dark\\:bg-blue-950\\/40[data-v-a3d50b0b]{background-color:#17255466}.dark .dark\\:bg-emerald-950\\/30[data-v-a3d50b0b]{background-color:#022c224d}.dark .dark\\:bg-emerald-950\\/40[data-v-a3d50b0b]{background-color:#022c2266}.dark .dark\\:bg-red-950\\/30[data-v-a3d50b0b]{background-color:#450a0a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-a3d50b0b]{background-color:#27272a66}.hover\\:\\!bg-red-500\\/10[data-v-a3d50b0b]:hover{background-color:#ef44441a!important}.p-3[data-v-a3d50b0b]{padding:.75rem}.p-3\\.5[data-v-a3d50b0b]{padding:.875rem}.\\!px-1\\.5[data-v-a3d50b0b]{padding-left:.375rem!important;padding-right:.375rem!important}.\\!px-2[data-v-a3d50b0b]{padding-left:.5rem!important;padding-right:.5rem!important}.py-12[data-v-a3d50b0b]{padding-top:3rem;padding-bottom:3rem}.py-2[data-v-a3d50b0b]{padding-top:.5rem;padding-bottom:.5rem}.pb-3[data-v-a3d50b0b]{padding-bottom:.75rem}.pr-2[data-v-a3d50b0b]{padding-right:.5rem}.pt-1\\.5[data-v-a3d50b0b]{padding-top:.375rem}.pt-2[data-v-a3d50b0b]{padding-top:.5rem}.pt-4[data-v-a3d50b0b]{padding-top:1rem}.text-center[data-v-a3d50b0b]{text-align:center}.\\!text-\\[10px\\][data-v-a3d50b0b]{font-size:10px!important}.text-\\[11px\\][data-v-a3d50b0b]{font-size:11px}.text-4xl[data-v-a3d50b0b]{font-size:2.25rem;line-height:2.5rem}.text-base[data-v-a3d50b0b]{font-size:1rem;line-height:1.5rem}.text-lg[data-v-a3d50b0b]{font-size:1.125rem;line-height:1.75rem}.text-sm[data-v-a3d50b0b]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-a3d50b0b]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-blue-400[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(96 165 250 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-red-300[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(252 165 165 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-a3d50b0b],.text-zinc-300[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-a3d50b0b],.text-zinc-400[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.dark .dark\\:text-zinc-600[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-\\[var\\(--td-text-color-placeholder\\)\\][data-v-a3d50b0b]{color:var(--td-text-color-placeholder)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-a3d50b0b]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-a3d50b0b]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-blue-600[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(37 99 235 / var(--un-text-opacity))}.text-emerald-500[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-red-500[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(239 68 68 / var(--un-text-opacity))}.text-red-800[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(153 27 27 / var(--un-text-opacity))}.text-zinc-500[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-700[data-v-a3d50b0b]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.font-bold[data-v-a3d50b0b]{font-weight:700}.font-medium[data-v-a3d50b0b]{font-weight:500}.\\!leading-4\\.5[data-v-a3d50b0b]{line-height:1.125rem!important}.leading-relaxed[data-v-a3d50b0b]{line-height:1.625}.leading-snug[data-v-a3d50b0b]{line-height:1.375}.font-mono[data-v-a3d50b0b]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.opacity-90[data-v-a3d50b0b]{opacity:.9}.shadow-sm[data-v-a3d50b0b]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-a3d50b0b]{outline-style:solid}.transition-all[data-v-a3d50b0b]{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-2[data-v-a3d50b0b]{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:flex-row[data-v-a3d50b0b]{flex-direction:row}.md\\:items-start[data-v-a3d50b0b]{align-items:flex-start}.md\\:items-center[data-v-a3d50b0b]{align-items:center}}.fixed[data-v-465f3268]{position:fixed}.grid[data-v-465f3268]{display:grid}.grid-cols-1[data-v-465f3268]{grid-template-columns:repeat(1,minmax(0,1fr))}.m-0[data-v-465f3268]{margin:0}.mx-auto[data-v-465f3268]{margin-left:auto;margin-right:auto}.my-2[data-v-465f3268]{margin-top:.5rem;margin-bottom:.5rem}.mb-1\\.5[data-v-465f3268]{margin-bottom:.375rem}.mb-3[data-v-465f3268]{margin-bottom:.75rem}.mb-4[data-v-465f3268]{margin-bottom:1rem}.ml-1[data-v-465f3268]{margin-left:.25rem}.mr-1\\.5[data-v-465f3268]{margin-right:.375rem}.mt-0\\.5[data-v-465f3268]{margin-top:.125rem}.mt-1[data-v-465f3268]{margin-top:.25rem}.mt-2[data-v-465f3268]{margin-top:.5rem}.mt-3[data-v-465f3268]{margin-top:.75rem}.mt-5[data-v-465f3268]{margin-top:1.25rem}.mt-8[data-v-465f3268]{margin-top:2rem}.\\!w-24[data-v-465f3268]{width:6rem!important}.\\!w-28[data-v-465f3268]{width:7rem!important}.\\!w-48[data-v-465f3268]{width:12rem!important}.\\!w-auto[data-v-465f3268]{width:auto!important}.h-4[data-v-465f3268]{height:1rem}.min-w-\\[200px\\][data-v-465f3268]{min-width:200px}.w-\\[120px\\][data-v-465f3268]{width:120px}.w-1[data-v-465f3268]{width:.25rem}.w-full[data-v-465f3268]{width:100%}.flex[data-v-465f3268]{display:flex}.\\!inline-flex[data-v-465f3268]{display:inline-flex!important}.flex-1[data-v-465f3268]{flex:1 1 0%}.shrink-0[data-v-465f3268]{flex-shrink:0}.flex-col[data-v-465f3268]{flex-direction:column}.flex-wrap[data-v-465f3268]{flex-wrap:wrap}.cursor-help[data-v-465f3268]{cursor:help}.\\!cursor-pointer[data-v-465f3268]{cursor:pointer!important}.items-start[data-v-465f3268]{align-items:flex-start}.\\!items-center[data-v-465f3268]{align-items:center!important}.items-center[data-v-465f3268]{align-items:center}.justify-start[data-v-465f3268]{justify-content:flex-start}.justify-end[data-v-465f3268]{justify-content:flex-end}.\\!justify-center[data-v-465f3268]{justify-content:center!important}.justify-between[data-v-465f3268]{justify-content:space-between}.gap-1[data-v-465f3268]{gap:.25rem}.gap-1\\.5[data-v-465f3268]{gap:.375rem}.gap-2[data-v-465f3268]{gap:.5rem}.gap-3[data-v-465f3268]{gap:.75rem}.overflow-hidden[data-v-465f3268]{overflow:hidden}.break-all[data-v-465f3268]{word-break:break-all}.border[data-v-465f3268]{border-width:1px}.border-b[data-v-465f3268]{border-bottom-width:1px}.border-t[data-v-465f3268]{border-top-width:1px}.border-emerald-300\\/80[data-v-465f3268]{border-color:#6ee7b7cc}.border-zinc-100[data-v-465f3268]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-465f3268]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-465f3268]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-465f3268]{border-color:#04785780}.dark .dark\\:border-zinc-700\\/40[data-v-465f3268]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/50[data-v-465f3268]{border-color:#3f3f4680}.dark .dark\\:border-zinc-700\\/60[data-v-465f3268]{border-color:#3f3f4699}.dark .dark\\:border-zinc-800\\/60[data-v-465f3268]{border-color:#27272a99}.hover\\:\\!border-\\[var\\(--color-primary\\)\\][data-v-465f3268]:hover{border-color:var(--color-primary)!important}.\\!rounded-lg[data-v-465f3268]{border-radius:.5rem!important}.\\!rounded-md[data-v-465f3268]{border-radius:.375rem!important}.rounded-full[data-v-465f3268]{border-radius:9999px}.rounded-xl[data-v-465f3268]{border-radius:.75rem}.border-dashed[data-v-465f3268]{border-style:dashed}.bg-\\[var\\(--color-primary\\)\\][data-v-465f3268]{background-color:var(--color-primary)}.bg-emerald-50\\/70[data-v-465f3268]{background-color:#ecfdf5b3}.bg-white\\/50[data-v-465f3268]{background-color:#ffffff80}.bg-white\\/60[data-v-465f3268]{background-color:#fff9}.bg-zinc-50\\/70[data-v-465f3268]{background-color:#fafafab3}.dark .dark\\:bg-emerald-950\\/30[data-v-465f3268]{background-color:#022c224d}.dark .dark\\:bg-zinc-800\\/30[data-v-465f3268]{background-color:#27272a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-465f3268]{background-color:#27272a66}.dark .dark\\:bg-zinc-900\\/20[data-v-465f3268]{background-color:#18181b33}.dark .dark\\:hover\\:bg-zinc-800\\/20[data-v-465f3268]:hover{background-color:#27272a33}.hover\\:\\!bg-red-500\\/10[data-v-465f3268]:hover{background-color:#ef44441a!important}.hover\\:bg-zinc-50\\/50[data-v-465f3268]:hover{background-color:#fafafa80}.p-3[data-v-465f3268]{padding:.75rem}.p-3\\.5[data-v-465f3268]{padding:.875rem}.p-8[data-v-465f3268]{padding:2rem}.\\!px-2\\.5[data-v-465f3268]{padding-left:.625rem!important;padding-right:.625rem!important}.px-4[data-v-465f3268]{padding-left:1rem;padding-right:1rem}.py-2[data-v-465f3268]{padding-top:.5rem;padding-bottom:.5rem}.pb-2[data-v-465f3268]{padding-bottom:.5rem}.pb-8[data-v-465f3268]{padding-bottom:2rem}.pr-0[data-v-465f3268]{padding-right:0}.pt-2[data-v-465f3268]{padding-top:.5rem}.text-center[data-v-465f3268]{text-align:center}.text-\\[11px\\][data-v-465f3268]{font-size:11px}.text-\\[13px\\][data-v-465f3268]{font-size:13px}.text-base[data-v-465f3268]{font-size:1rem;line-height:1.5rem}.text-sm[data-v-465f3268]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-465f3268]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-zinc-200[data-v-465f3268]{--un-text-opacity:1;color:rgb(228 228 231 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-465f3268]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-465f3268],.text-zinc-400[data-v-465f3268]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.text-\\[var\\(--color-primary\\)\\][data-v-465f3268]{color:var(--color-primary)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-465f3268]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-465f3268]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-emerald-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-zinc-500[data-v-465f3268]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-600[data-v-465f3268]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-zinc-700[data-v-465f3268]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.text-zinc-800[data-v-465f3268]{--un-text-opacity:1;color:rgb(39 39 42 / var(--un-text-opacity))}.hover\\:text-zinc-500[data-v-465f3268]:hover{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.\\!font-medium[data-v-465f3268]{font-weight:500!important}.font-bold[data-v-465f3268]{font-weight:700}.font-medium[data-v-465f3268]{font-weight:500}.leading-relaxed[data-v-465f3268]{line-height:1.625}.leading-snug[data-v-465f3268]{line-height:1.375}.font-mono[data-v-465f3268]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.shadow-sm[data-v-465f3268]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-465f3268]{outline-style:solid}.transition-colors[data-v-465f3268]{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-3[data-v-465f3268]{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:mb-0[data-v-465f3268]{margin-bottom:0}.md\\:mt-0[data-v-465f3268]{margin-top:0}.md\\:w-\\[340px\\][data-v-465f3268]{width:340px}.md\\:w-\\[360px\\][data-v-465f3268]{width:360px}.md\\:w-\\[380px\\][data-v-465f3268]{width:380px}.md\\:flex-row[data-v-465f3268]{flex-direction:row}.md\\:items-start[data-v-465f3268]{align-items:flex-start}.md\\:items-center[data-v-465f3268]{align-items:center}.md\\:justify-end[data-v-465f3268]{justify-content:flex-end}.md\\:justify-between[data-v-465f3268]{justify-content:space-between}.md\\:p-4[data-v-465f3268]{padding:1rem}.md\\:pr-2[data-v-465f3268]{padding-right:.5rem}.md\\:pr-8[data-v-465f3268]{padding-right:2rem}}")),document.head.appendChild(a)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
+(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("@keyframes t-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.t-icon{display:inline-block;vertical-align:middle;width:1em;height:1em}.t-icon:before{font-family:unset}.t-icon-loading{animation:t-spin 1s linear infinite}.t-icon.t-size-s,i.t-size-s{font-size:14px}.t-icon.t-size-m,i.t-size-m{font-size:16px}.t-icon.t-size-l,i.t-size-l{font-size:18px}.visible[data-v-ac98cf6e]{visibility:visible}.absolute[data-v-ac98cf6e]{position:absolute}.grid[data-v-ac98cf6e]{display:grid}.grid-cols-1[data-v-ac98cf6e]{grid-template-columns:repeat(1,minmax(0,1fr))}.mb-2[data-v-ac98cf6e]{margin-bottom:.5rem}.mb-3[data-v-ac98cf6e]{margin-bottom:.75rem}.mb-4[data-v-ac98cf6e]{margin-bottom:1rem}.mt-0\\.5[data-v-ac98cf6e]{margin-top:.125rem}.mt-1[data-v-ac98cf6e]{margin-top:.25rem}.mt-4[data-v-ac98cf6e]{margin-top:1rem}.hidden[data-v-ac98cf6e]{display:none}.\\!h-4\\.5[data-v-ac98cf6e]{height:1.125rem!important}.\\!w-32[data-v-ac98cf6e]{width:8rem!important}.\\!w-auto[data-v-ac98cf6e]{width:auto!important}.\\!w-fit[data-v-ac98cf6e]{width:fit-content!important}.h-8[data-v-ac98cf6e]{height:2rem}.max-w-\\[150px\\][data-v-ac98cf6e]{max-width:150px}.max-w-sm[data-v-ac98cf6e]{max-width:24rem}.min-h-\\[380px\\][data-v-ac98cf6e]{min-height:380px}.min-w-0[data-v-ac98cf6e]{min-width:0}.w-32[data-v-ac98cf6e]{width:8rem}.w-8[data-v-ac98cf6e]{width:2rem}.flex[data-v-ac98cf6e]{display:flex}.\\!inline-flex[data-v-ac98cf6e]{display:inline-flex!important}.flex-1[data-v-ac98cf6e]{flex:1 1 0%}.shrink-0[data-v-ac98cf6e]{flex-shrink:0}.flex-col[data-v-ac98cf6e]{flex-direction:column}.flex-wrap[data-v-ac98cf6e]{flex-wrap:wrap}.items-start[data-v-ac98cf6e]{align-items:flex-start}.items-center[data-v-ac98cf6e]{align-items:center}.justify-center[data-v-ac98cf6e]{justify-content:center}.justify-between[data-v-ac98cf6e]{justify-content:space-between}.gap-1[data-v-ac98cf6e]{gap:.25rem}.gap-1\\.5[data-v-ac98cf6e]{gap:.375rem}.gap-2[data-v-ac98cf6e]{gap:.5rem}.gap-2\\.5[data-v-ac98cf6e]{gap:.625rem}.gap-3[data-v-ac98cf6e]{gap:.75rem}.space-y-1[data-v-ac98cf6e]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(.25rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(.25rem * var(--un-space-y-reverse))}.space-y-4[data-v-ac98cf6e]>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(1rem * var(--un-space-y-reverse))}.truncate[data-v-ac98cf6e]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.border[data-v-ac98cf6e]{border-width:1px}.border-b[data-v-ac98cf6e]{border-bottom-width:1px}.border-t[data-v-ac98cf6e]{border-top-width:1px}.border-emerald-300\\/80[data-v-ac98cf6e]{border-color:#6ee7b7cc}.border-red-300\\/80[data-v-ac98cf6e]{border-color:#fca5a5cc}.border-zinc-100[data-v-ac98cf6e]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-ac98cf6e]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-ac98cf6e]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-ac98cf6e]{border-color:#04785780}.dark .dark\\:border-red-700\\/50[data-v-ac98cf6e]{border-color:#b91c1c80}.dark .dark\\:border-zinc-700\\/40[data-v-ac98cf6e]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/60[data-v-ac98cf6e]{border-color:#3f3f4699}.hover\\:border-\\[var\\(--color-primary\\)\\][data-v-ac98cf6e]:hover{border-color:var(--color-primary)}.\\!rounded-lg[data-v-ac98cf6e]{border-radius:.5rem!important}.\\!rounded-md[data-v-ac98cf6e]{border-radius:.375rem!important}.rounded-lg[data-v-ac98cf6e]{border-radius:.5rem}.rounded-xl[data-v-ac98cf6e]{border-radius:.75rem}.bg-amber-50[data-v-ac98cf6e]{--un-bg-opacity:1;background-color:rgb(255 251 235 / var(--un-bg-opacity))}.bg-blue-50[data-v-ac98cf6e]{--un-bg-opacity:1;background-color:rgb(239 246 255 / var(--un-bg-opacity))}.bg-emerald-50[data-v-ac98cf6e]{--un-bg-opacity:1;background-color:rgb(236 253 245 / var(--un-bg-opacity))}.bg-emerald-50\\/70[data-v-ac98cf6e]{background-color:#ecfdf5b3}.bg-purple-50[data-v-ac98cf6e]{--un-bg-opacity:1;background-color:rgb(250 245 255 / var(--un-bg-opacity))}.bg-red-50\\/70[data-v-ac98cf6e]{background-color:#fef2f2b3}.bg-white\\/60[data-v-ac98cf6e]{background-color:#fff9}.dark .dark\\:bg-amber-950\\/40[data-v-ac98cf6e]{background-color:#451a0366}.dark .dark\\:bg-blue-950\\/40[data-v-ac98cf6e]{background-color:#17255466}.dark .dark\\:bg-emerald-950\\/30[data-v-ac98cf6e]{background-color:#022c224d}.dark .dark\\:bg-emerald-950\\/40[data-v-ac98cf6e]{background-color:#022c2266}.dark .dark\\:bg-purple-950\\/40[data-v-ac98cf6e]{background-color:#3b076466}.dark .dark\\:bg-red-950\\/30[data-v-ac98cf6e]{background-color:#450a0a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-ac98cf6e]{background-color:#27272a66}.hover\\:\\!bg-red-500\\/10[data-v-ac98cf6e]:hover{background-color:#ef44441a!important}.p-3[data-v-ac98cf6e]{padding:.75rem}.p-3\\.5[data-v-ac98cf6e]{padding:.875rem}.\\!px-1\\.5[data-v-ac98cf6e]{padding-left:.375rem!important;padding-right:.375rem!important}.\\!px-2[data-v-ac98cf6e]{padding-left:.5rem!important;padding-right:.5rem!important}.py-12[data-v-ac98cf6e]{padding-top:3rem;padding-bottom:3rem}.py-2[data-v-ac98cf6e]{padding-top:.5rem;padding-bottom:.5rem}.pb-3[data-v-ac98cf6e]{padding-bottom:.75rem}.pr-2[data-v-ac98cf6e]{padding-right:.5rem}.pt-1\\.5[data-v-ac98cf6e]{padding-top:.375rem}.pt-2[data-v-ac98cf6e]{padding-top:.5rem}.pt-4[data-v-ac98cf6e]{padding-top:1rem}.text-center[data-v-ac98cf6e]{text-align:center}.\\!text-\\[10px\\][data-v-ac98cf6e]{font-size:10px!important}.\\!text-\\[11px\\][data-v-ac98cf6e]{font-size:11px!important}.text-\\[11px\\][data-v-ac98cf6e]{font-size:11px}.text-4xl[data-v-ac98cf6e]{font-size:2.25rem;line-height:2.5rem}.text-base[data-v-ac98cf6e]{font-size:1rem;line-height:1.5rem}.text-lg[data-v-ac98cf6e]{font-size:1.125rem;line-height:1.75rem}.text-sm[data-v-ac98cf6e]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-ac98cf6e]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-blue-400[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(96 165 250 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-purple-400[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(192 132 252 / var(--un-text-opacity))}.dark .dark\\:text-red-300[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(252 165 165 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-ac98cf6e],.text-zinc-300[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-ac98cf6e],.text-zinc-400[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.dark .dark\\:text-zinc-600[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-\\[var\\(--td-text-color-placeholder\\)\\][data-v-ac98cf6e]{color:var(--td-text-color-placeholder)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-ac98cf6e]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-ac98cf6e]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-blue-600[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(37 99 235 / var(--un-text-opacity))}.text-emerald-500[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-purple-600[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(147 51 234 / var(--un-text-opacity))}.text-red-500[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(239 68 68 / var(--un-text-opacity))}.text-red-800[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(153 27 27 / var(--un-text-opacity))}.text-zinc-500[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-700[data-v-ac98cf6e]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.font-bold[data-v-ac98cf6e]{font-weight:700}.font-medium[data-v-ac98cf6e]{font-weight:500}.\\!leading-4\\.5[data-v-ac98cf6e]{line-height:1.125rem!important}.leading-relaxed[data-v-ac98cf6e]{line-height:1.625}.leading-snug[data-v-ac98cf6e]{line-height:1.375}.font-mono[data-v-ac98cf6e]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.opacity-90[data-v-ac98cf6e]{opacity:.9}.shadow-sm[data-v-ac98cf6e]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-ac98cf6e]{outline-style:solid}.transition-all[data-v-ac98cf6e]{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-2[data-v-ac98cf6e]{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:flex-row[data-v-ac98cf6e]{flex-direction:row}.md\\:items-start[data-v-ac98cf6e]{align-items:flex-start}.md\\:items-center[data-v-ac98cf6e]{align-items:center}}.fixed[data-v-aedf6946]{position:fixed}.grid[data-v-aedf6946]{display:grid}.grid-cols-1[data-v-aedf6946]{grid-template-columns:repeat(1,minmax(0,1fr))}.m-0[data-v-aedf6946]{margin:0}.mx-auto[data-v-aedf6946]{margin-left:auto;margin-right:auto}.my-2[data-v-aedf6946]{margin-top:.5rem;margin-bottom:.5rem}.mb-1\\.5[data-v-aedf6946]{margin-bottom:.375rem}.mb-3[data-v-aedf6946]{margin-bottom:.75rem}.mb-4[data-v-aedf6946]{margin-bottom:1rem}.ml-1[data-v-aedf6946]{margin-left:.25rem}.mr-1\\.5[data-v-aedf6946]{margin-right:.375rem}.mt-0\\.5[data-v-aedf6946]{margin-top:.125rem}.mt-1[data-v-aedf6946]{margin-top:.25rem}.mt-2[data-v-aedf6946]{margin-top:.5rem}.mt-3[data-v-aedf6946]{margin-top:.75rem}.mt-5[data-v-aedf6946]{margin-top:1.25rem}.mt-8[data-v-aedf6946]{margin-top:2rem}.\\!w-24[data-v-aedf6946]{width:6rem!important}.\\!w-28[data-v-aedf6946]{width:7rem!important}.\\!w-48[data-v-aedf6946]{width:12rem!important}.\\!w-auto[data-v-aedf6946]{width:auto!important}.h-4[data-v-aedf6946]{height:1rem}.min-w-\\[200px\\][data-v-aedf6946]{min-width:200px}.w-\\[120px\\][data-v-aedf6946]{width:120px}.w-1[data-v-aedf6946]{width:.25rem}.w-full[data-v-aedf6946]{width:100%}.flex[data-v-aedf6946]{display:flex}.\\!inline-flex[data-v-aedf6946]{display:inline-flex!important}.flex-1[data-v-aedf6946]{flex:1 1 0%}.shrink-0[data-v-aedf6946]{flex-shrink:0}.flex-col[data-v-aedf6946]{flex-direction:column}.flex-wrap[data-v-aedf6946]{flex-wrap:wrap}.cursor-help[data-v-aedf6946]{cursor:help}.\\!cursor-pointer[data-v-aedf6946]{cursor:pointer!important}.items-start[data-v-aedf6946]{align-items:flex-start}.\\!items-center[data-v-aedf6946]{align-items:center!important}.items-center[data-v-aedf6946]{align-items:center}.justify-start[data-v-aedf6946]{justify-content:flex-start}.justify-end[data-v-aedf6946]{justify-content:flex-end}.\\!justify-center[data-v-aedf6946]{justify-content:center!important}.justify-between[data-v-aedf6946]{justify-content:space-between}.gap-1[data-v-aedf6946]{gap:.25rem}.gap-1\\.5[data-v-aedf6946]{gap:.375rem}.gap-2[data-v-aedf6946]{gap:.5rem}.gap-3[data-v-aedf6946]{gap:.75rem}.overflow-hidden[data-v-aedf6946]{overflow:hidden}.break-all[data-v-aedf6946]{word-break:break-all}.border[data-v-aedf6946]{border-width:1px}.border-b[data-v-aedf6946]{border-bottom-width:1px}.border-t[data-v-aedf6946]{border-top-width:1px}.border-emerald-300\\/80[data-v-aedf6946]{border-color:#6ee7b7cc}.border-zinc-100[data-v-aedf6946]{--un-border-opacity:1;border-color:rgb(244 244 245 / var(--un-border-opacity))}.border-zinc-200\\/60[data-v-aedf6946]{border-color:#e4e4e799}.border-zinc-200\\/70[data-v-aedf6946]{border-color:#e4e4e7b3}.dark .dark\\:border-emerald-700\\/50[data-v-aedf6946]{border-color:#04785780}.dark .dark\\:border-zinc-700\\/40[data-v-aedf6946]{border-color:#3f3f4666}.dark .dark\\:border-zinc-700\\/50[data-v-aedf6946]{border-color:#3f3f4680}.dark .dark\\:border-zinc-700\\/60[data-v-aedf6946]{border-color:#3f3f4699}.dark .dark\\:border-zinc-800\\/60[data-v-aedf6946]{border-color:#27272a99}.hover\\:\\!border-\\[var\\(--color-primary\\)\\][data-v-aedf6946]:hover{border-color:var(--color-primary)!important}.\\!rounded-lg[data-v-aedf6946]{border-radius:.5rem!important}.\\!rounded-md[data-v-aedf6946]{border-radius:.375rem!important}.rounded-full[data-v-aedf6946]{border-radius:9999px}.rounded-xl[data-v-aedf6946]{border-radius:.75rem}.border-dashed[data-v-aedf6946]{border-style:dashed}.bg-\\[var\\(--color-primary\\)\\][data-v-aedf6946]{background-color:var(--color-primary)}.bg-emerald-50\\/70[data-v-aedf6946]{background-color:#ecfdf5b3}.bg-white\\/50[data-v-aedf6946]{background-color:#ffffff80}.bg-white\\/60[data-v-aedf6946]{background-color:#fff9}.bg-zinc-50\\/70[data-v-aedf6946]{background-color:#fafafab3}.dark .dark\\:bg-emerald-950\\/30[data-v-aedf6946]{background-color:#022c224d}.dark .dark\\:bg-zinc-800\\/30[data-v-aedf6946]{background-color:#27272a4d}.dark .dark\\:bg-zinc-800\\/40[data-v-aedf6946]{background-color:#27272a66}.dark .dark\\:bg-zinc-900\\/20[data-v-aedf6946]{background-color:#18181b33}.dark .dark\\:hover\\:bg-zinc-800\\/20[data-v-aedf6946]:hover{background-color:#27272a33}.hover\\:\\!bg-red-500\\/10[data-v-aedf6946]:hover{background-color:#ef44441a!important}.hover\\:bg-zinc-50\\/50[data-v-aedf6946]:hover{background-color:#fafafa80}.p-3[data-v-aedf6946]{padding:.75rem}.p-3\\.5[data-v-aedf6946]{padding:.875rem}.p-8[data-v-aedf6946]{padding:2rem}.\\!px-2\\.5[data-v-aedf6946]{padding-left:.625rem!important;padding-right:.625rem!important}.px-4[data-v-aedf6946]{padding-left:1rem;padding-right:1rem}.py-2[data-v-aedf6946]{padding-top:.5rem;padding-bottom:.5rem}.pb-2[data-v-aedf6946]{padding-bottom:.5rem}.pb-8[data-v-aedf6946]{padding-bottom:2rem}.pr-0[data-v-aedf6946]{padding-right:0}.pt-2[data-v-aedf6946]{padding-top:.5rem}.text-center[data-v-aedf6946]{text-align:center}.text-\\[11px\\][data-v-aedf6946]{font-size:11px}.text-\\[13px\\][data-v-aedf6946]{font-size:13px}.text-base[data-v-aedf6946]{font-size:1rem;line-height:1.5rem}.text-sm[data-v-aedf6946]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-aedf6946]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-amber-400[data-v-aedf6946]{--un-text-opacity:1;color:rgb(251 191 36 / var(--un-text-opacity))}.dark .dark\\:text-emerald-300[data-v-aedf6946]{--un-text-opacity:1;color:rgb(110 231 183 / var(--un-text-opacity))}.dark .dark\\:text-emerald-400[data-v-aedf6946]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.dark .dark\\:text-zinc-200[data-v-aedf6946]{--un-text-opacity:1;color:rgb(228 228 231 / var(--un-text-opacity))}.dark .dark\\:text-zinc-300[data-v-aedf6946]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.dark .dark\\:text-zinc-400[data-v-aedf6946],.text-zinc-400[data-v-aedf6946]{--un-text-opacity:1;color:rgb(161 161 170 / var(--un-text-opacity))}.text-\\[var\\(--color-primary\\)\\][data-v-aedf6946]{color:var(--color-primary)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-aedf6946]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-aedf6946]{color:var(--td-text-color-secondary)}.text-amber-600[data-v-aedf6946]{--un-text-opacity:1;color:rgb(217 119 6 / var(--un-text-opacity))}.text-emerald-500[data-v-aedf6946]{--un-text-opacity:1;color:rgb(16 185 129 / var(--un-text-opacity))}.text-emerald-600[data-v-aedf6946]{--un-text-opacity:1;color:rgb(5 150 105 / var(--un-text-opacity))}.text-emerald-800[data-v-aedf6946]{--un-text-opacity:1;color:rgb(6 95 70 / var(--un-text-opacity))}.text-zinc-500[data-v-aedf6946]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.text-zinc-600[data-v-aedf6946]{--un-text-opacity:1;color:rgb(82 82 91 / var(--un-text-opacity))}.text-zinc-700[data-v-aedf6946]{--un-text-opacity:1;color:rgb(63 63 70 / var(--un-text-opacity))}.text-zinc-800[data-v-aedf6946]{--un-text-opacity:1;color:rgb(39 39 42 / var(--un-text-opacity))}.hover\\:text-zinc-500[data-v-aedf6946]:hover{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.\\!font-medium[data-v-aedf6946]{font-weight:500!important}.font-bold[data-v-aedf6946]{font-weight:700}.font-medium[data-v-aedf6946]{font-weight:500}.leading-relaxed[data-v-aedf6946]{line-height:1.625}.leading-snug[data-v-aedf6946]{line-height:1.375}.font-mono[data-v-aedf6946]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.shadow-sm[data-v-aedf6946]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline[data-v-aedf6946]{outline-style:solid}.transition-colors[data-v-aedf6946]{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-3[data-v-aedf6946]{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:mb-0[data-v-aedf6946]{margin-bottom:0}.md\\:mt-0[data-v-aedf6946]{margin-top:0}.md\\:w-\\[340px\\][data-v-aedf6946]{width:340px}.md\\:w-\\[360px\\][data-v-aedf6946]{width:360px}.md\\:w-\\[380px\\][data-v-aedf6946]{width:380px}.md\\:flex-row[data-v-aedf6946]{flex-direction:row}.md\\:items-start[data-v-aedf6946]{align-items:flex-start}.md\\:items-center[data-v-aedf6946]{align-items:center}.md\\:justify-end[data-v-aedf6946]{justify-content:flex-end}.md\\:justify-between[data-v-aedf6946]{justify-content:space-between}.md\\:p-4[data-v-aedf6946]{padding:1rem}.md\\:pr-2[data-v-aedf6946]{padding-right:.5rem}.md\\:pr-8[data-v-aedf6946]{padding-right:2rem}}")),document.head.appendChild(a)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
 function F(t) {
   "@babel/helpers - typeof";
-  return F = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(o) {
-    return typeof o;
-  } : function(o) {
-    return o && typeof Symbol == "function" && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+  return F = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(a) {
+    return typeof a;
+  } : function(a) {
+    return a && typeof Symbol == "function" && a.constructor === Symbol && a !== Symbol.prototype ? "symbol" : typeof a;
   }, F(t);
 }
-function it(t, o) {
+function ut(t, a) {
   if (F(t) != "object" || !t) return t;
-  var r = t[Symbol.toPrimitive];
-  if (r !== void 0) {
-    var l = r.call(t, o);
-    if (F(l) != "object") return l;
+  var l = t[Symbol.toPrimitive];
+  if (l !== void 0) {
+    var o = l.call(t, a);
+    if (F(o) != "object") return o;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return (o === "string" ? String : Number)(t);
+  return (a === "string" ? String : Number)(t);
 }
-function st(t) {
-  var o = it(t, "string");
-  return F(o) == "symbol" ? o : o + "";
+function ft(t) {
+  var a = ut(t, "string");
+  return F(a) == "symbol" ? a : a + "";
 }
-function N(t, o, r) {
-  return (o = st(o)) in t ? Object.defineProperty(t, o, {
-    value: r,
+function S(t, a, l) {
+  return (a = ft(a)) in t ? Object.defineProperty(t, a, {
+    value: l,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : t[o] = r, t;
+  }) : t[a] = l, t;
 }
-function ct(t) {
+function mt(t) {
   return t && t.__esModule && Object.prototype.hasOwnProperty.call(t, "default") ? t.default : t;
 }
 var Q, oe;
-function dt() {
+function vt() {
   return oe || (oe = 1, Q = Vue), Q;
 }
-var e = dt(), ae = (t) => {
-  var o = ["strokeLinecap", "fillRule", "clipRule", "strokeWidth"];
-  return o.includes(t) ? t.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, "$1-$2").toLowerCase() : t;
-}, w = (t, o) => {
-  var r = {};
+var e = vt(), ae = (t) => {
+  var a = ["strokeLinecap", "fillRule", "clipRule", "strokeWidth"];
+  return a.includes(t) ? t.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, "$1-$2").toLowerCase() : t;
+}, N = (t, a) => {
+  var l = {};
   if (t.attrs)
-    for (var [l, i] of Object.entries(t.attrs))
+    for (var [o, i] of Object.entries(t.attrs))
       if (typeof i == "string" && i.startsWith("props.")) {
-        var k = i.split(".")[1];
-        r[ae(l)] = o[k];
+        var y = i.split(".")[1];
+        l[ae(o)] = a[y];
       } else
-        r[ae(l)] = i;
-  t.tag === "svg" && (r.class = o.class, r.style = o.style, r.onClick = o.onClick);
-  var f = t.children ? t.children.map((C) => w(C, o)) : [];
-  return e.h(t.tag, r, f);
-}, ut = "t", ft = {
-  classPrefix: ut
+        l[ae(o)] = i;
+  t.tag === "svg" && (l.class = a.class, l.style = a.style, l.onClick = a.onClick);
+  var f = t.children ? t.children.map((C) => N(C, a)) : [];
+  return e.h(t.tag, l, f);
+}, Ct = "t", yt = {
+  classPrefix: Ct
 };
-function mt() {
+function pt() {
   var {
     classPrefix: t
-  } = ft;
+  } = yt;
   return {
     SIZE: {
       default: "",
@@ -86,37 +86,37 @@ function mt() {
     }
   };
 }
-function O(t) {
-  var o = mt().SIZE, r = e.computed(() => t.value in o ? o[t.value] : ""), l = e.computed(() => t.value === void 0 || t.value in o ? {} : {
+function P(t) {
+  var a = pt().SIZE, l = e.computed(() => t.value in a ? a[t.value] : ""), o = e.computed(() => t.value === void 0 || t.value in a ? {} : {
     fontSize: t.value
   });
   return {
-    style: l,
-    className: r
+    style: o,
+    className: l
   };
 }
-function ne(t, o) {
-  var r = Object.keys(t);
+function ne(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function ie(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? ne(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : ne(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? ne(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : ne(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var vt = {
+var kt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -159,61 +159,61 @@ var vt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-add", m.value]), g = e.computed(() => ie(ie({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-add", m.value]), x = e.computed(() => ie(ie({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(vt, y.value);
+    return () => N(kt, v.value);
   }
 });
-function ce(t, o) {
-  var r = Object.keys(t);
+function ce(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function de(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? ce(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : ce(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? ce(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : ce(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var Ct = {
+var gt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -269,61 +269,61 @@ var Ct = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-calendar", m.value]), g = e.computed(() => de(de({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-calendar", m.value]), x = e.computed(() => de(de({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(Ct, y.value);
+    return () => N(gt, v.value);
   }
 });
-function ue(t, o) {
-  var r = Object.keys(t);
+function ue(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function fe(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? ue(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : ue(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? ue(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : ue(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var yt = {
+var xt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -338,7 +338,7 @@ var yt = {
       d: "M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM7.49985 10.5858L10.4999 13.5858L16.4999 7.58578L17.9141 8.99999L10.4999 16.4142L6.08564 12L7.49985 10.5858Z"
     }
   }]
-}, Je = e.defineComponent({
+}, et = e.defineComponent({
   name: "CheckCircleFilledIcon",
   props: {
     size: {
@@ -357,61 +357,61 @@ var yt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-check-circle-filled", m.value]), g = e.computed(() => fe(fe({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-check-circle-filled", m.value]), x = e.computed(() => fe(fe({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(yt, y.value);
+    return () => N(xt, v.value);
   }
 });
-function me(t, o) {
-  var r = Object.keys(t);
+function me(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function ve(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? me(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : me(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? me(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : me(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var kt = {
+var bt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -435,7 +435,7 @@ var kt = {
       }
     }]
   }]
-}, pt = e.defineComponent({
+}, ht = e.defineComponent({
   name: "CheckIcon",
   props: {
     size: {
@@ -454,61 +454,61 @@ var kt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-check", m.value]), g = e.computed(() => ve(ve({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-check", m.value]), x = e.computed(() => ve(ve({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(kt, y.value);
+    return () => N(bt, v.value);
   }
 });
-function Ce(t, o) {
-  var r = Object.keys(t);
+function Ce(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function ye(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Ce(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Ce(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Ce(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Ce(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var gt = {
+var Vt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -532,7 +532,7 @@ var gt = {
       }
     }]
   }]
-}, xt = e.defineComponent({
+}, wt = e.defineComponent({
   name: "CloseIcon",
   props: {
     size: {
@@ -551,61 +551,61 @@ var gt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-close", m.value]), g = e.computed(() => ye(ye({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-close", m.value]), x = e.computed(() => ye(ye({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(gt, y.value);
+    return () => N(Vt, v.value);
   }
 });
-function ke(t, o) {
-  var r = Object.keys(t);
+function pe(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
-function pe(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? ke(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : ke(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+function ke(t) {
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? pe(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : pe(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var bt = {
+var Nt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -638,7 +638,7 @@ var bt = {
       }
     }]
   }]
-}, Xe = e.defineComponent({
+}, tt = e.defineComponent({
   name: "CloudUploadIcon",
   props: {
     size: {
@@ -657,61 +657,61 @@ var bt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-cloud-upload", m.value]), g = e.computed(() => pe(pe({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-cloud-upload", m.value]), x = e.computed(() => ke(ke({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(bt, y.value);
+    return () => N(Nt, v.value);
   }
 });
-function ge(t, o) {
-  var r = Object.keys(t);
+function ge(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function xe(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? ge(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : ge(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? ge(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : ge(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var ht = {
+var Ot = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -741,7 +741,7 @@ var ht = {
       }
     }]
   }]
-}, Vt = e.defineComponent({
+}, St = e.defineComponent({
   name: "CloudIcon",
   props: {
     size: {
@@ -760,61 +760,61 @@ var ht = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-cloud", m.value]), g = e.computed(() => xe(xe({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-cloud", m.value]), x = e.computed(() => xe(xe({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(ht, y.value);
+    return () => N(Ot, v.value);
   }
 });
-function be(t, o) {
-  var r = Object.keys(t);
+function be(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function he(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? be(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : be(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? be(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : be(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var wt = {
+var Pt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -854,7 +854,7 @@ var wt = {
       }
     }]
   }]
-}, Qe = e.defineComponent({
+}, rt = e.defineComponent({
   name: "DeleteIcon",
   props: {
     size: {
@@ -873,61 +873,61 @@ var wt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-delete", m.value]), g = e.computed(() => he(he({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-delete", m.value]), x = e.computed(() => he(he({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(wt, y.value);
+    return () => N(Pt, v.value);
   }
 });
-function Ve(t, o) {
-  var r = Object.keys(t);
+function Ve(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function we(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Ve(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Ve(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Ve(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Ve(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var Nt = {
+var jt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -967,7 +967,7 @@ var Nt = {
       }
     }]
   }]
-}, Ot = e.defineComponent({
+}, At = e.defineComponent({
   name: "EditIcon",
   props: {
     size: {
@@ -986,61 +986,61 @@ var Nt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-edit", m.value]), g = e.computed(() => we(we({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-edit", m.value]), x = e.computed(() => we(we({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(Nt, y.value);
+    return () => N(jt, v.value);
   }
 });
-function Ne(t, o) {
-  var r = Object.keys(t);
+function Ne(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function Oe(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Ne(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Ne(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Ne(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Ne(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var jt = {
+var Et = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1055,7 +1055,7 @@ var jt = {
       d: "M12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1ZM11.0001 14H13.0001V6.49998H11.0001V14ZM13.004 15.5H11.0001V17.5039H13.004V15.5Z"
     }
   }]
-}, Ye = e.defineComponent({
+}, lt = e.defineComponent({
   name: "ErrorCircleFilledIcon",
   props: {
     size: {
@@ -1074,61 +1074,61 @@ var jt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-error-circle-filled", m.value]), g = e.computed(() => Oe(Oe({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-error-circle-filled", m.value]), x = e.computed(() => Oe(Oe({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(jt, y.value);
+    return () => N(Et, v.value);
   }
 });
-function je(t, o) {
-  var r = Object.keys(t);
+function Se(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
-function Se(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? je(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : je(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+function Pe(t) {
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Se(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Se(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var St = {
+var zt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1158,7 +1158,7 @@ var St = {
       }
     }]
   }]
-}, At = e.defineComponent({
+}, $t = e.defineComponent({
   name: "FileIcon",
   props: {
     size: {
@@ -1177,61 +1177,61 @@ var St = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-file", m.value]), g = e.computed(() => Se(Se({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-file", m.value]), x = e.computed(() => Pe(Pe({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(St, y.value);
+    return () => N(zt, v.value);
   }
 });
-function Ae(t, o) {
-  var r = Object.keys(t);
+function je(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
-function Pe(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Ae(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Ae(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+function Ae(t) {
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? je(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : je(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var Pt = {
+var _t = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1262,7 +1262,7 @@ var Pt = {
       }
     }]
   }]
-}, Et = e.defineComponent({
+}, Dt = e.defineComponent({
   name: "HardDriveIcon",
   props: {
     size: {
@@ -1281,61 +1281,61 @@ var Pt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-hard-drive", m.value]), g = e.computed(() => Pe(Pe({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-hard-drive", m.value]), x = e.computed(() => Ae(Ae({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(Pt, y.value);
+    return () => N(_t, v.value);
   }
 });
-function Ee(t, o) {
-  var r = Object.keys(t);
+function Ee(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function ze(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Ee(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Ee(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Ee(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Ee(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var zt = {
+var Bt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1375,7 +1375,7 @@ var zt = {
       }
     }]
   }]
-}, _e = e.defineComponent({
+}, $e = e.defineComponent({
   name: "HelpCircleIcon",
   props: {
     size: {
@@ -1394,61 +1394,61 @@ var zt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-help-circle", m.value]), g = e.computed(() => ze(ze({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-help-circle", m.value]), x = e.computed(() => ze(ze({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(zt, y.value);
+    return () => N(Bt, v.value);
   }
 });
-function $e(t, o) {
-  var r = Object.keys(t);
+function _e(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function De(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? $e(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : $e(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? _e(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : _e(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var _t = {
+var Wt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1472,7 +1472,7 @@ var _t = {
       }
     }]
   }]
-}, $t = e.defineComponent({
+}, Tt = e.defineComponent({
   name: "HistoryIcon",
   props: {
     size: {
@@ -1491,61 +1491,61 @@ var _t = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-history", m.value]), g = e.computed(() => De(De({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-history", m.value]), x = e.computed(() => De(De({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(_t, y.value);
+    return () => N(Wt, v.value);
   }
 });
-function Be(t, o) {
-  var r = Object.keys(t);
+function Be(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function We(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Be(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Be(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Be(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Be(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var Dt = {
+var Mt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1569,7 +1569,7 @@ var Dt = {
       }
     }]
   }]
-}, et = e.defineComponent({
+}, ot = e.defineComponent({
   name: "RefreshIcon",
   props: {
     size: {
@@ -1588,61 +1588,61 @@ var Dt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-refresh", m.value]), g = e.computed(() => We(We({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-refresh", m.value]), x = e.computed(() => We(We({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(Dt, y.value);
+    return () => N(Mt, v.value);
   }
 });
-function Me(t, o) {
-  var r = Object.keys(t);
+function Te(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
-function Le(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Me(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Me(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+function Me(t) {
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Te(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Te(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var Bt = {
+var Lt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1682,7 +1682,7 @@ var Bt = {
       }
     }]
   }]
-}, Wt = e.defineComponent({
+}, Ft = e.defineComponent({
   name: "SearchIcon",
   props: {
     size: {
@@ -1701,61 +1701,61 @@ var Bt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-search", m.value]), g = e.computed(() => Le(Le({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-search", m.value]), x = e.computed(() => Me(Me({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(Bt, y.value);
+    return () => N(Lt, v.value);
   }
 });
-function Te(t, o) {
-  var r = Object.keys(t);
+function Le(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
-function Ke(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Te(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Te(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+function Fe(t) {
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Le(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Le(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var Mt = {
+var Kt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1826,7 +1826,7 @@ var Mt = {
       }]
     }]
   }]
-}, Fe = e.defineComponent({
+}, Ke = e.defineComponent({
   name: "ServerIcon",
   props: {
     size: {
@@ -1845,61 +1845,61 @@ var Mt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-server", m.value]), g = e.computed(() => Ke(Ke({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-server", m.value]), x = e.computed(() => Fe(Fe({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(Mt, y.value);
+    return () => N(Kt, v.value);
   }
 });
-function Ue(t, o) {
-  var r = Object.keys(t);
+function Ue(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
-function Ie(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? Ue(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : Ue(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+function He(t) {
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Ue(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Ue(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var Lt = {
+var Ut = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -1948,7 +1948,7 @@ var Lt = {
       }
     }]
   }]
-}, Tt = e.defineComponent({
+}, Ht = e.defineComponent({
   name: "SettingIcon",
   props: {
     size: {
@@ -1967,61 +1967,158 @@ var Lt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-setting", m.value]), g = e.computed(() => Ie(Ie({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-setting", m.value]), x = e.computed(() => He(He({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(Lt, y.value);
+    return () => N(Ut, v.value);
   }
 });
-function He(t, o) {
-  var r = Object.keys(t);
+function Ie(t, a) {
+  var l = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(t);
-    o && (l = l.filter(function(i) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
       return Object.getOwnPropertyDescriptor(t, i).enumerable;
-    })), r.push.apply(r, l);
+    })), l.push.apply(l, o);
   }
-  return r;
+  return l;
 }
 function Re(t) {
-  for (var o = 1; o < arguments.length; o++) {
-    var r = arguments[o] != null ? arguments[o] : {};
-    o % 2 ? He(Object(r), !0).forEach(function(l) {
-      N(t, l, r[l]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : He(Object(r)).forEach(function(l) {
-      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(r, l));
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Ie(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Ie(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
     });
   }
   return t;
 }
-var Kt = {
+var It = {
+  tag: "svg",
+  attrs: {
+    fill: "none",
+    viewBox: "0 0 24 24",
+    width: "1em",
+    height: "1em"
+  },
+  children: [{
+    tag: "g",
+    attrs: {
+      id: "terminal"
+    },
+    children: [{
+      tag: "path",
+      attrs: {
+        id: "stroke1",
+        stroke: "props.strokeColor1",
+        d: "M13 19H21M3.5 17L8.5 12L3.5 7",
+        strokeLinecap: "square",
+        strokeWidth: "props.strokeWidth"
+      }
+    }]
+  }]
+}, Rt = e.defineComponent({
+  name: "TerminalIcon",
+  props: {
+    size: {
+      type: String
+    },
+    onClick: {
+      type: Function
+    },
+    fillColor: {
+      type: [Array, String]
+    },
+    strokeColor: {
+      type: [Array, String]
+    },
+    strokeWidth: {
+      type: Number
+    }
+  },
+  setup(t, a) {
+    var {
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      className: m,
+      style: p
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-terminal", m.value]), x = e.computed(() => Re(Re({
+      fill: "none"
+    }, p.value), l.style)), v = e.computed(() => ({
+      class: n.value,
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
+        });
+      },
+      strokeColor1: i.value,
+      strokeColor2: y.value,
+      fillColor1: f.value,
+      fillColor2: C.value,
+      strokeWidth: t.strokeWidth || 2,
+      filledColor: g.value
+    }));
+    return () => N(It, v.value);
+  }
+});
+function qe(t, a) {
+  var l = Object.keys(t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
+      return Object.getOwnPropertyDescriptor(t, i).enumerable;
+    })), l.push.apply(l, o);
+  }
+  return l;
+}
+function Ze(t) {
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? qe(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : qe(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
+    });
+  }
+  return t;
+}
+var qt = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -2061,7 +2158,7 @@ var Kt = {
       }
     }]
   }]
-}, Ft = e.defineComponent({
+}, Zt = e.defineComponent({
   name: "TimeIcon",
   props: {
     size: {
@@ -2080,81 +2177,199 @@ var Kt = {
       type: Number
     }
   },
-  setup(t, o) {
+  setup(t, a) {
     var {
-      attrs: r
-    } = o, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), k = e.computed(() => {
-      var a;
-      return t.strokeColor ? Array.isArray(t.strokeColor) ? (a = t.strokeColor[1]) !== null && a !== void 0 ? a : t.strokeColor[0] : t.strokeColor : "currentColor";
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
     }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
-      var a;
-      return t.fillColor ? Array.isArray(t.fillColor) ? (a = t.fillColor[1]) !== null && a !== void 0 ? a : t.fillColor[0] : t.fillColor : "transparent";
-    }), x = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
       className: m,
       style: p
-    } = O(l), n = e.computed(() => ["t-icon", "t-icon-time", m.value]), g = e.computed(() => Re(Re({
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-time", m.value]), x = e.computed(() => Ze(Ze({
       fill: "none"
-    }, p.value), r.style)), y = e.computed(() => ({
+    }, p.value), l.style)), v = e.computed(() => ({
       class: n.value,
-      style: g.value,
-      onClick: (a) => {
-        var s;
-        return (s = t.onClick) === null || s === void 0 ? void 0 : s.call(t, {
-          e: a
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
         });
       },
       strokeColor1: i.value,
-      strokeColor2: k.value,
+      strokeColor2: y.value,
       fillColor1: f.value,
       fillColor2: C.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: x.value
+      filledColor: g.value
     }));
-    return () => w(Kt, y.value);
+    return () => N(qt, v.value);
   }
-}), ee, Ze;
-function Ut() {
-  return Ze || (Ze = 1, ee = TDesign), ee;
+});
+function Ge(t, a) {
+  var l = Object.keys(t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(t);
+    a && (o = o.filter(function(i) {
+      return Object.getOwnPropertyDescriptor(t, i).enumerable;
+    })), l.push.apply(l, o);
+  }
+  return l;
 }
-var V = Ut(), te, qe;
-function It() {
-  return qe || (qe = 1, te = mslxRequest), te;
+function Je(t) {
+  for (var a = 1; a < arguments.length; a++) {
+    var l = arguments[a] != null ? arguments[a] : {};
+    a % 2 ? Ge(Object(l), !0).forEach(function(o) {
+      S(t, o, l[o]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : Ge(Object(l)).forEach(function(o) {
+      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(l, o));
+    });
+  }
+  return t;
 }
-var Ht = It();
-const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
+var Gt = {
+  tag: "svg",
+  attrs: {
+    fill: "none",
+    viewBox: "0 0 24 24",
+    width: "1em",
+    height: "1em"
+  },
+  children: [{
+    tag: "g",
+    attrs: {
+      id: "upload"
+    },
+    children: [{
+      tag: "path",
+      attrs: {
+        id: "stroke1",
+        stroke: "props.strokeColor1",
+        d: "M16.5 8.5L12 4L7.5 8.5M12 5.25V15",
+        strokeLinecap: "square",
+        strokeWidth: "props.strokeWidth"
+      }
+    }, {
+      tag: "path",
+      attrs: {
+        id: "stroke2",
+        stroke: "props.strokeColor2",
+        d: "M20.5 15V20H3.5V15",
+        strokeLinecap: "square",
+        strokeWidth: "props.strokeWidth"
+      }
+    }]
+  }]
+}, Jt = e.defineComponent({
+  name: "UploadIcon",
+  props: {
+    size: {
+      type: String
+    },
+    onClick: {
+      type: Function
+    },
+    fillColor: {
+      type: [Array, String]
+    },
+    strokeColor: {
+      type: [Array, String]
+    },
+    strokeWidth: {
+      type: Number
+    }
+  },
+  setup(t, a) {
+    var {
+      attrs: l
+    } = a, o = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), y = e.computed(() => {
+      var r;
+      return t.strokeColor ? Array.isArray(t.strokeColor) ? (r = t.strokeColor[1]) !== null && r !== void 0 ? r : t.strokeColor[0] : t.strokeColor : "currentColor";
+    }), f = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), C = e.computed(() => {
+      var r;
+      return t.fillColor ? Array.isArray(t.fillColor) ? (r = t.fillColor[1]) !== null && r !== void 0 ? r : t.fillColor[0] : t.fillColor : "transparent";
+    }), g = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      className: m,
+      style: p
+    } = P(o), n = e.computed(() => ["t-icon", "t-icon-upload", m.value]), x = e.computed(() => Je(Je({
+      fill: "none"
+    }, p.value), l.style)), v = e.computed(() => ({
+      class: n.value,
+      style: x.value,
+      onClick: (r) => {
+        var c;
+        return (c = t.onClick) === null || c === void 0 ? void 0 : c.call(t, {
+          e: r
+        });
+      },
+      strokeColor1: i.value,
+      strokeColor2: y.value,
+      fillColor1: f.value,
+      fillColor2: C.value,
+      strokeWidth: t.strokeWidth || 2,
+      filledColor: g.value
+    }));
+    return () => N(Gt, v.value);
+  }
+}), ee, Xe;
+function Xt() {
+  return Xe || (Xe = 1, ee = TDesign), ee;
+}
+var w = Xt(), te, Qe;
+function Qt() {
+  return Qe || (Qe = 1, te = mslxRequest), te;
+}
+var Yt = Qt();
+const _ = /* @__PURE__ */ mt(Yt), D = "/api/plugins/cloud-backup", z = {
   // 用户存储策略
-  getUserProfiles: async () => await _.get({ url: `${$}/user/profiles` }) || [],
+  getUserProfiles: async () => await _.get({ url: `${D}/user/profiles` }) || [],
   saveUserProfile: async (t) => await _.post({
-    url: `${$}/user/profile`,
+    url: `${D}/user/profile`,
     data: t
   }),
-  deleteUserProfile: async (t) => (await _.delete({ url: `${$}/user/profile/${t}` }), !0),
+  deleteUserProfile: async (t) => (await _.delete({ url: `${D}/user/profile/${t}` }), !0),
   testConnection: async (t) => await _.post({
-    url: `${$}/test-connection`,
+    url: `${D}/test-connection`,
     data: t
   }),
   // 探测 GFS 状态
-  getGfsStatus: async (t) => await _.get({ url: `${$}/instance/gfs-status?instanceId=${t}` }) || { isInstalled: !1, enabled: !1, keepDailyDays: 7, keepWeeklyWeeks: 4, keepMonthlyMonths: 12 },
+  getGfsStatus: async (t) => await _.get({ url: `${D}/instance/gfs-status?instanceId=${t}` }) || { isInstalled: !1, enabled: !1, keepDailyDays: 7, keepWeeklyWeeks: 4, keepMonthlyMonths: 12 },
   // 实例云同步配置
-  getInstanceConfig: async (t) => await _.get({ url: `${$}/instance/config?instanceId=${t}` }),
-  saveInstanceConfig: async (t, o) => await _.post({
-    url: `${$}/instance/config?instanceId=${t}`,
-    data: o
+  getInstanceConfig: async (t) => await _.get({ url: `${D}/instance/config?instanceId=${t}` }),
+  saveInstanceConfig: async (t, a) => await _.post({
+    url: `${D}/instance/config?instanceId=${t}`,
+    data: a
   }),
   // 远端文件管理
-  getRemoteBackups: async (t) => await _.get({ url: `${$}/instance/remote-backups?instanceId=${t}` }) || [],
-  deleteRemoteBackup: async (t, o) => (await _.post({
-    url: `${$}/instance/delete-remote-backup?instanceId=${t}`,
-    data: { fullPath: o }
+  getRemoteBackups: async (t) => await _.get({ url: `${D}/instance/remote-backups?instanceId=${t}` }) || [],
+  deleteRemoteBackup: async (t, a) => (await _.post({
+    url: `${D}/instance/delete-remote-backup?instanceId=${t}`,
+    data: { fullPath: a }
   }), !0)
-}, A = (t) => t === "WebDAV" || t === 1 || t === "1" ? "WebDAV" : t === "FTP" || t === 2 || t === "2" ? "FTP" : "S3Compatible", Ge = (t) => t === "Both" || t === 2 || t === "2" ? "Both" : t === "RegularOnly" || t === 0 || t === "0" ? "RegularOnly" : "GfsOnly", Rt = /* @__PURE__ */ e.defineComponent({
+}, O = (t) => t === "WebDAV" || t === 1 || t === "1" ? "WebDAV" : t === "FTP" || t === 2 || t === "2" ? "FTP" : t === "SFTP" || t === 3 || t === "3" ? "SFTP" : "S3Compatible", Ye = (t) => t === "Both" || t === 2 || t === "2" ? "Both" : t === "RegularOnly" || t === 0 || t === "0" ? "RegularOnly" : "GfsOnly", er = /* @__PURE__ */ e.defineComponent({
   __name: "CloudStorageProfileModal",
   props: {
     visible: { type: Boolean }
   },
   emits: ["update:visible", "changed"],
-  setup(t, { emit: o }) {
-    const r = t, l = o, i = e.ref([]), k = e.ref(!1), f = e.ref(!1), C = e.ref(!1), x = e.ref(!1), m = e.ref(null), p = () => ({
+  setup(t, { emit: a }) {
+    const l = t, o = a, i = e.ref([]), y = e.ref(!1), f = e.ref(!1), C = e.ref(!1), g = e.ref(!1), m = e.ref(null), p = e.ref(null), n = () => {
+      p.value?.click();
+    }, x = (h) => {
+      const d = h.target, E = d.files?.[0];
+      if (!E) return;
+      const j = new FileReader();
+      j.onload = ($) => {
+        const V = $.target?.result;
+        V && (r.value.sftpPrivateKey = V, w.MessagePlugin.success(`已导入私钥文件: ${E.name}`));
+      }, j.onerror = () => {
+        w.MessagePlugin.error("读取私钥文件失败");
+      }, j.readAsText(E), d.value = "";
+    }, v = () => ({
       id: "",
       name: "",
       providerType: "S3Compatible",
@@ -2174,108 +2389,122 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
       ftpPassword: "",
       ftpUseSsl: !1,
       ftpBasePath: "/",
+      sftpHost: "",
+      sftpPort: 22,
+      sftpUsername: "",
+      sftpAuthType: "Password",
+      sftpPassword: "",
+      sftpPrivateKey: "",
+      sftpPassphrase: "",
+      sftpBasePath: "/",
       hasS3Credentials: !1,
       hasWebDavCredentials: !1,
-      hasFtpCredentials: !1
-    }), n = e.ref(p()), g = async () => {
-      k.value = !0;
+      hasFtpCredentials: !1,
+      hasSftpCredentials: !1
+    }), r = e.ref(v()), c = async () => {
+      y.value = !0;
       try {
         const h = await z.getUserProfiles();
-        i.value = h.map((u) => ({
-          ...u,
-          providerType: A(u.providerType)
+        i.value = h.map((d) => ({
+          ...d,
+          providerType: O(d.providerType)
         }));
       } catch (h) {
-        V.MessagePlugin.error(h?.message || "获取存储策略列表失败");
+        w.MessagePlugin.error(h?.message || "获取存储策略列表失败");
       } finally {
-        k.value = !1;
+        y.value = !1;
       }
     };
     e.watch(
-      () => r.visible,
+      () => l.visible,
       (h) => {
-        h && (f.value = !1, m.value = null, g());
+        h && (f.value = !1, m.value = null, c());
       },
       { immediate: !0 }
     );
-    const y = () => {
-      l("update:visible", !1);
-    }, a = () => {
-      n.value = p(), n.value.providerType = "S3Compatible", m.value = null, f.value = !0;
-    }, s = (h) => {
-      const u = JSON.parse(JSON.stringify(h));
-      u.providerType = A(u.providerType), u.s3AccessKey = "", u.s3SecretKey = "", u.webDavUsername = "", u.webDavPassword = "", u.ftpUsername = "", u.ftpPassword = "", n.value = u, m.value = null, f.value = !0;
-    }, H = (h) => {
-      const u = V.DialogPlugin.confirm({
+    const q = () => {
+      o("update:visible", !1);
+    }, K = () => {
+      r.value = v(), r.value.providerType = "S3Compatible", m.value = null, f.value = !0;
+    }, Z = (h) => {
+      const d = JSON.parse(JSON.stringify(h));
+      d.providerType = O(d.providerType), d.s3AccessKey = "", d.s3SecretKey = "", d.webDavUsername = "", d.webDavPassword = "", d.ftpUsername = "", d.ftpPassword = "", d.sftpUsername = "", d.sftpPassword = "", d.sftpPrivateKey = "", d.sftpPassphrase = "", d.sftpAuthType || (d.sftpAuthType = "Password"), r.value = d, m.value = null, f.value = !0;
+    }, G = (h) => {
+      const d = w.DialogPlugin.confirm({
         header: "确认删除存储策略?",
         body: `确定要删除存储策略「${h.name}」吗？已绑定此策略的实例将暂停自动云端备份。`,
         theme: "danger",
         confirmBtn: { content: "确认删除", theme: "danger" },
         onConfirm: async () => {
-          u.hide();
+          d.hide();
           try {
-            await z.deleteUserProfile(h.id), V.MessagePlugin.success("策略已成功删除"), await g(), l("changed"), f.value && n.value.id === h.id && (f.value = !1);
-          } catch (B) {
-            V.MessagePlugin.error(B?.message || "删除策略失败");
+            await z.deleteUserProfile(h.id), w.MessagePlugin.success("策略已成功删除"), await c(), o("changed"), f.value && r.value.id === h.id && (f.value = !1);
+          } catch (E) {
+            w.MessagePlugin.error(E?.message || "删除策略失败");
           }
         },
-        onClose: () => u.hide()
+        onClose: () => d.hide()
       });
-    }, R = async () => {
-      if (!n.value.name) {
-        V.MessagePlugin.warning("请先填写策略名称");
+    }, J = async () => {
+      if (!r.value.name) {
+        w.MessagePlugin.warning("请先填写策略名称");
         return;
       }
-      x.value = !0, m.value = null;
+      g.value = !0, m.value = null;
       try {
-        const h = await z.testConnection(n.value);
-        m.value = h, h.success ? V.MessagePlugin.success(h.message || "连接测试成功！") : V.MessagePlugin.error(h.message || "连接测试未成功");
+        const h = await z.testConnection(r.value);
+        m.value = h, h.success ? w.MessagePlugin.success(h.message || "连接测试成功！") : w.MessagePlugin.error(h.message || "连接测试未成功");
       } catch (h) {
         m.value = {
           success: !1,
           message: h?.message || "连接测试异常",
           latencyMs: 0
-        }, V.MessagePlugin.error(h?.message || "连接测试异常");
+        }, w.MessagePlugin.error(h?.message || "连接测试异常");
       } finally {
-        x.value = !1;
+        g.value = !1;
       }
-    }, Z = async () => {
-      if (!n.value.name) {
-        V.MessagePlugin.warning("请输入策略名称");
+    }, X = async () => {
+      if (!r.value.name) {
+        w.MessagePlugin.warning("请输入策略名称");
         return;
       }
-      if (n.value.providerType === "S3Compatible") {
-        if (!n.value.s3BucketName) {
-          V.MessagePlugin.warning("请输入 S3 存储桶 (Bucket) 名称");
+      if (r.value.providerType === "S3Compatible") {
+        if (!r.value.s3BucketName) {
+          w.MessagePlugin.warning("请输入 S3 存储桶 (Bucket) 名称");
           return;
         }
-      } else if (n.value.providerType === "WebDAV") {
-        if (!n.value.webDavUrl) {
-          V.MessagePlugin.warning("请输入 WebDAV 服务地址 (URL)");
+      } else if (r.value.providerType === "WebDAV") {
+        if (!r.value.webDavUrl) {
+          w.MessagePlugin.warning("请输入 WebDAV 服务地址 (URL)");
           return;
         }
-      } else if (n.value.providerType === "FTP" && !n.value.ftpHost) {
-        V.MessagePlugin.warning("请输入 FTP 主机地址");
+      } else if (r.value.providerType === "FTP") {
+        if (!r.value.ftpHost) {
+          w.MessagePlugin.warning("请输入 FTP 主机地址");
+          return;
+        }
+      } else if (r.value.providerType === "SFTP" && !r.value.sftpHost) {
+        w.MessagePlugin.warning("请输入 SFTP 主机地址");
         return;
       }
       C.value = !0;
       try {
-        await z.saveUserProfile(n.value), V.MessagePlugin.success("存储策略保存成功！"), f.value = !1, await g(), l("changed");
+        await z.saveUserProfile(r.value), w.MessagePlugin.success("存储策略保存成功！"), f.value = !1, await c(), o("changed");
       } catch (h) {
-        V.MessagePlugin.error(h?.message || "保存存储策略失败");
+        w.MessagePlugin.error(h?.message || "保存存储策略失败");
       } finally {
         C.value = !1;
       }
     };
-    return (h, u) => {
-      const B = e.resolveComponent("t-tag"), P = e.resolveComponent("t-button"), U = e.resolveComponent("t-loading"), j = e.resolveComponent("t-input"), M = e.resolveComponent("t-radio-button"), D = e.resolveComponent("t-radio-group"), L = e.resolveComponent("t-switch"), q = e.resolveComponent("t-input-number"), G = e.resolveComponent("t-dialog");
-      return e.openBlock(), e.createBlock(G, {
+    return (h, d) => {
+      const E = e.resolveComponent("t-tag"), j = e.resolveComponent("t-button"), $ = e.resolveComponent("t-loading"), V = e.resolveComponent("t-input"), B = e.resolveComponent("t-radio-button"), U = e.resolveComponent("t-radio-group"), H = e.resolveComponent("t-switch"), I = e.resolveComponent("t-input-number"), u = e.resolveComponent("t-textarea"), b = e.resolveComponent("t-dialog");
+      return e.openBlock(), e.createBlock(b, {
         attach: "body",
         visible: t.visible,
         width: "760px",
         footer: !1,
         header: "云端存储策略",
-        onClose: y
+        onClose: q
       }, {
         default: e.withCtx(() => [
           e.createElementVNode("div", { class: "py-2 min-h-[380px]" }, [
@@ -2284,15 +2513,15 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
               class: "flex flex-col"
             }, [
               e.createElementVNode("div", { class: "flex items-center justify-between pb-3 mb-4 border-b border-zinc-200/60 dark:border-zinc-700/60" }, [
-                e.createElementVNode("div", { class: "text-sm font-bold text-[var(--td-text-color-primary)]" }, e.toDisplayString(n.value.id ? "编辑云端存储策略" : "新建云端存储策略"), 1),
-                e.createVNode(P, {
+                e.createElementVNode("div", { class: "text-sm font-bold text-[var(--td-text-color-primary)]" }, e.toDisplayString(r.value.id ? "编辑云端存储策略" : "新建云端存储策略"), 1),
+                e.createVNode(j, {
                   variant: "text",
                   size: "small",
                   class: "!rounded-lg",
-                  onClick: u[0] || (u[0] = (d) => f.value = !1)
+                  onClick: d[0] || (d[0] = (s) => f.value = !1)
                 }, {
                   icon: e.withCtx(() => [
-                    e.createVNode(e.unref(xt))
+                    e.createVNode(e.unref(wt))
                   ]),
                   default: e.withCtx(() => [
                     e.createTextVNode(" 返回列表 ")
@@ -2323,10 +2552,10 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     e.createTextVNode("策略友好名称 "),
                     e.createElementVNode("span", { class: "text-red-500" }, "*")
                   ]),
-                  e.createVNode(j, {
-                    modelValue: n.value.name,
-                    "onUpdate:modelValue": u[1] || (u[1] = (d) => n.value.name = d),
-                    placeholder: "例如：我的 Cloudflare R2 / 家用群晖 WebDAV",
+                  e.createVNode(V, {
+                    modelValue: r.value.name,
+                    "onUpdate:modelValue": d[1] || (d[1] = (s) => r.value.name = s),
+                    placeholder: "例如：我的 Cloudflare R2 / 家用群晖 WebDAV / 异地 VPS",
                     class: "flex-1"
                   }, null, 8, ["modelValue"])
                 ]),
@@ -2335,28 +2564,34 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     e.createTextVNode("存储协议类型 "),
                     e.createElementVNode("span", { class: "text-red-500" }, "*")
                   ]),
-                  e.createVNode(D, {
-                    modelValue: n.value.providerType,
-                    "onUpdate:modelValue": u[2] || (u[2] = (d) => n.value.providerType = d),
+                  e.createVNode(U, {
+                    modelValue: r.value.providerType,
+                    "onUpdate:modelValue": d[2] || (d[2] = (s) => r.value.providerType = s),
                     variant: "default-filled",
                     class: "flex-1"
                   }, {
                     default: e.withCtx(() => [
-                      e.createVNode(M, { value: "S3Compatible" }, {
+                      e.createVNode(B, { value: "S3Compatible" }, {
                         default: e.withCtx(() => [
                           e.createTextVNode("S3 兼容对象存储")
                         ]),
                         _: 1
                       }),
-                      e.createVNode(M, { value: "WebDAV" }, {
+                      e.createVNode(B, { value: "WebDAV" }, {
                         default: e.withCtx(() => [
                           e.createTextVNode("WebDAV 网盘")
                         ]),
                         _: 1
                       }),
-                      e.createVNode(M, { value: "FTP" }, {
+                      e.createVNode(B, { value: "FTP" }, {
                         default: e.withCtx(() => [
                           e.createTextVNode("FTP / FTPS")
+                        ]),
+                        _: 1
+                      }),
+                      e.createVNode(B, { value: "SFTP" }, {
+                        default: e.withCtx(() => [
+                          e.createTextVNode("SFTP (SSH)")
                         ]),
                         _: 1
                       })
@@ -2364,15 +2599,15 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     _: 1
                   }, 8, ["modelValue"])
                 ]),
-                n.value.providerType === "S3Compatible" ? (e.openBlock(), e.createElementBlock(e.Fragment, { key: 0 }, [
+                r.value.providerType === "S3Compatible" ? (e.openBlock(), e.createElementBlock(e.Fragment, { key: 0 }, [
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-start justify-between gap-2" }, [
                     e.createElementVNode("div", { class: "w-32 shrink-0 pt-1.5" }, [
                       e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)]" }, "服务地址 (Endpoint)")
                     ]),
                     e.createElementVNode("div", { class: "flex-1" }, [
-                      e.createVNode(j, {
-                        modelValue: n.value.s3Endpoint,
-                        "onUpdate:modelValue": u[3] || (u[3] = (d) => n.value.s3Endpoint = d),
+                      e.createVNode(V, {
+                        modelValue: r.value.s3Endpoint,
+                        "onUpdate:modelValue": d[3] || (d[3] = (s) => r.value.s3Endpoint = s),
                         placeholder: "原生 AWS S3 可留空；第三方 R2 / MinIO / COS 等需填写"
                       }, null, 8, ["modelValue"]),
                       e.createElementVNode("div", { class: "text-[11px] text-[var(--td-text-color-placeholder)] mt-1" }, " 原生 AWS S3 可留空（自动按区域解析）；第三方（如 Cloudflare R2、自建 MinIO、腾讯云 COS 等）需填入完整的终结点 URL。 ")
@@ -2383,118 +2618,118 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                       e.createTextVNode("存储桶 (Bucket) "),
                       e.createElementVNode("span", { class: "text-red-500" }, "*")
                     ]),
-                    e.createVNode(j, {
-                      modelValue: n.value.s3BucketName,
-                      "onUpdate:modelValue": u[4] || (u[4] = (d) => n.value.s3BucketName = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.s3BucketName,
+                      "onUpdate:modelValue": d[4] || (d[4] = (s) => r.value.s3BucketName = s),
                       placeholder: "例如：mslx-backups",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "区域 (Region)"),
-                    e.createVNode(j, {
-                      modelValue: n.value.s3Region,
-                      "onUpdate:modelValue": u[5] || (u[5] = (d) => n.value.s3Region = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.s3Region,
+                      "onUpdate:modelValue": d[5] || (d[5] = (s) => r.value.s3Region = s),
                       placeholder: "R2/MinIO 填 auto，AWS 填 us-east-1 等",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "Access Key ID"),
-                    e.createVNode(j, {
-                      modelValue: n.value.s3AccessKey,
-                      "onUpdate:modelValue": u[6] || (u[6] = (d) => n.value.s3AccessKey = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.s3AccessKey,
+                      "onUpdate:modelValue": d[6] || (d[6] = (s) => r.value.s3AccessKey = s),
                       name: "cloud_storage_s3_key",
                       autocomplete: "new-password",
-                      placeholder: n.value.hasS3Credentials ? "已加密存储（若不修改请留空）" : "输入访问密钥 Access Key",
+                      placeholder: r.value.hasS3Credentials ? "已加密存储（若不修改请留空）" : "输入访问密钥 Access Key",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "Secret Access Key"),
-                    e.createVNode(j, {
-                      modelValue: n.value.s3SecretKey,
-                      "onUpdate:modelValue": u[7] || (u[7] = (d) => n.value.s3SecretKey = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.s3SecretKey,
+                      "onUpdate:modelValue": d[7] || (d[7] = (s) => r.value.s3SecretKey = s),
                       type: "password",
                       name: "cloud_storage_s3_secret",
                       autocomplete: "new-password",
-                      placeholder: n.value.hasS3Credentials ? "已加密存储（若不修改请留空）" : "输入私有访问密钥 Secret Key",
+                      placeholder: r.value.hasS3Credentials ? "已加密存储（若不修改请留空）" : "输入私有访问密钥 Secret Key",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "路径样式 (PathStyle)"),
                     e.createElementVNode("div", { class: "flex-1 flex items-center gap-2" }, [
-                      e.createVNode(L, {
-                        modelValue: n.value.s3ForcePathStyle,
-                        "onUpdate:modelValue": u[8] || (u[8] = (d) => n.value.s3ForcePathStyle = d)
+                      e.createVNode(H, {
+                        modelValue: r.value.s3ForcePathStyle,
+                        "onUpdate:modelValue": d[8] || (d[8] = (s) => r.value.s3ForcePathStyle = s)
                       }, null, 8, ["modelValue"]),
                       e.createElementVNode("span", { class: "text-xs text-zinc-400" }, "适用于 MinIO、Cloudflare R2 等兼容 S3 协议的自建端")
                     ])
                   ])
-                ], 64)) : n.value.providerType === "WebDAV" ? (e.openBlock(), e.createElementBlock(e.Fragment, { key: 1 }, [
+                ], 64)) : r.value.providerType === "WebDAV" ? (e.openBlock(), e.createElementBlock(e.Fragment, { key: 1 }, [
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, [
                       e.createTextVNode("WebDAV 地址 "),
                       e.createElementVNode("span", { class: "text-red-500" }, "*")
                     ]),
-                    e.createVNode(j, {
-                      modelValue: n.value.webDavUrl,
-                      "onUpdate:modelValue": u[9] || (u[9] = (d) => n.value.webDavUrl = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.webDavUrl,
+                      "onUpdate:modelValue": d[9] || (d[9] = (s) => r.value.webDavUrl = s),
                       placeholder: "例如：https://pan.example.com/dav 或 http://192.168.1.20:5005",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "根路径"),
-                    e.createVNode(j, {
-                      modelValue: n.value.webDavBasePath,
-                      "onUpdate:modelValue": u[10] || (u[10] = (d) => n.value.webDavBasePath = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.webDavBasePath,
+                      "onUpdate:modelValue": d[10] || (d[10] = (s) => r.value.webDavBasePath = s),
                       placeholder: "默认 /，如 /MinecraftBackups",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "用户名"),
-                    e.createVNode(j, {
-                      modelValue: n.value.webDavUsername,
-                      "onUpdate:modelValue": u[11] || (u[11] = (d) => n.value.webDavUsername = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.webDavUsername,
+                      "onUpdate:modelValue": d[11] || (d[11] = (s) => r.value.webDavUsername = s),
                       name: "cloud_storage_webdav_user",
                       autocomplete: "new-password",
-                      placeholder: n.value.hasWebDavCredentials ? "已加密存储（若不修改请留空）" : "WebDAV 登录用户名",
+                      placeholder: r.value.hasWebDavCredentials ? "已加密存储（若不修改请留空）" : "WebDAV 登录用户名",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "密码"),
-                    e.createVNode(j, {
-                      modelValue: n.value.webDavPassword,
-                      "onUpdate:modelValue": u[12] || (u[12] = (d) => n.value.webDavPassword = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.webDavPassword,
+                      "onUpdate:modelValue": d[12] || (d[12] = (s) => r.value.webDavPassword = s),
                       type: "password",
                       name: "cloud_storage_webdav_pass",
                       autocomplete: "new-password",
-                      placeholder: n.value.hasWebDavCredentials ? "已加密存储（若不修改请留空）" : "WebDAV 登录密码",
+                      placeholder: r.value.hasWebDavCredentials ? "已加密存储（若不修改请留空）" : "WebDAV 登录密码",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
                   ])
-                ], 64)) : (e.openBlock(), e.createElementBlock(e.Fragment, { key: 2 }, [
+                ], 64)) : r.value.providerType === "FTP" ? (e.openBlock(), e.createElementBlock(e.Fragment, { key: 2 }, [
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, [
                       e.createTextVNode("FTP 主机地址 "),
                       e.createElementVNode("span", { class: "text-red-500" }, "*")
                     ]),
-                    e.createVNode(j, {
-                      modelValue: n.value.ftpHost,
-                      "onUpdate:modelValue": u[13] || (u[13] = (d) => n.value.ftpHost = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.ftpHost,
+                      "onUpdate:modelValue": d[13] || (d[13] = (s) => r.value.ftpHost = s),
                       placeholder: "例如：192.168.1.100 或 ftp.example.com",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "FTP 端口"),
-                    e.createVNode(q, {
-                      modelValue: n.value.ftpPort,
-                      "onUpdate:modelValue": u[14] || (u[14] = (d) => n.value.ftpPort = d),
+                    e.createVNode(I, {
+                      modelValue: r.value.ftpPort,
+                      "onUpdate:modelValue": d[14] || (d[14] = (s) => r.value.ftpPort = s),
                       min: 1,
                       max: 65535,
                       size: "small",
@@ -2503,54 +2738,189 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "基础存放目录"),
-                    e.createVNode(j, {
-                      modelValue: n.value.ftpBasePath,
-                      "onUpdate:modelValue": u[15] || (u[15] = (d) => n.value.ftpBasePath = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.ftpBasePath,
+                      "onUpdate:modelValue": d[15] || (d[15] = (s) => r.value.ftpBasePath = s),
                       placeholder: "默认 /，如 /backups",
                       class: "flex-1"
                     }, null, 8, ["modelValue"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "账号"),
-                    e.createVNode(j, {
-                      modelValue: n.value.ftpUsername,
-                      "onUpdate:modelValue": u[16] || (u[16] = (d) => n.value.ftpUsername = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.ftpUsername,
+                      "onUpdate:modelValue": d[16] || (d[16] = (s) => r.value.ftpUsername = s),
                       name: "cloud_storage_ftp_user",
                       autocomplete: "new-password",
-                      placeholder: n.value.hasFtpCredentials ? "已加密存储（若不修改请留空）" : "FTP 账号",
+                      placeholder: r.value.hasFtpCredentials ? "已加密存储（若不修改请留空）" : "FTP 账号",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "密码"),
-                    e.createVNode(j, {
-                      modelValue: n.value.ftpPassword,
-                      "onUpdate:modelValue": u[17] || (u[17] = (d) => n.value.ftpPassword = d),
+                    e.createVNode(V, {
+                      modelValue: r.value.ftpPassword,
+                      "onUpdate:modelValue": d[17] || (d[17] = (s) => r.value.ftpPassword = s),
                       type: "password",
                       name: "cloud_storage_ftp_pass",
                       autocomplete: "new-password",
-                      placeholder: n.value.hasFtpCredentials ? "已加密存储（若不修改请留空）" : "FTP 密码",
+                      placeholder: r.value.hasFtpCredentials ? "已加密存储（若不修改请留空）" : "FTP 密码",
                       class: "flex-1"
                     }, null, 8, ["modelValue", "placeholder"])
                   ]),
                   e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
                     e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "FTPS / SSL 加密"),
                     e.createElementVNode("div", { class: "flex-1" }, [
-                      e.createVNode(L, {
-                        modelValue: n.value.ftpUseSsl,
-                        "onUpdate:modelValue": u[18] || (u[18] = (d) => n.value.ftpUseSsl = d)
+                      e.createVNode(H, {
+                        modelValue: r.value.ftpUseSsl,
+                        "onUpdate:modelValue": d[18] || (d[18] = (s) => r.value.ftpUseSsl = s)
                       }, null, 8, ["modelValue"])
                     ])
                   ])
+                ], 64)) : (e.openBlock(), e.createElementBlock(e.Fragment, { key: 3 }, [
+                  e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
+                    e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, [
+                      e.createTextVNode("SSH 主机地址 "),
+                      e.createElementVNode("span", { class: "text-red-500" }, "*")
+                    ]),
+                    e.createVNode(V, {
+                      modelValue: r.value.sftpHost,
+                      "onUpdate:modelValue": d[19] || (d[19] = (s) => r.value.sftpHost = s),
+                      placeholder: "例如：192.168.1.100 或 vps.example.com",
+                      class: "flex-1"
+                    }, null, 8, ["modelValue"])
+                  ]),
+                  e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
+                    e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "SSH 端口"),
+                    e.createVNode(I, {
+                      modelValue: r.value.sftpPort,
+                      "onUpdate:modelValue": d[20] || (d[20] = (s) => r.value.sftpPort = s),
+                      min: 1,
+                      max: 65535,
+                      size: "small",
+                      class: "!w-32"
+                    }, null, 8, ["modelValue"])
+                  ]),
+                  e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
+                    e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "SSH 登录账号"),
+                    e.createVNode(V, {
+                      modelValue: r.value.sftpUsername,
+                      "onUpdate:modelValue": d[21] || (d[21] = (s) => r.value.sftpUsername = s),
+                      name: "cloud_storage_sftp_user",
+                      autocomplete: "new-password",
+                      placeholder: r.value.hasSftpCredentials ? "已加密存储（若不修改请留空）" : "例如：root 或 ubuntu",
+                      class: "flex-1"
+                    }, null, 8, ["modelValue", "placeholder"])
+                  ]),
+                  e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
+                    e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "认证方式"),
+                    e.createVNode(U, {
+                      modelValue: r.value.sftpAuthType,
+                      "onUpdate:modelValue": d[22] || (d[22] = (s) => r.value.sftpAuthType = s),
+                      variant: "default-filled",
+                      size: "small",
+                      class: "flex-1"
+                    }, {
+                      default: e.withCtx(() => [
+                        e.createVNode(B, { value: "Password" }, {
+                          default: e.withCtx(() => [
+                            e.createTextVNode("密码认证")
+                          ]),
+                          _: 1
+                        }),
+                        e.createVNode(B, { value: "PrivateKey" }, {
+                          default: e.withCtx(() => [
+                            e.createTextVNode("私钥认证 (Key)")
+                          ]),
+                          _: 1
+                        })
+                      ]),
+                      _: 1
+                    }, 8, ["modelValue"])
+                  ]),
+                  r.value.sftpAuthType !== "PrivateKey" ? (e.openBlock(), e.createElementBlock("div", {
+                    key: 0,
+                    class: "flex flex-col md:flex-row md:items-center justify-between gap-2"
+                  }, [
+                    e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "SSH 密码"),
+                    e.createVNode(V, {
+                      modelValue: r.value.sftpPassword,
+                      "onUpdate:modelValue": d[23] || (d[23] = (s) => r.value.sftpPassword = s),
+                      type: "password",
+                      name: "cloud_storage_sftp_pass",
+                      autocomplete: "new-password",
+                      placeholder: r.value.hasSftpCredentials ? "已加密存储（若不修改请留空）" : "SSH 登录密码",
+                      class: "flex-1"
+                    }, null, 8, ["modelValue", "placeholder"])
+                  ])) : (e.openBlock(), e.createElementBlock(e.Fragment, { key: 1 }, [
+                    e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-start justify-between gap-2" }, [
+                      e.createElementVNode("div", { class: "w-32 shrink-0 pt-1.5 flex flex-col gap-1.5" }, [
+                        e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)]" }, "SSH 私钥内容"),
+                        e.createVNode(j, {
+                          variant: "outline",
+                          size: "extra-small",
+                          class: "!text-[11px] !w-fit !rounded-md",
+                          onClick: n
+                        }, {
+                          icon: e.withCtx(() => [
+                            e.createVNode(e.unref(Jt))
+                          ]),
+                          default: e.withCtx(() => [
+                            e.createTextVNode(" 导入私钥文件 ")
+                          ]),
+                          _: 1
+                        }),
+                        e.createElementVNode("input", {
+                          ref_key: "keyFileInputRef",
+                          ref: p,
+                          type: "file",
+                          class: "hidden",
+                          onChange: x
+                        }, null, 544)
+                      ]),
+                      e.createElementVNode("div", { class: "flex-1" }, [
+                        e.createVNode(u, {
+                          modelValue: r.value.sftpPrivateKey,
+                          "onUpdate:modelValue": d[24] || (d[24] = (s) => r.value.sftpPrivateKey = s),
+                          name: "cloud_storage_sftp_key",
+                          autocomplete: "new-password",
+                          placeholder: r.value.hasSftpCredentials ? "已加密存储（若不修改请留空）" : "粘贴 OpenSSH / PEM 格式私钥内容（-----BEGIN 开头）",
+                          autosize: { minRows: 3, maxRows: 6 },
+                          class: "font-mono text-xs"
+                        }, null, 8, ["modelValue", "placeholder"])
+                      ])
+                    ]),
+                    e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
+                      e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "私钥密码短语"),
+                      e.createVNode(V, {
+                        modelValue: r.value.sftpPassphrase,
+                        "onUpdate:modelValue": d[25] || (d[25] = (s) => r.value.sftpPassphrase = s),
+                        type: "password",
+                        name: "cloud_storage_sftp_passphrase",
+                        autocomplete: "new-password",
+                        placeholder: r.value.hasSftpCredentials ? "已加密存储（若不修改请留空）" : "私钥密码短语 Passphrase（无密码可留空）",
+                        class: "flex-1"
+                      }, null, 8, ["modelValue", "placeholder"])
+                    ])
+                  ], 64)),
+                  e.createElementVNode("div", { class: "flex flex-col md:flex-row md:items-center justify-between gap-2" }, [
+                    e.createElementVNode("span", { class: "text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0" }, "基础存放目录"),
+                    e.createVNode(V, {
+                      modelValue: r.value.sftpBasePath,
+                      "onUpdate:modelValue": d[26] || (d[26] = (s) => r.value.sftpBasePath = s),
+                      placeholder: "默认 /，如 /backups 或 /home/user/backups",
+                      class: "flex-1"
+                    }, null, 8, ["modelValue"])
+                  ])
                 ], 64)),
                 m.value ? (e.openBlock(), e.createElementBlock("div", {
-                  key: 3,
+                  key: 4,
                   class: e.normalizeClass(["flex items-start gap-2.5 p-3 rounded-xl border text-xs leading-relaxed", m.value.success ? "border-emerald-300/80 bg-emerald-50/70 text-emerald-800 dark:bg-emerald-950/30 dark:border-emerald-700/50 dark:text-emerald-300" : "border-red-300/80 bg-red-50/70 text-red-800 dark:bg-red-950/30 dark:border-red-700/50 dark:text-red-300"])
                 }, [
-                  m.value.success ? (e.openBlock(), e.createBlock(e.unref(Je), {
+                  m.value.success ? (e.openBlock(), e.createBlock(e.unref(et), {
                     key: 0,
                     class: "text-base text-emerald-500 shrink-0 mt-0.5"
-                  })) : (e.openBlock(), e.createBlock(e.unref(Ye), {
+                  })) : (e.openBlock(), e.createBlock(e.unref(lt), {
                     key: 1,
                     class: "text-base text-red-500 shrink-0 mt-0.5"
                   })),
@@ -2560,15 +2930,15 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                   ])
                 ], 2)) : e.createCommentVNode("", !0),
                 e.createElementVNode("div", { class: "flex items-center justify-between pt-4 border-t border-zinc-200/60 dark:border-zinc-700/60" }, [
-                  e.createVNode(P, {
+                  e.createVNode(j, {
                     variant: "outline",
                     size: "small",
-                    loading: x.value,
+                    loading: g.value,
                     class: "!rounded-lg",
-                    onClick: R
+                    onClick: J
                   }, {
                     icon: e.withCtx(() => [
-                      e.createVNode(e.unref(et))
+                      e.createVNode(e.unref(ot))
                     ]),
                     default: e.withCtx(() => [
                       e.createTextVNode(" 测试连接 ")
@@ -2576,26 +2946,26 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     _: 1
                   }, 8, ["loading"]),
                   e.createElementVNode("div", { class: "flex items-center gap-2" }, [
-                    e.createVNode(P, {
+                    e.createVNode(j, {
                       variant: "base",
                       size: "small",
                       class: "!rounded-lg",
-                      onClick: u[19] || (u[19] = (d) => f.value = !1)
+                      onClick: d[27] || (d[27] = (s) => f.value = !1)
                     }, {
                       default: e.withCtx(() => [
                         e.createTextVNode(" 取消 ")
                       ]),
                       _: 1
                     }),
-                    e.createVNode(P, {
+                    e.createVNode(j, {
                       theme: "primary",
                       size: "small",
                       loading: C.value,
                       class: "!rounded-lg shadow-sm",
-                      onClick: Z
+                      onClick: X
                     }, {
                       icon: e.withCtx(() => [
-                        e.createVNode(e.unref(pt))
+                        e.createVNode(e.unref(ht))
                       ]),
                       default: e.withCtx(() => [
                         e.createTextVNode(" 保存策略 ")
@@ -2612,7 +2982,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
               e.createElementVNode("div", { class: "flex items-center justify-between pb-3 mb-4 border-b border-zinc-200/60 dark:border-zinc-700/60" }, [
                 e.createElementVNode("div", { class: "flex items-center gap-2" }, [
                   e.createElementVNode("span", { class: "text-xs text-[var(--td-text-color-secondary)]" }, "已配置存储策略"),
-                  e.createVNode(B, {
+                  e.createVNode(E, {
                     size: "small",
                     variant: "light",
                     theme: "primary",
@@ -2624,11 +2994,11 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     _: 1
                   })
                 ]),
-                e.createVNode(P, {
+                e.createVNode(j, {
                   theme: "primary",
                   size: "small",
                   class: "!rounded-lg shadow-sm",
-                  onClick: a
+                  onClick: K
                 }, {
                   icon: e.withCtx(() => [
                     e.createVNode(e.unref(se))
@@ -2639,21 +3009,21 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                   _: 1
                 })
               ]),
-              e.createVNode(U, { loading: k.value }, {
+              e.createVNode($, { loading: y.value }, {
                 default: e.withCtx(() => [
                   i.value.length === 0 ? (e.openBlock(), e.createElementBlock("div", {
                     key: 0,
                     class: "flex flex-col items-center justify-center py-12 text-center"
                   }, [
-                    e.createVNode(e.unref(Fe), { class: "text-4xl text-zinc-300 dark:text-zinc-600 mb-3" }),
+                    e.createVNode(e.unref(Ke), { class: "text-4xl text-zinc-300 dark:text-zinc-600 mb-3" }),
                     e.createElementVNode("div", { class: "text-sm font-medium text-zinc-700 dark:text-zinc-300" }, "当前尚未配置任何云存储策略"),
-                    e.createElementVNode("div", { class: "text-xs text-zinc-400 mt-1 max-w-sm" }, " 支持 S3 兼容对象存储（Cloudflare R2 / MinIO 等）、WebDAV 与 FTP / FTPS "),
-                    e.createVNode(P, {
+                    e.createElementVNode("div", { class: "text-xs text-zinc-400 mt-1 max-w-sm" }, " 支持 S3 兼容对象存储（Cloudflare R2 / MinIO 等）、WebDAV、FTP / FTPS 与 SFTP (SSH) "),
+                    e.createVNode(j, {
                       theme: "primary",
                       variant: "outline",
                       size: "small",
                       class: "mt-4 !rounded-lg",
-                      onClick: a
+                      onClick: K
                     }, {
                       icon: e.withCtx(() => [
                         e.createVNode(e.unref(se))
@@ -2667,29 +3037,29 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     key: 1,
                     class: "grid grid-cols-1 md:grid-cols-2 gap-3"
                   }, [
-                    (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(i.value, (d) => (e.openBlock(), e.createElementBlock("div", {
-                      key: d.id,
+                    (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(i.value, (s) => (e.openBlock(), e.createElementBlock("div", {
+                      key: s.id,
                       class: "p-3.5 rounded-xl border border-zinc-200/70 dark:border-zinc-700/60 bg-white/60 dark:bg-zinc-800/40 hover:border-[var(--color-primary)] transition-all flex flex-col justify-between shadow-2xs"
                     }, [
                       e.createElementVNode("div", null, [
                         e.createElementVNode("div", { class: "flex items-center justify-between mb-2" }, [
                           e.createElementVNode("div", { class: "flex items-center gap-2.5 flex-1 min-w-0 pr-2" }, [
                             e.createElementVNode("div", {
-                              class: e.normalizeClass(["w-8 h-8 rounded-lg flex items-center justify-center text-lg shrink-0", e.unref(A)(d.providerType) === "S3Compatible" ? "bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400" : e.unref(A)(d.providerType) === "WebDAV" ? "bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 dark:text-emerald-400" : "bg-amber-50 text-amber-600 dark:bg-amber-950/40 dark:text-amber-400"])
+                              class: e.normalizeClass(["w-8 h-8 rounded-lg flex items-center justify-center text-lg shrink-0", e.unref(O)(s.providerType) === "S3Compatible" ? "bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400" : e.unref(O)(s.providerType) === "WebDAV" ? "bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 dark:text-emerald-400" : e.unref(O)(s.providerType) === "SFTP" ? "bg-purple-50 text-purple-600 dark:bg-purple-950/40 dark:text-purple-400" : "bg-amber-50 text-amber-600 dark:bg-amber-950/40 dark:text-amber-400"])
                             }, [
-                              e.unref(A)(d.providerType) === "S3Compatible" ? (e.openBlock(), e.createBlock(e.unref(Vt), { key: 0 })) : e.unref(A)(d.providerType) === "WebDAV" ? (e.openBlock(), e.createBlock(e.unref(Et), { key: 1 })) : (e.openBlock(), e.createBlock(e.unref(Fe), { key: 2 }))
+                              e.unref(O)(s.providerType) === "S3Compatible" ? (e.openBlock(), e.createBlock(e.unref(St), { key: 0 })) : e.unref(O)(s.providerType) === "WebDAV" ? (e.openBlock(), e.createBlock(e.unref(Dt), { key: 1 })) : e.unref(O)(s.providerType) === "SFTP" ? (e.openBlock(), e.createBlock(e.unref(Rt), { key: 2 })) : (e.openBlock(), e.createBlock(e.unref(Ke), { key: 3 }))
                             ], 2),
                             e.createElementVNode("div", { class: "flex-1 min-w-0" }, [
                               e.createElementVNode("div", { class: "flex items-center gap-1.5 flex-wrap" }, [
-                                e.createElementVNode("span", { class: "text-sm font-bold text-[var(--td-text-color-primary)] leading-snug truncate max-w-[150px]" }, e.toDisplayString(d.name), 1),
-                                e.createVNode(B, {
+                                e.createElementVNode("span", { class: "text-sm font-bold text-[var(--td-text-color-primary)] leading-snug truncate max-w-[150px]" }, e.toDisplayString(s.name), 1),
+                                e.createVNode(E, {
                                   size: "small",
                                   variant: "light",
-                                  theme: e.unref(A)(d.providerType) === "S3Compatible" ? "primary" : e.unref(A)(d.providerType) === "WebDAV" ? "success" : "warning",
+                                  theme: e.unref(O)(s.providerType) === "S3Compatible" ? "primary" : e.unref(O)(s.providerType) === "WebDAV" ? "success" : e.unref(O)(s.providerType) === "SFTP" ? "danger" : "warning",
                                   class: "!text-[10px] !h-4.5 !leading-4.5 !px-2 !inline-flex items-center justify-center text-center font-medium shrink-0 !w-auto"
                                 }, {
                                   default: e.withCtx(() => [
-                                    e.createTextVNode(e.toDisplayString(e.unref(A)(d.providerType) === "S3Compatible" ? "S3 兼容" : e.unref(A)(d.providerType) === "WebDAV" ? "WebDAV" : "FTP / FTPS"), 1)
+                                    e.createTextVNode(e.toDisplayString(e.unref(O)(s.providerType) === "S3Compatible" ? "S3 兼容" : e.unref(O)(s.providerType) === "WebDAV" ? "WebDAV" : e.unref(O)(s.providerType) === "SFTP" ? "SFTP (SSH)" : "FTP / FTPS"), 1)
                                   ]),
                                   _: 2
                                 }, 1032, ["theme"])
@@ -2697,50 +3067,53 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                             ])
                           ]),
                           e.createElementVNode("div", { class: "flex items-center gap-1 shrink-0" }, [
-                            e.createVNode(P, {
+                            e.createVNode(j, {
                               variant: "text",
                               shape: "square",
                               size: "small",
                               class: "!rounded-md",
-                              onClick: (J) => s(d)
+                              onClick: (T) => Z(s)
                             }, {
                               default: e.withCtx(() => [
-                                e.createVNode(e.unref(Ot))
+                                e.createVNode(e.unref(At))
                               ]),
                               _: 1
                             }, 8, ["onClick"]),
-                            e.createVNode(P, {
+                            e.createVNode(j, {
                               variant: "text",
                               shape: "square",
                               size: "small",
                               theme: "danger",
                               class: "!rounded-md hover:!bg-red-500/10",
-                              onClick: (J) => H(d)
+                              onClick: (T) => G(s)
                             }, {
                               default: e.withCtx(() => [
-                                e.createVNode(e.unref(Qe))
+                                e.createVNode(e.unref(rt))
                               ]),
                               _: 1
                             }, 8, ["onClick"])
                           ])
                         ]),
                         e.createElementVNode("div", { class: "text-[11px] text-zinc-500 dark:text-zinc-400 space-y-1 font-mono pt-2 border-t border-zinc-100 dark:border-zinc-700/40" }, [
-                          e.unref(A)(d.providerType) === "S3Compatible" ? (e.openBlock(), e.createElementBlock("div", {
+                          e.unref(O)(s.providerType) === "S3Compatible" ? (e.openBlock(), e.createElementBlock("div", {
                             key: 0,
                             class: "truncate"
                           }, [
-                            e.createTextVNode(" 桶: " + e.toDisplayString(d.s3BucketName) + " ", 1),
-                            d.s3Region ? (e.openBlock(), e.createElementBlock("span", {
+                            e.createTextVNode(" 桶: " + e.toDisplayString(s.s3BucketName) + " ", 1),
+                            s.s3Region ? (e.openBlock(), e.createElementBlock("span", {
                               key: 0,
                               class: "text-zinc-400"
-                            }, "(" + e.toDisplayString(d.s3Region) + ")", 1)) : e.createCommentVNode("", !0)
-                          ])) : e.unref(A)(d.providerType) === "WebDAV" ? (e.openBlock(), e.createElementBlock("div", {
+                            }, "(" + e.toDisplayString(s.s3Region) + ")", 1)) : e.createCommentVNode("", !0)
+                          ])) : e.unref(O)(s.providerType) === "WebDAV" ? (e.openBlock(), e.createElementBlock("div", {
                             key: 1,
                             class: "truncate"
-                          }, e.toDisplayString(d.webDavUrl), 1)) : (e.openBlock(), e.createElementBlock("div", {
+                          }, e.toDisplayString(s.webDavUrl), 1)) : e.unref(O)(s.providerType) === "SFTP" ? (e.openBlock(), e.createElementBlock("div", {
                             key: 2,
                             class: "truncate"
-                          }, e.toDisplayString(d.ftpHost) + ":" + e.toDisplayString(d.ftpPort), 1))
+                          }, e.toDisplayString(s.sftpHost) + ":" + e.toDisplayString(s.sftpPort) + " (" + e.toDisplayString(s.sftpAuthType === "PrivateKey" ? "私钥认证" : "密码认证") + ") ", 1)) : (e.openBlock(), e.createElementBlock("div", {
+                            key: 3,
+                            class: "truncate"
+                          }, e.toDisplayString(s.ftpHost) + ":" + e.toDisplayString(s.ftpPort), 1))
                         ])
                       ])
                     ]))), 128))
@@ -2755,26 +3128,26 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
       }, 8, ["visible"]);
     };
   }
-}), tt = (t, o) => {
-  const r = t.__vccOpts || t;
-  for (const [l, i] of o)
-    r[l] = i;
-  return r;
-}, Zt = /* @__PURE__ */ tt(Rt, [["__scopeId", "data-v-a3d50b0b"]]), qt = /* @__PURE__ */ e.defineComponent({
+}), at = (t, a) => {
+  const l = t.__vccOpts || t;
+  for (const [o, i] of a)
+    l[o] = i;
+  return l;
+}, tr = /* @__PURE__ */ at(er, [["__scopeId", "data-v-ac98cf6e"]]), rr = /* @__PURE__ */ e.defineComponent({
   __name: "InstanceCloudSyncTab",
   props: {
     serverId: {},
     instanceId: {}
   },
   setup(t) {
-    const o = t, r = e.computed(() => o.instanceId || o.serverId || 0), l = e.ref(!1), i = e.ref(!1), k = e.ref(!1), f = e.ref(!1), C = e.ref(""), x = e.ref("all"), m = e.ref([]), p = e.ref({
+    const a = t, l = e.computed(() => a.instanceId || a.serverId || 0), o = e.ref(!1), i = e.ref(!1), y = e.ref(!1), f = e.ref(!1), C = e.ref(""), g = e.ref("all"), m = e.ref([]), p = e.ref({
       isInstalled: !1,
       enabled: !1,
       keepDailyDays: 7,
       keepWeeklyWeeks: 4,
       keepMonthlyMonths: 12
     }), n = e.ref({
-      instanceId: r.value,
+      instanceId: l.value,
       enabled: !1,
       syncMode: "GfsOnly",
       profileId: "",
@@ -2786,148 +3159,148 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
       remoteKeepDaily: 7,
       remoteKeepWeekly: 4,
       remoteKeepMonthly: 12
-    }), g = e.computed({
+    }), x = e.computed({
       get: () => n.value.deleteLocalAfterUpload ? "deleteImmediate" : n.value.maxLocalKeep === 0 ? "keepAll" : "keepN",
-      set: (c) => {
-        c === "deleteImmediate" ? n.value.deleteLocalAfterUpload = !0 : c === "keepAll" ? (n.value.deleteLocalAfterUpload = !1, n.value.maxLocalKeep = 0) : (n.value.deleteLocalAfterUpload = !1, (!n.value.maxLocalKeep || n.value.maxLocalKeep <= 0) && (n.value.maxLocalKeep = 5));
+      set: (u) => {
+        u === "deleteImmediate" ? n.value.deleteLocalAfterUpload = !0 : u === "keepAll" ? (n.value.deleteLocalAfterUpload = !1, n.value.maxLocalKeep = 0) : (n.value.deleteLocalAfterUpload = !1, (!n.value.maxLocalKeep || n.value.maxLocalKeep <= 0) && (n.value.maxLocalKeep = 5));
       }
-    }), y = e.ref([]), a = e.computed(() => y.value.filter((c) => c.tier === "regular").length), s = e.computed(() => y.value.filter((c) => c.tier === "daily").length), H = e.computed(() => y.value.filter((c) => c.tier === "weekly").length), R = e.computed(() => y.value.filter((c) => c.tier === "monthly").length), Z = e.computed(() => {
-      const c = y.value.reduce((b, E) => b + (E.sizeBytes || 0), 0);
-      return c >= 1073741824 ? (c / (1024 * 1024 * 1024)).toFixed(2) + " GB" : c >= 1048576 ? (c / (1024 * 1024)).toFixed(2) + " MB" : c >= 1024 ? (c / 1024).toFixed(2) + " KB" : c + " B";
-    }), h = (c) => {
-      if (!c) return "-";
+    }), v = e.ref([]), r = e.computed(() => v.value.filter((u) => u.tier === "regular").length), c = e.computed(() => v.value.filter((u) => u.tier === "daily").length), q = e.computed(() => v.value.filter((u) => u.tier === "weekly").length), K = e.computed(() => v.value.filter((u) => u.tier === "monthly").length), Z = e.computed(() => {
+      const u = v.value.reduce((b, s) => b + (s.sizeBytes || 0), 0);
+      return u >= 1073741824 ? (u / (1024 * 1024 * 1024)).toFixed(2) + " GB" : u >= 1048576 ? (u / (1024 * 1024)).toFixed(2) + " MB" : u >= 1024 ? (u / 1024).toFixed(2) + " KB" : u + " B";
+    }), G = (u) => {
+      if (!u) return "-";
       try {
-        const b = new Date(c);
-        return isNaN(b.getTime()) ? String(c) : b.toLocaleString();
+        const b = new Date(u);
+        return isNaN(b.getTime()) ? String(u) : b.toLocaleString();
       } catch {
-        return String(c);
+        return String(u);
       }
-    }, u = e.computed(() => {
-      let c = y.value;
-      if (x.value !== "all" && (c = c.filter((b) => b.tier === x.value)), C.value.trim()) {
+    }, J = e.computed(() => {
+      let u = v.value;
+      if (g.value !== "all" && (u = u.filter((b) => b.tier === g.value)), C.value.trim()) {
         const b = C.value.trim().toLowerCase();
-        c = c.filter(
-          (E) => E.fileName.toLowerCase().includes(b) || E.fullPath.toLowerCase().includes(b)
+        u = u.filter(
+          (s) => s.fileName.toLowerCase().includes(b) || s.fullPath.toLowerCase().includes(b)
         );
       }
-      return c;
-    }), B = [
+      return u;
+    }), X = [
       { label: "{serverName}", desc: "实例名" },
       { label: "{instanceId}", desc: "ID" },
       { label: "{date}", desc: "日期" },
       { label: "{year}", desc: "年" },
       { label: "{month}", desc: "月" },
       { label: "{day}", desc: "日" }
-    ], P = (c) => {
-      n.value.remotePathPattern = (n.value.remotePathPattern || "") + c;
-    }, U = async () => {
+    ], h = (u) => {
+      n.value.remotePathPattern = (n.value.remotePathPattern || "") + u;
+    }, d = async () => {
       try {
-        const c = await z.getUserProfiles();
-        m.value = c.map((b) => ({
+        const u = await z.getUserProfiles();
+        m.value = u.map((b) => ({
           ...b,
-          providerType: A(b.providerType)
+          providerType: O(b.providerType)
         }));
-      } catch (c) {
-        console.error("[CloudBackup] 获取存储策略失败:", c);
+      } catch (u) {
+        console.error("[CloudBackup] 获取存储策略失败:", u);
       }
+    }, E = async () => {
+      if (l.value)
+        try {
+          p.value = await z.getGfsStatus(l.value);
+        } catch (u) {
+          console.error("[CloudBackup] 探测 GFS 状态失败:", u);
+        }
     }, j = async () => {
-      if (r.value)
+      if (l.value)
         try {
-          p.value = await z.getGfsStatus(r.value);
-        } catch (c) {
-          console.error("[CloudBackup] 探测 GFS 状态失败:", c);
-        }
-    }, M = async () => {
-      if (r.value)
-        try {
-          const c = await z.getInstanceConfig(r.value);
-          c && (n.value = {
-            ...c,
-            syncMode: Ge(c.syncMode),
-            remotePathPattern: c.remotePathPattern || "/mslx-backups/{serverName}/",
-            maxLocalKeep: c.maxLocalKeep ?? 5,
-            maxRemoteKeep: c.maxRemoteKeep ?? 10,
-            deleteLocalAfterUpload: c.deleteLocalAfterUpload ?? !1,
-            inheritGfsKeep: c.inheritGfsKeep ?? !0,
-            remoteKeepDaily: c.remoteKeepDaily ?? 7,
-            remoteKeepWeekly: c.remoteKeepWeekly ?? 4,
-            remoteKeepMonthly: c.remoteKeepMonthly ?? 12
+          const u = await z.getInstanceConfig(l.value);
+          u && (n.value = {
+            ...u,
+            syncMode: Ye(u.syncMode),
+            remotePathPattern: u.remotePathPattern || "/mslx-backups/{serverName}/",
+            maxLocalKeep: u.maxLocalKeep ?? 5,
+            maxRemoteKeep: u.maxRemoteKeep ?? 10,
+            deleteLocalAfterUpload: u.deleteLocalAfterUpload ?? !1,
+            inheritGfsKeep: u.inheritGfsKeep ?? !0,
+            remoteKeepDaily: u.remoteKeepDaily ?? 7,
+            remoteKeepWeekly: u.remoteKeepWeekly ?? 4,
+            remoteKeepMonthly: u.remoteKeepMonthly ?? 12
           });
-        } catch (c) {
-          console.error("[CloudBackup] 获取实例云同步配置失败:", c);
+        } catch (u) {
+          console.error("[CloudBackup] 获取实例云同步配置失败:", u);
         }
-    }, D = async () => {
-      if (r.value) {
-        k.value = !0;
+    }, $ = async () => {
+      if (l.value) {
+        y.value = !0;
         try {
-          y.value = await z.getRemoteBackups(r.value);
-        } catch (c) {
-          console.error("[CloudBackup] 获取远端文件失败:", c);
+          v.value = await z.getRemoteBackups(l.value);
+        } catch (u) {
+          console.error("[CloudBackup] 获取远端文件失败:", u);
         } finally {
-          k.value = !1;
+          y.value = !1;
         }
       }
-    }, L = async () => {
-      if (r.value) {
-        l.value = !0;
+    }, V = async () => {
+      if (l.value) {
+        o.value = !0;
         try {
-          await Promise.all([U(), j(), M()]), n.value.profileId && await D();
+          await Promise.all([d(), E(), j()]), n.value.profileId && await $();
         } finally {
-          l.value = !1;
+          o.value = !1;
         }
       }
-    }, q = async () => {
+    }, B = async () => {
       if (n.value.enabled && !n.value.profileId) {
-        V.MessagePlugin.warning("开启自动同步时必须选择绑定的存储策略");
+        w.MessagePlugin.warning("开启自动同步时必须选择绑定的存储策略");
         return;
       }
       i.value = !0;
       try {
-        const c = await z.saveInstanceConfig(r.value, n.value);
-        V.MessagePlugin.success("云同步配置已保存"), n.value = {
+        const u = await z.saveInstanceConfig(l.value, n.value);
+        w.MessagePlugin.success("云同步配置已保存"), n.value = {
           ...n.value,
-          ...c,
-          syncMode: Ge(c?.syncMode ?? n.value.syncMode)
-        }, n.value.profileId && await D();
-      } catch (c) {
-        V.MessagePlugin.error(c?.message || "保存配置失败");
+          ...u,
+          syncMode: Ye(u?.syncMode ?? n.value.syncMode)
+        }, n.value.profileId && await $();
+      } catch (u) {
+        w.MessagePlugin.error(u?.message || "保存配置失败");
       } finally {
         i.value = !1;
       }
-    }, G = (c) => {
-      const b = c.tier === "daily" ? "日备份" : c.tier === "weekly" ? "周备份" : c.tier === "monthly" ? "月备份" : "常规备份", E = V.DialogPlugin.confirm({
+    }, U = (u) => {
+      const b = u.tier === "daily" ? "日备份" : u.tier === "weekly" ? "周备份" : u.tier === "monthly" ? "月备份" : "常规备份", s = w.DialogPlugin.confirm({
         header: "确认删除远端备份?",
-        body: `您确定要从云端删除 ${b} "${c.fileName}" 吗？此操作不可恢复。`,
+        body: `您确定要从云端删除 ${b} "${u.fileName}" 吗？此操作不可恢复。`,
         theme: "danger",
         confirmBtn: { content: "确认删除", theme: "danger" },
         onConfirm: async () => {
-          E.hide();
+          s.hide();
           try {
-            await z.deleteRemoteBackup(r.value, c.fullPath), V.MessagePlugin.success("远端备份已删除"), await D();
-          } catch (X) {
-            V.MessagePlugin.error(X?.message || "删除远端文件失败");
+            await z.deleteRemoteBackup(l.value, u.fullPath), w.MessagePlugin.success("远端备份已删除"), await $();
+          } catch (T) {
+            w.MessagePlugin.error(T?.message || "删除远端文件失败");
           }
         },
-        onClose: () => E.hide()
+        onClose: () => s.hide()
       });
-    }, d = async () => {
-      await U(), n.value.profileId && await D();
+    }, H = async () => {
+      await d(), n.value.profileId && await $();
     };
-    e.watch(() => r.value, () => L()), e.onMounted(() => L());
-    const J = [
+    e.watch(() => l.value, () => V()), e.onMounted(() => V());
+    const I = [
       { colKey: "tier", title: "类型", width: 90 },
       { colKey: "fileName", title: "文件名", ellipsis: !0 },
       { colKey: "formattedSize", title: "文件大小", width: 100 },
       { colKey: "lastModified", title: "云端更新时间", width: 170 },
       { colKey: "op", title: "操作", width: 70, fixed: "right" }
     ];
-    return (c, b) => {
-      const E = e.resolveComponent("t-switch"), X = e.resolveComponent("t-tooltip"), rt = e.resolveComponent("t-option"), lt = e.resolveComponent("t-select"), I = e.resolveComponent("t-button"), S = e.resolveComponent("t-tag"), re = e.resolveComponent("t-input"), W = e.resolveComponent("t-radio-button"), le = e.resolveComponent("t-radio-group"), T = e.resolveComponent("t-input-number"), K = e.resolveComponent("t-tab-panel"), ot = e.resolveComponent("t-tabs"), at = e.resolveComponent("t-table");
+    return (u, b) => {
+      const s = e.resolveComponent("t-switch"), T = e.resolveComponent("t-tooltip"), nt = e.resolveComponent("t-option"), it = e.resolveComponent("t-select"), R = e.resolveComponent("t-button"), A = e.resolveComponent("t-tag"), re = e.resolveComponent("t-input"), W = e.resolveComponent("t-radio-button"), le = e.resolveComponent("t-radio-group"), M = e.resolveComponent("t-input-number"), L = e.resolveComponent("t-tab-panel"), st = e.resolveComponent("t-tabs"), ct = e.resolveComponent("t-table");
       return e.openBlock(), e.createElementBlock("div", { class: "flex flex-col mx-auto w-full pb-8" }, [
         e.createElementVNode("div", { class: "flex items-center gap-2 mt-5 mb-4 pb-2 border-b border-zinc-200/60 dark:border-zinc-700/60" }, [
           e.createElementVNode("div", { class: "w-1 h-4 bg-[var(--color-primary)] rounded-full" }),
           e.createElementVNode("h2", { class: "text-base font-bold text-[var(--td-text-color-primary)] m-0 flex items-center" }, [
-            e.createVNode(e.unref(Xe), { class: "mr-1.5 text-[var(--color-primary)]" }),
+            e.createVNode(e.unref(tt), { class: "mr-1.5 text-[var(--color-primary)]" }),
             e.createTextVNode(" 云端同步设置 ")
           ])
         ]),
@@ -2936,7 +3309,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
           class: "flex flex-col md:flex-row md:items-center justify-between p-3 px-4 mb-4 rounded-xl border border-emerald-300/80 bg-emerald-50/70 dark:bg-emerald-950/30 dark:border-emerald-700/50 text-xs shadow-xs gap-2"
         }, [
           e.createElementVNode("div", { class: "flex items-center gap-3" }, [
-            e.createVNode(e.unref(Je), { class: "text-base text-emerald-500 shrink-0" }),
+            e.createVNode(e.unref(et), { class: "text-base text-emerald-500 shrink-0" }),
             e.createElementVNode("div", { class: "text-emerald-800 dark:text-emerald-300" }, [
               e.createElementVNode("b", null, "云端同步已就绪"),
               e.createTextVNode("： "),
@@ -2944,14 +3317,14 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
               n.value.lastSyncTime ? (e.openBlock(), e.createElementBlock("span", {
                 key: 3,
                 class: "ml-1 text-emerald-600 dark:text-emerald-400"
-              }, " 最近同步: " + e.toDisplayString(h(n.value.lastSyncTime)) + " (" + e.toDisplayString(n.value.lastSyncStatus === "Success" ? "成功" : n.value.lastSyncMessage) + ") ", 1)) : e.createCommentVNode("", !0)
+              }, " 最近同步: " + e.toDisplayString(G(n.value.lastSyncTime)) + " (" + e.toDisplayString(n.value.lastSyncStatus === "Success" ? "成功" : n.value.lastSyncMessage) + ") ", 1)) : e.createCommentVNode("", !0)
             ])
           ])
         ])) : (e.openBlock(), e.createElementBlock("div", {
           key: 0,
           class: "flex items-start gap-3 p-3.5 md:p-4 mb-4 rounded-xl border border-zinc-200/70 bg-zinc-50/70 dark:bg-zinc-800/30 dark:border-zinc-700/50 text-xs shadow-xs"
         }, [
-          e.createVNode(e.unref(Ye), { class: "text-base text-zinc-400 shrink-0 mt-0.5" }),
+          e.createVNode(e.unref(lt), { class: "text-base text-zinc-400 shrink-0 mt-0.5" }),
           e.createElementVNode("div", { class: "flex flex-col text-xs leading-relaxed" }, [
             e.createElementVNode("span", { class: "font-bold text-zinc-800 dark:text-zinc-200 text-sm" }, "云端自动备份同步已停用"),
             e.createElementVNode("span", { class: "text-zinc-600 dark:text-zinc-400 mt-0.5" }, " 启用后，每次实例备份完成时将自动上传到云端对象存储或远程服务器，实现异地容灾与超额滚动清理。 ")
@@ -2964,9 +3337,9 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
               e.createElementVNode("div", { class: "text-xs text-[var(--td-text-color-secondary)] mt-1 leading-relaxed" }, " 启用后，每次生成备份时将自动上传至指定云存储 ")
             ]),
             e.createElementVNode("div", { class: "w-full md:w-[340px] shrink-0 flex items-center justify-end" }, [
-              e.createVNode(E, {
+              e.createVNode(s, {
                 modelValue: n.value.enabled,
-                "onUpdate:modelValue": b[0] || (b[0] = (v) => n.value.enabled = v),
+                "onUpdate:modelValue": b[0] || (b[0] = (k) => n.value.enabled = k),
                 size: "large"
               }, null, 8, ["modelValue"])
             ])
@@ -2976,10 +3349,10 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
               e.createElementVNode("div", { class: "flex-1 pr-0 md:pr-8 mb-3 md:mb-0 min-w-[200px]" }, [
                 e.createElementVNode("div", { class: "text-sm font-medium text-[var(--td-text-color-primary)] leading-snug flex items-center gap-1.5" }, [
                   e.createTextVNode(" 关联云存储目标 "),
-                  e.createVNode(X, { content: "支持 S3 兼容对象存储、WebDAV 与 FTP / FTPS 协议。" }, {
+                  e.createVNode(T, { content: "支持 S3 兼容对象存储、WebDAV、FTP / FTPS 与 SFTP (SSH) 协议。" }, {
                     default: e.withCtx(() => [
                       e.createElementVNode("span", { class: "text-xs text-zinc-400 hover:text-zinc-500 cursor-help flex items-center gap-1" }, [
-                        e.createVNode(e.unref(_e))
+                        e.createVNode(e.unref($e))
                       ])
                     ]),
                     _: 1
@@ -2988,30 +3361,30 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 e.createElementVNode("div", { class: "text-xs text-[var(--td-text-color-secondary)] mt-1 leading-relaxed" }, " 选择本实例备份上传的目标存储服务 ")
               ]),
               e.createElementVNode("div", { class: "w-full md:w-[360px] shrink-0 flex items-center gap-2" }, [
-                e.createVNode(lt, {
+                e.createVNode(it, {
                   modelValue: n.value.profileId,
-                  "onUpdate:modelValue": b[1] || (b[1] = (v) => n.value.profileId = v),
+                  "onUpdate:modelValue": b[1] || (b[1] = (k) => n.value.profileId = k),
                   placeholder: "请选择云存储策略...",
                   clearable: "",
                   class: "flex-1"
                 }, {
                   default: e.withCtx(() => [
-                    (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(m.value, (v) => (e.openBlock(), e.createBlock(rt, {
-                      key: v.id,
-                      value: v.id,
-                      label: `${v.name} (${e.unref(A)(v.providerType) === "S3Compatible" ? "S3 兼容" : e.unref(A)(v.providerType) === "WebDAV" ? "WebDAV" : "FTP / FTPS"})`
+                    (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(m.value, (k) => (e.openBlock(), e.createBlock(nt, {
+                      key: k.id,
+                      value: k.id,
+                      label: `${k.name} (${e.unref(O)(k.providerType) === "S3Compatible" ? "S3 兼容" : e.unref(O)(k.providerType) === "WebDAV" ? "WebDAV" : e.unref(O)(k.providerType) === "SFTP" ? "SFTP (SSH)" : "FTP / FTPS"})`
                     }, null, 8, ["value", "label"]))), 128))
                   ]),
                   _: 1
                 }, 8, ["modelValue"]),
-                e.createVNode(I, {
+                e.createVNode(R, {
                   variant: "outline",
                   theme: "primary",
                   class: "!rounded-lg shrink-0",
-                  onClick: b[2] || (b[2] = (v) => f.value = !0)
+                  onClick: b[2] || (b[2] = (k) => f.value = !0)
                 }, {
                   icon: e.withCtx(() => [
-                    e.createVNode(e.unref(Tt))
+                    e.createVNode(e.unref(Ht))
                   ]),
                   default: e.withCtx(() => [
                     e.createTextVNode(" 管理策略 ")
@@ -3026,15 +3399,15 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 e.createElementVNode("div", { class: "text-xs text-[var(--td-text-color-secondary)] mt-1 leading-relaxed" }, " 支持变量占位符以自定义不同实例的存储路径 "),
                 e.createElementVNode("div", { class: "flex flex-wrap items-center gap-1.5 mt-2" }, [
                   e.createElementVNode("span", { class: "text-[11px] text-zinc-400" }, "点击插入:"),
-                  (e.openBlock(), e.createElementBlock(e.Fragment, null, e.renderList(B, (v) => e.createVNode(S, {
-                    key: v.label,
+                  (e.openBlock(), e.createElementBlock(e.Fragment, null, e.renderList(X, (k) => e.createVNode(A, {
+                    key: k.label,
                     size: "small",
                     variant: "light",
                     class: "!cursor-pointer hover:!border-[var(--color-primary)] transition-colors",
-                    onClick: (nt) => P(v.label)
+                    onClick: (dt) => h(k.label)
                   }, {
                     default: e.withCtx(() => [
-                      e.createTextVNode(e.toDisplayString(v.label) + " (" + e.toDisplayString(v.desc) + ") ", 1)
+                      e.createTextVNode(e.toDisplayString(k.label) + " (" + e.toDisplayString(k.desc) + ") ", 1)
                     ]),
                     _: 2
                   }, 1032, ["onClick"])), 64))
@@ -3043,7 +3416,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
               e.createElementVNode("div", { class: "w-full md:w-[360px] shrink-0 flex items-center" }, [
                 e.createVNode(re, {
                   modelValue: n.value.remotePathPattern,
-                  "onUpdate:modelValue": b[3] || (b[3] = (v) => n.value.remotePathPattern = v),
+                  "onUpdate:modelValue": b[3] || (b[3] = (k) => n.value.remotePathPattern = k),
                   placeholder: "/mslx-backups/{serverName}/"
                 }, null, 8, ["modelValue"])
               ])
@@ -3054,9 +3427,9 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
             }, [
               e.createElementVNode("div", { class: "flex-1 pr-0 md:pr-8 mb-3 md:mb-0 min-w-[200px]" }, [
                 e.createElementVNode("div", { class: "text-sm font-medium text-[var(--td-text-color-primary)] leading-snug flex items-center gap-1.5" }, [
-                  e.createVNode(e.unref($t), { class: "text-[var(--color-primary)]" }),
+                  e.createVNode(e.unref(Tt), { class: "text-[var(--color-primary)]" }),
                   e.createTextVNode(" GFS 分层归档同步模式 "),
-                  p.value.enabled ? (e.openBlock(), e.createBlock(S, {
+                  p.value.enabled ? (e.openBlock(), e.createBlock(A, {
                     key: 0,
                     size: "small",
                     theme: "success",
@@ -3066,7 +3439,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                       e.createTextVNode("GFS已启用")
                     ]),
                     _: 1
-                  })) : (e.openBlock(), e.createBlock(S, {
+                  })) : (e.openBlock(), e.createBlock(A, {
                     key: 1,
                     size: "small",
                     theme: "default",
@@ -3083,7 +3456,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
               e.createElementVNode("div", { class: "w-full md:w-[360px] shrink-0 flex items-center justify-start md:justify-end" }, [
                 e.createVNode(le, {
                   modelValue: n.value.syncMode,
-                  "onUpdate:modelValue": b[4] || (b[4] = (v) => n.value.syncMode = v),
+                  "onUpdate:modelValue": b[4] || (b[4] = (k) => n.value.syncMode = k),
                   variant: "default-filled"
                 }, {
                   default: e.withCtx(() => [
@@ -3125,9 +3498,9 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 ]),
                 e.createElementVNode("div", { class: "mt-2 md:mt-0 flex items-center gap-2" }, [
                   e.createElementVNode("span", { class: "text-xs text-zinc-500" }, "继承本地 GFS 份数:"),
-                  e.createVNode(E, {
+                  e.createVNode(s, {
                     modelValue: n.value.inheritGfsKeep,
-                    "onUpdate:modelValue": b[5] || (b[5] = (v) => n.value.inheritGfsKeep = v)
+                    "onUpdate:modelValue": b[5] || (b[5] = (k) => n.value.inheritGfsKeep = k)
                   }, null, 8, ["modelValue"])
                 ])
               ]),
@@ -3139,7 +3512,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                         e.createVNode(e.unref(Y)),
                         e.createTextVNode(" 远端日备份 ")
                       ]),
-                      e.createVNode(S, {
+                      e.createVNode(A, {
                         theme: "primary",
                         variant: "light",
                         size: "small"
@@ -3155,9 +3528,9 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                   e.createElementVNode("div", { class: "flex items-center justify-between pt-2 border-t border-zinc-100 dark:border-zinc-700/40" }, [
                     e.createElementVNode("span", { class: "text-xs text-zinc-600 dark:text-zinc-300" }, "云端保留上限"),
                     e.createElementVNode("div", { class: "w-[120px]" }, [
-                      e.createVNode(T, {
+                      e.createVNode(M, {
                         modelValue: n.value.remoteKeepDaily,
-                        "onUpdate:modelValue": b[6] || (b[6] = (v) => n.value.remoteKeepDaily = v),
+                        "onUpdate:modelValue": b[6] || (b[6] = (k) => n.value.remoteKeepDaily = k),
                         min: 1,
                         max: 365,
                         size: "small",
@@ -3175,7 +3548,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                         e.createVNode(e.unref(Y)),
                         e.createTextVNode(" 远端周备份 ")
                       ]),
-                      e.createVNode(S, {
+                      e.createVNode(A, {
                         theme: "success",
                         variant: "light",
                         size: "small"
@@ -3191,9 +3564,9 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                   e.createElementVNode("div", { class: "flex items-center justify-between pt-2 border-t border-zinc-100 dark:border-zinc-700/40" }, [
                     e.createElementVNode("span", { class: "text-xs text-zinc-600 dark:text-zinc-300" }, "云端保留上限"),
                     e.createElementVNode("div", { class: "w-[120px]" }, [
-                      e.createVNode(T, {
+                      e.createVNode(M, {
                         modelValue: n.value.remoteKeepWeekly,
-                        "onUpdate:modelValue": b[7] || (b[7] = (v) => n.value.remoteKeepWeekly = v),
+                        "onUpdate:modelValue": b[7] || (b[7] = (k) => n.value.remoteKeepWeekly = k),
                         min: 1,
                         max: 365,
                         size: "small",
@@ -3211,7 +3584,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                         e.createVNode(e.unref(Y)),
                         e.createTextVNode(" 远端月备份 ")
                       ]),
-                      e.createVNode(S, {
+                      e.createVNode(A, {
                         theme: "warning",
                         variant: "light",
                         size: "small"
@@ -3227,9 +3600,9 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                   e.createElementVNode("div", { class: "flex items-center justify-between pt-2 border-t border-zinc-100 dark:border-zinc-700/40" }, [
                     e.createElementVNode("span", { class: "text-xs text-zinc-600 dark:text-zinc-300" }, "云端保留上限"),
                     e.createElementVNode("div", { class: "w-[120px]" }, [
-                      e.createVNode(T, {
+                      e.createVNode(M, {
                         modelValue: n.value.remoteKeepMonthly,
-                        "onUpdate:modelValue": b[8] || (b[8] = (v) => n.value.remoteKeepMonthly = v),
+                        "onUpdate:modelValue": b[8] || (b[8] = (k) => n.value.remoteKeepMonthly = k),
                         min: 1,
                         max: 365,
                         size: "small",
@@ -3250,9 +3623,9 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 ]),
                 e.createElementVNode("div", { class: "w-full md:w-[360px] shrink-0 flex items-center justify-start md:justify-end gap-2" }, [
                   e.createElementVNode("span", { class: "text-xs text-zinc-500" }, "云端保留上限:"),
-                  e.createVNode(T, {
+                  e.createVNode(M, {
                     modelValue: n.value.maxRemoteKeep,
-                    "onUpdate:modelValue": b[9] || (b[9] = (v) => n.value.maxRemoteKeep = v),
+                    "onUpdate:modelValue": b[9] || (b[9] = (k) => n.value.maxRemoteKeep = k),
                     min: 0,
                     max: 1e3,
                     size: "small",
@@ -3266,13 +3639,13 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 e.createElementVNode("div", { class: "flex-1 pr-0 md:pr-8 mb-3 md:mb-0 min-w-[200px]" }, [
                   e.createElementVNode("div", { class: "text-sm font-medium text-[var(--td-text-color-primary)] leading-snug" }, "本地备份保留策略"),
                   e.createElementVNode("div", { class: "text-xs text-[var(--td-text-color-secondary)] mt-1 leading-relaxed" }, [
-                    g.value === "keepN" ? (e.openBlock(), e.createElementBlock("span", { key: 0 }, "本地仅保留最新备份以备快速还原，更早的旧备份在上传后自动滚动清理。")) : g.value === "deleteImmediate" ? (e.openBlock(), e.createElementBlock("span", { key: 1 }, "备份成功上传至云端后立即删除本地副本，实现零本地磁盘占用（适用于磁盘空间紧张的服务器）。")) : (e.openBlock(), e.createElementBlock("span", { key: 2 }, "本地备份文件永久保留，不执行自动清理。"))
+                    x.value === "keepN" ? (e.openBlock(), e.createElementBlock("span", { key: 0 }, "本地仅保留最新备份以备快速还原，更早的旧备份在上传后自动滚动清理。")) : x.value === "deleteImmediate" ? (e.openBlock(), e.createElementBlock("span", { key: 1 }, "备份成功上传至云端后立即删除本地副本，实现零本地磁盘占用（适用于磁盘空间紧张的服务器）。")) : (e.openBlock(), e.createElementBlock("span", { key: 2 }, "本地备份文件永久保留，不执行自动清理。"))
                   ])
                 ]),
                 e.createElementVNode("div", { class: "w-full md:w-[380px] shrink-0 flex flex-wrap items-center justify-start md:justify-end gap-2" }, [
                   e.createVNode(le, {
-                    modelValue: g.value,
-                    "onUpdate:modelValue": b[10] || (b[10] = (v) => g.value = v),
+                    modelValue: x.value,
+                    "onUpdate:modelValue": b[10] || (b[10] = (k) => x.value = k),
                     variant: "default-filled"
                   }, {
                     default: e.withCtx(() => [
@@ -3297,10 +3670,10 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     ]),
                     _: 1
                   }, 8, ["modelValue"]),
-                  g.value === "keepN" ? (e.openBlock(), e.createBlock(T, {
+                  x.value === "keepN" ? (e.openBlock(), e.createBlock(M, {
                     key: 0,
                     modelValue: n.value.maxLocalKeep,
-                    "onUpdate:modelValue": b[11] || (b[11] = (v) => n.value.maxLocalKeep = v),
+                    "onUpdate:modelValue": b[11] || (b[11] = (k) => n.value.maxLocalKeep = k),
                     min: 1,
                     max: 1e3,
                     size: "small",
@@ -3315,16 +3688,16 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
               class: "p-3 md:p-4 border-b border-dashed border-zinc-100 dark:border-zinc-800/60 rounded-xl text-xs text-[var(--td-text-color-secondary)] leading-relaxed"
             }, [
               e.createElementVNode("div", { class: "flex items-center gap-2 text-zinc-600 dark:text-zinc-400" }, [
-                e.createVNode(e.unref(_e), { class: "text-sm text-[var(--color-primary)] shrink-0" }),
+                e.createVNode(e.unref($e), { class: "text-sm text-[var(--color-primary)] shrink-0" }),
                 e.createElementVNode("span", null, "当前为「仅 GFS 归档」模式：仅将日/周/月长线归档快照同步至云端，常规定时备份不上传至云端，本地文件不受云端滚动策略影响。如需同步常规备份，请在上方切换为「双轨同步」或「仅常规备份」。")
               ])
             ])),
             e.createElementVNode("div", { class: "flex justify-end p-3 md:p-4" }, [
-              e.createVNode(I, {
+              e.createVNode(R, {
                 theme: "primary",
                 loading: i.value,
                 class: "!rounded-lg shadow-sm",
-                onClick: q
+                onClick: B
               }, {
                 default: e.withCtx(() => [
                   e.createTextVNode(" 保存云同步配置 ")
@@ -3343,34 +3716,34 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
             e.createElementVNode("div", { class: "text-sm font-bold text-[var(--td-text-color-primary)] leading-snug" }, "云端文件列表"),
             e.createElementVNode("div", { class: "text-xs text-[var(--td-text-color-secondary)] mt-0.5 leading-relaxed" }, [
               e.createTextVNode(" 当前云存储已沉淀 "),
-              e.createElementVNode("b", { class: "text-zinc-700 dark:text-zinc-300" }, e.toDisplayString(y.value.length), 1),
+              e.createElementVNode("b", { class: "text-zinc-700 dark:text-zinc-300" }, e.toDisplayString(v.value.length), 1),
               e.createTextVNode(" 份历史备份（总占用: " + e.toDisplayString(Z.value) + "）。 ", 1)
             ])
           ]),
           e.createElementVNode("div", { class: "shrink-0 flex items-center gap-2" }, [
             e.createVNode(re, {
               modelValue: C.value,
-              "onUpdate:modelValue": b[12] || (b[12] = (v) => C.value = v),
+              "onUpdate:modelValue": b[12] || (b[12] = (k) => C.value = k),
               placeholder: "搜索文件名或路径...",
               clearable: "",
               size: "small",
               class: "!w-48"
             }, {
               "prefix-icon": e.withCtx(() => [
-                e.createVNode(e.unref(Wt))
+                e.createVNode(e.unref(Ft))
               ]),
               _: 1
             }, 8, ["modelValue"]),
-            e.createVNode(I, {
+            e.createVNode(R, {
               theme: "primary",
               variant: "outline",
               size: "small",
               class: "!rounded-lg shadow-sm",
-              loading: k.value,
-              onClick: D
+              loading: y.value,
+              onClick: $
             }, {
               icon: e.withCtx(() => [
-                e.createVNode(e.unref(et))
+                e.createVNode(e.unref(ot))
               ]),
               default: e.withCtx(() => [
                 e.createTextVNode(" 刷新 ")
@@ -3380,24 +3753,24 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
           ])
         ]),
         e.createElementVNode("div", { class: "mt-3" }, [
-          e.createVNode(ot, {
-            modelValue: x.value,
-            "onUpdate:modelValue": b[13] || (b[13] = (v) => x.value = v),
+          e.createVNode(st, {
+            modelValue: g.value,
+            "onUpdate:modelValue": b[13] || (b[13] = (k) => g.value = k),
             theme: "card",
             size: "medium"
           }, {
             default: e.withCtx(() => [
-              e.createVNode(K, { value: "all" }, {
+              e.createVNode(L, { value: "all" }, {
                 label: e.withCtx(() => [
                   e.createElementVNode("div", { class: "flex items-center gap-1.5" }, [
                     e.createElementVNode("span", null, "全部备份"),
-                    e.createVNode(S, {
+                    e.createVNode(A, {
                       size: "small",
                       variant: "light",
                       theme: "default"
                     }, {
                       default: e.withCtx(() => [
-                        e.createTextVNode(e.toDisplayString(y.value.length), 1)
+                        e.createTextVNode(e.toDisplayString(v.value.length), 1)
                       ]),
                       _: 1
                     })
@@ -3405,17 +3778,17 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 ]),
                 _: 1
               }),
-              e.createVNode(K, { value: "daily" }, {
+              e.createVNode(L, { value: "daily" }, {
                 label: e.withCtx(() => [
                   e.createElementVNode("div", { class: "flex items-center gap-1.5" }, [
                     e.createElementVNode("span", null, "日备份"),
-                    e.createVNode(S, {
+                    e.createVNode(A, {
                       size: "small",
                       variant: "light",
                       theme: "primary"
                     }, {
                       default: e.withCtx(() => [
-                        e.createTextVNode(e.toDisplayString(s.value), 1)
+                        e.createTextVNode(e.toDisplayString(c.value), 1)
                       ]),
                       _: 1
                     })
@@ -3423,17 +3796,17 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 ]),
                 _: 1
               }),
-              e.createVNode(K, { value: "weekly" }, {
+              e.createVNode(L, { value: "weekly" }, {
                 label: e.withCtx(() => [
                   e.createElementVNode("div", { class: "flex items-center gap-1.5" }, [
                     e.createElementVNode("span", null, "周备份"),
-                    e.createVNode(S, {
+                    e.createVNode(A, {
                       size: "small",
                       variant: "light",
                       theme: "success"
                     }, {
                       default: e.withCtx(() => [
-                        e.createTextVNode(e.toDisplayString(H.value), 1)
+                        e.createTextVNode(e.toDisplayString(q.value), 1)
                       ]),
                       _: 1
                     })
@@ -3441,17 +3814,17 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 ]),
                 _: 1
               }),
-              e.createVNode(K, { value: "monthly" }, {
+              e.createVNode(L, { value: "monthly" }, {
                 label: e.withCtx(() => [
                   e.createElementVNode("div", { class: "flex items-center gap-1.5" }, [
                     e.createElementVNode("span", null, "月备份"),
-                    e.createVNode(S, {
+                    e.createVNode(A, {
                       size: "small",
                       variant: "light",
                       theme: "warning"
                     }, {
                       default: e.withCtx(() => [
-                        e.createTextVNode(e.toDisplayString(R.value), 1)
+                        e.createTextVNode(e.toDisplayString(K.value), 1)
                       ]),
                       _: 1
                     })
@@ -3459,17 +3832,17 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 ]),
                 _: 1
               }),
-              e.createVNode(K, { value: "regular" }, {
+              e.createVNode(L, { value: "regular" }, {
                 label: e.withCtx(() => [
                   e.createElementVNode("div", { class: "flex items-center gap-1.5" }, [
                     e.createElementVNode("span", null, "常规备份"),
-                    e.createVNode(S, {
+                    e.createVNode(A, {
                       size: "small",
                       variant: "light",
                       theme: "default"
                     }, {
                       default: e.withCtx(() => [
-                        e.createTextVNode(e.toDisplayString(a.value), 1)
+                        e.createTextVNode(e.toDisplayString(r.value), 1)
                       ]),
                       _: 1
                     })
@@ -3482,18 +3855,18 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
           }, 8, ["modelValue"])
         ]),
         e.createElementVNode("div", { class: "mt-2 border border-zinc-200/60 dark:border-zinc-700/60 rounded-xl overflow-hidden shadow-sm bg-white/50 dark:bg-zinc-900/20" }, [
-          e.createVNode(at, {
+          e.createVNode(ct, {
             "row-key": "fullPath",
-            data: u.value,
-            columns: J,
-            loading: k.value,
+            data: J.value,
+            columns: I,
+            loading: y.value,
             stripe: "",
             hover: "",
             size: "small"
           }, {
-            tier: e.withCtx(({ row: v }) => [
+            tier: e.withCtx(({ row: k }) => [
               e.createElementVNode("div", { class: "flex items-center" }, [
-                v.tier === "daily" ? (e.openBlock(), e.createBlock(S, {
+                k.tier === "daily" ? (e.openBlock(), e.createBlock(A, {
                   key: 0,
                   theme: "primary",
                   variant: "light",
@@ -3504,7 +3877,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     e.createTextVNode(" 日备份 ")
                   ]),
                   _: 1
-                })) : v.tier === "weekly" ? (e.openBlock(), e.createBlock(S, {
+                })) : k.tier === "weekly" ? (e.openBlock(), e.createBlock(A, {
                   key: 1,
                   theme: "success",
                   variant: "light",
@@ -3515,7 +3888,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     e.createTextVNode(" 周备份 ")
                   ]),
                   _: 1
-                })) : v.tier === "monthly" ? (e.openBlock(), e.createBlock(S, {
+                })) : k.tier === "monthly" ? (e.openBlock(), e.createBlock(A, {
                   key: 2,
                   theme: "warning",
                   variant: "light",
@@ -3526,7 +3899,7 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                     e.createTextVNode(" 月备份 ")
                   ]),
                   _: 1
-                })) : (e.openBlock(), e.createBlock(S, {
+                })) : (e.openBlock(), e.createBlock(A, {
                   key: 3,
                   theme: "default",
                   variant: "light",
@@ -3540,28 +3913,28 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
                 }))
               ])
             ]),
-            fileName: e.withCtx(({ row: v }) => [
+            fileName: e.withCtx(({ row: k }) => [
               e.createElementVNode("div", { class: "flex items-center font-mono text-[13px] text-zinc-700 dark:text-zinc-300 break-all" }, [
-                e.createVNode(e.unref(At), { class: "mr-1.5 text-[var(--color-primary)] shrink-0" }),
-                e.createElementVNode("span", null, e.toDisplayString(v.fileName), 1)
+                e.createVNode(e.unref($t), { class: "mr-1.5 text-[var(--color-primary)] shrink-0" }),
+                e.createElementVNode("span", null, e.toDisplayString(k.fileName), 1)
               ])
             ]),
-            lastModified: e.withCtx(({ row: v }) => [
+            lastModified: e.withCtx(({ row: k }) => [
               e.createElementVNode("div", { class: "flex items-center text-[var(--td-text-color-secondary)] text-[13px]" }, [
-                e.createVNode(e.unref(Ft), { class: "mr-1.5 shrink-0" }),
-                e.createTextVNode(" " + e.toDisplayString(v.lastModified ? new Date(v.lastModified).toLocaleString() : "-"), 1)
+                e.createVNode(e.unref(Zt), { class: "mr-1.5 shrink-0" }),
+                e.createTextVNode(" " + e.toDisplayString(k.lastModified ? new Date(k.lastModified).toLocaleString() : "-"), 1)
               ])
             ]),
-            op: e.withCtx(({ row: v }) => [
-              e.createVNode(I, {
+            op: e.withCtx(({ row: k }) => [
+              e.createVNode(R, {
                 variant: "text",
                 shape: "square",
                 theme: "danger",
                 class: "!rounded-md hover:!bg-red-500/10 transition-colors",
-                onClick: (nt) => G(v)
+                onClick: (dt) => U(k)
               }, {
                 default: e.withCtx(() => [
-                  e.createVNode(e.unref(Qe))
+                  e.createVNode(e.unref(rt))
                 ]),
                 _: 1
               }, 8, ["onClick"])
@@ -3574,15 +3947,15 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
             _: 1
           }, 8, ["data", "loading"])
         ]),
-        e.createVNode(Zt, {
+        e.createVNode(tr, {
           visible: f.value,
-          "onUpdate:visible": b[14] || (b[14] = (v) => f.value = v),
-          onChanged: d
+          "onUpdate:visible": b[14] || (b[14] = (k) => f.value = k),
+          onChanged: H
         }, null, 8, ["visible"])
       ]);
     };
   }
-}), Gt = /* @__PURE__ */ tt(qt, [["__scopeId", "data-v-465f3268"]]), Jt = {
+}), lr = /* @__PURE__ */ at(rr, [["__scopeId", "data-v-aedf6946"]]), or = {
   name: "MSLX.Plugin.Cloud.Backup",
   version: "1.0.0",
   routes: [],
@@ -3590,12 +3963,12 @@ const _ = /* @__PURE__ */ ct(Ht), $ = "/api/plugins/cloud-backup", z = {
     {
       slot: "instance-settings-tab",
       // 注入到实例配置侧边栏新 Tab
-      component: Gt,
+      component: lr,
       label: "云备份同步",
-      icon: Xe
+      icon: tt
     }
   ]
 };
 export {
-  Jt as pluginConfig
+  or as pluginConfig
 };

@@ -141,7 +141,11 @@ public class CloudBackupEngine
                             PluginCryptoService.IsPlaintext(profile.WebDavUsername) ||
                             PluginCryptoService.IsPlaintext(profile.WebDavPassword) ||
                             PluginCryptoService.IsPlaintext(profile.FtpUsername) ||
-                            PluginCryptoService.IsPlaintext(profile.FtpPassword))
+                            PluginCryptoService.IsPlaintext(profile.FtpPassword) ||
+                            PluginCryptoService.IsPlaintext(profile.SftpUsername) ||
+                            PluginCryptoService.IsPlaintext(profile.SftpPassword) ||
+                            PluginCryptoService.IsPlaintext(profile.SftpPrivateKey) ||
+                            PluginCryptoService.IsPlaintext(profile.SftpPassphrase))
                         {
                             needsMigration = true;
                             break;

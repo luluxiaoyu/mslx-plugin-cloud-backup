@@ -1,9 +1,10 @@
-export type CloudStorageProviderType = 'S3Compatible' | 'WebDAV' | 'FTP';
+export type CloudStorageProviderType = 'S3Compatible' | 'WebDAV' | 'FTP' | 'SFTP';
 export type CloudSyncTargetMode = 'RegularOnly' | 'GfsOnly' | 'Both';
 
 export const normalizeProviderType = (type: any): CloudStorageProviderType => {
   if (type === 'WebDAV' || type === 1 || type === '1') return 'WebDAV';
   if (type === 'FTP' || type === 2 || type === '2') return 'FTP';
+  if (type === 'SFTP' || type === 3 || type === '3') return 'SFTP';
   return 'S3Compatible';
 };
 
@@ -41,12 +42,23 @@ export interface CloudStorageProfile {
   ftpUseSsl?: boolean;
   ftpBasePath?: string;
 
+  // SFTP (SSH)
+  sftpHost?: string;
+  sftpPort?: number;
+  sftpUsername?: string;
+  sftpAuthType?: 'Password' | 'PrivateKey';
+  sftpPassword?: string;
+  sftpPrivateKey?: string;
+  sftpPassphrase?: string;
+  sftpBasePath?: string;
+
   createdAt?: string;
   updatedAt?: string;
 
   hasS3Credentials?: boolean;
   hasWebDavCredentials?: boolean;
   hasFtpCredentials?: boolean;
+  hasSftpCredentials?: boolean;
 }
 
 export interface InstanceCloudSyncConfig {

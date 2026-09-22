@@ -9,7 +9,8 @@ public enum CloudStorageProviderType
 {
     S3Compatible,
     WebDAV,
-    FTP
+    FTP,
+    SFTP
 }
 
 /// <summary>
@@ -44,12 +45,23 @@ public class CloudStorageProfile
     public bool FtpUseSsl { get; set; } = false;
     public string? FtpBasePath { get; set; } = "/";
 
+    // ====== SFTP (SSH) 协议 ======
+    public string? SftpHost { get; set; }
+    public int SftpPort { get; set; } = 22;
+    public string? SftpUsername { get; set; }
+    public string? SftpAuthType { get; set; } = "Password"; // "Password" | "PrivateKey"
+    public string? SftpPassword { get; set; }
+    public string? SftpPrivateKey { get; set; }
+    public string? SftpPassphrase { get; set; }
+    public string? SftpBasePath { get; set; } = "/";
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
     public bool HasS3Credentials { get; set; }
     public bool HasWebDavCredentials { get; set; }
     public bool HasFtpCredentials { get; set; }
+    public bool HasSftpCredentials { get; set; }
 }
 
 /// <summary>
