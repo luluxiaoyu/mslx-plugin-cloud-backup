@@ -606,14 +606,14 @@ const columns = [
           </div>
         </div>
 
-        <!-- 保存配置按钮行：完全匹配 GFS 按钮行 -->
-        <div class="flex justify-end p-3 md:p-4">
-          <t-button theme="primary" :loading="saving" class="!rounded-lg shadow-sm" @click="handleSaveConfig">
-            保存云同步配置
-          </t-button>
-        </div>
-
       </template>
+
+      <!-- 保存配置按钮行：完全匹配 GFS 按钮行 -->
+      <div class="flex justify-end p-3 md:p-4">
+        <t-button theme="primary" :loading="saving" class="!rounded-lg shadow-sm" @click="handleSaveConfig">
+          保存云同步配置
+        </t-button>
+      </div>
 
     </div>
 
