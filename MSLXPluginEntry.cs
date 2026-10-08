@@ -13,7 +13,7 @@ public class MSLXPluginEntry : IPlugin
     public string Id => "mslx-plugin-cloud-backup";
     public string Name => "存档云端备份同步";
     public string Description => "备份自动同步至云端对象存储与远端主机（支持 S3兼容、WebDAV、FTP/FTPS、SFTP/SSH），支持联动GFS备份插件管理，支持用户策略隔离与本地/远端超额自动滚动清理。";
-    public string Version => "1.0.3.6";
+    public string Version => "1.0.3.8";
     public string Icon => "icon.png";
     public string MinSDKVersion => "1.6.4";
     public string Developer => "xiaoyu";
@@ -33,6 +33,9 @@ public class MSLXPluginEntry : IPlugin
             SDK.MSLX.Logger.Info("[MSLX 云端备份同步插件] 已成功加载！");
             SDK.MSLX.Logger.Info("已挂载事件总线，监听宿主备份生成流水线...");
             SDK.MSLX.Logger.Info("========================================");
+
+            // 初始化任务生命周期管控
+            CloudBackupEngine.InitializeLifecycle();
 
             // 启动时自动迁移历史明文凭据至 AES-256 加密存储
             CloudBackupEngine.MigrateLegacyPlaintextCredentials();
@@ -57,6 +60,7 @@ public class MSLXPluginEntry : IPlugin
     public void OnUnload()
     {
         SDK.MSLX.Events.OnBackupCompleted -= HandleBackupCompleted;
+        CloudBackupEngine.ShutdownLifecycle();
         SDK.MSLX.Logger.Info("[MSLX 云端备份同步插件] 已安全卸载。");
     }
 

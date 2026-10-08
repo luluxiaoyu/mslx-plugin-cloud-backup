@@ -4,6 +4,7 @@ using MSLX.Plugin.Cloud.Backup.Services.Providers;
 using MSLX.Plugin.Cloud.Backup.Services.Security;
 using MSLX.SDK;
 using MSLX.SDK.Events;
+using MSLX.SDK.Models.Files;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -15,6 +16,33 @@ namespace MSLX.Plugin.Cloud.Backup.Services;
 public class CloudBackupEngine
 {
     private static readonly System.Collections.Concurrent.ConcurrentDictionary<uint, SemaphoreSlim> _instanceLocks = new();
+    private static CancellationTokenSource _pluginLifetimeCts = new();
+    private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, CancellationTokenSource> _activeUploads = new();
+
+    public static void InitializeLifecycle()
+    {
+        _pluginLifetimeCts = new CancellationTokenSource();
+    }
+
+    public static void ShutdownLifecycle()
+    {
+        try
+        {
+            _pluginLifetimeCts.Cancel();
+        }
+        catch { }
+
+        foreach (var (taskId, cts) in _activeUploads)
+        {
+            try
+            {
+                cts.Cancel();
+                SDK.MSLX.Tasks?.SetFailed(taskId, "插件已卸载或停用，任务终止");
+            }
+            catch { }
+        }
+        _activeUploads.Clear();
+    }
 
     public static string GetUserConfigKey(string userId) => $"user_cloud_storage_{userId}";
     public static string GetInstanceConfigKey(uint instanceId) => $"instance_cloud_sync_{instanceId}";
@@ -349,7 +377,16 @@ public class CloudBackupEngine
 
                         try
                         {
-                            bool success = await provider.UploadFileAsync(profile, localPath, remoteGfsFile);
+                            bool success = await UploadWithBackgroundTaskAsync(
+                                provider,
+                                profile,
+                                localPath,
+                                remoteGfsFile,
+                                $"同步 GFS {tier} 归档: {serverName}",
+                                gfsFileName,
+                                e.InstanceId,
+                                syncConfig.OwnerUserId ?? ""
+                            );
                             if (success)
                             {
                                 anyUploadSuccess = true;
@@ -407,7 +444,16 @@ public class CloudBackupEngine
                 if (File.Exists(sourceFile))
                 {
                     SDK.MSLX.Logger.Info($"[CloudBackup] 正在上传常规定时备份: {fileName} -> {remoteFilePath}");
-                    bool regularSuccess = await provider.UploadFileAsync(profile, sourceFile, remoteFilePath);
+                    bool regularSuccess = await UploadWithBackgroundTaskAsync(
+                        provider,
+                        profile,
+                        sourceFile,
+                        remoteFilePath,
+                        $"同步云端备份: {serverName}",
+                        fileName,
+                        e.InstanceId,
+                        syncConfig.OwnerUserId ?? ""
+                    );
                     if (regularSuccess)
                     {
                         anyUploadSuccess = true;
@@ -556,6 +602,106 @@ public class CloudBackupEngine
         catch (Exception ex)
         {
             SDK.MSLX.Logger.Warn($"[CloudBackup] 本地生命周期清理异常: {ex.Message}");
+        }
+    }
+
+    /// <summary>
+    /// 包装后台任务进度的云端上传辅助方法
+    /// </summary>
+    private static async Task<bool> UploadWithBackgroundTaskAsync(
+        ICloudStorageProvider provider,
+        CloudStorageProfile profile,
+        string localPath,
+        string remotePath,
+        string title,
+        string targetName,
+        uint instanceId,
+        string userId)
+    {
+        string? taskId = null;
+        CancellationToken taskCancelToken = CancellationToken.None;
+
+        try
+        {
+            if (SDK.MSLX.Tasks != null)
+            {
+                var (task, token) = SDK.MSLX.Tasks.CreateTask(
+                    userId: userId ?? "",
+                    instanceId: instanceId,
+                    type: TaskType.Plugin,
+                    title: title,
+                    targetName: targetName
+                );
+                taskId = task?.Id;
+                taskCancelToken = token;
+            }
+        }
+        catch (Exception ex)
+        {
+            SDK.MSLX.Logger.Warn($"[CloudBackup] 注册后台任务管理器记录失败: {ex.Message}");
+        }
+
+        var progress = new Progress<double>(ratio =>
+        {
+            if (!string.IsNullOrEmpty(taskId))
+            {
+                int percent = ratio <= 1.0 && ratio > 0 ? (int)(ratio * 100) : (int)ratio;
+                percent = Math.Clamp(percent, 0, 100);
+                try
+                {
+                    SDK.MSLX.Tasks?.UpdateProgress(taskId, percent, $"正在同步至云端: {percent}%");
+                }
+                catch { }
+            }
+        });
+
+        using var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(taskCancelToken, _pluginLifetimeCts.Token);
+        if (!string.IsNullOrEmpty(taskId))
+        {
+            _activeUploads[taskId] = linkedCts;
+        }
+
+        try
+        {
+            bool success = await provider.UploadFileAsync(profile, localPath, remotePath, progress, linkedCts.Token);
+            if (!string.IsNullOrEmpty(taskId))
+            {
+                if (success)
+                {
+                    SDK.MSLX.Tasks?.SetSuccess(taskId, "云端备份同步完成");
+                }
+                else
+                {
+                    SDK.MSLX.Tasks?.SetFailed(taskId, "云端上传未成功");
+                }
+            }
+            return success;
+        }
+        catch (Exception ex)
+        {
+            if (!string.IsNullOrEmpty(taskId))
+            {
+                if (_pluginLifetimeCts.IsCancellationRequested)
+                {
+                    SDK.MSLX.Tasks?.SetFailed(taskId, "插件已卸载或停用，任务终止");
+                }
+                else if (taskCancelToken.IsCancellationRequested)
+                {
+                    SDK.MSLX.Tasks?.SetFailed(taskId, "用户已取消");
+                }
+                else
+                {
+                    SDK.MSLX.Tasks?.SetFailed(taskId, ex.Message);
+                }
+            }
+            throw;
+        }
+        finally
+        {
+            if (!string.IsNullOrEmpty(taskId))
+            {
+                _activeUploads.TryRemove(taskId, out _);
+            }
         }
     }
     #endregion

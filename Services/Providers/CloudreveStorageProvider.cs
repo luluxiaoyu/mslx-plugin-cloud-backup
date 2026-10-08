@@ -241,7 +241,7 @@ public class CloudreveStorageProvider : ICloudStorageProvider
 
                     uploadedBytes += bytesRead;
                     chunkIndex++;
-                    progress?.Report(totalBytes > 0 ? (double)uploadedBytes / totalBytes : 1.0);
+                    progress?.Report(totalBytes > 0 ? (double)uploadedBytes / totalBytes * 100.0 : 100.0);
                 }
             }
             else if (policyType == "remote")
@@ -282,7 +282,7 @@ public class CloudreveStorageProvider : ICloudStorageProvider
 
                     uploadedBytes += bytesRead;
                     chunkIndex++;
-                    progress?.Report(totalBytes > 0 ? (double)uploadedBytes / totalBytes : 1.0);
+                    progress?.Report(totalBytes > 0 ? (double)uploadedBytes / totalBytes * 100.0 : 100.0);
                 }
             }
             else if (policyType == "onedrive")
@@ -311,7 +311,7 @@ public class CloudreveStorageProvider : ICloudStorageProvider
 
                     uploadedBytes += bytesRead;
                     chunkIndex++;
-                    progress?.Report(totalBytes > 0 ? (double)uploadedBytes / totalBytes : 1.0);
+                    progress?.Report(totalBytes > 0 ? (double)uploadedBytes / totalBytes * 100.0 : 100.0);
                 }
 
                 if (!string.IsNullOrEmpty(callbackSecret))
@@ -361,7 +361,7 @@ public class CloudreveStorageProvider : ICloudStorageProvider
 
                     uploadedBytes += bytesRead;
                     chunkIndex++;
-                    progress?.Report(totalBytes > 0 ? (double)uploadedBytes / totalBytes : 1.0);
+                    progress?.Report(totalBytes > 0 ? (double)uploadedBytes / totalBytes * 100.0 : 100.0);
                 }
 
                 // 完结对象存储多段上传
