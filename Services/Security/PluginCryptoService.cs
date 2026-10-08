@@ -220,6 +220,9 @@ public static class PluginCryptoService
             profile.SftpPrivateKey = Encrypt(profile.SftpPrivateKey);
         if (!string.IsNullOrEmpty(profile.SftpPassphrase))
             profile.SftpPassphrase = Encrypt(profile.SftpPassphrase);
+
+        if (!string.IsNullOrEmpty(profile.CloudrevePassword))
+            profile.CloudrevePassword = Encrypt(profile.CloudrevePassword);
     }
 
     /// <summary>
@@ -262,6 +265,12 @@ public static class PluginCryptoService
             SftpPassphrase = Decrypt(source.SftpPassphrase),
             SftpBasePath = source.SftpBasePath,
 
+            CloudreveUrl = source.CloudreveUrl,
+            CloudreveEmail = source.CloudreveEmail,
+            CloudrevePassword = Decrypt(source.CloudrevePassword),
+            CloudrevePolicyId = source.CloudrevePolicyId,
+            CloudreveBasePath = source.CloudreveBasePath,
+
             CreatedAt = source.CreatedAt,
             UpdatedAt = source.UpdatedAt
         };
@@ -299,6 +308,11 @@ public static class PluginCryptoService
             SftpAuthType = source.SftpAuthType,
             SftpBasePath = source.SftpBasePath,
 
+            CloudreveUrl = source.CloudreveUrl,
+            CloudreveEmail = source.CloudreveEmail,
+            CloudrevePolicyId = source.CloudrevePolicyId,
+            CloudreveBasePath = source.CloudreveBasePath,
+
             CreatedAt = source.CreatedAt,
             UpdatedAt = source.UpdatedAt,
 
@@ -313,12 +327,14 @@ public static class PluginCryptoService
             SftpPassword = string.Empty,
             SftpPrivateKey = string.Empty,
             SftpPassphrase = string.Empty,
+            CloudrevePassword = string.Empty,
 
             // 标记凭据是否已配置，供前端展示状态
             HasS3Credentials = !string.IsNullOrWhiteSpace(source.S3AccessKey) || !string.IsNullOrWhiteSpace(source.S3SecretKey),
             HasWebDavCredentials = !string.IsNullOrWhiteSpace(source.WebDavUsername) || !string.IsNullOrWhiteSpace(source.WebDavPassword),
             HasFtpCredentials = !string.IsNullOrWhiteSpace(source.FtpUsername) || !string.IsNullOrWhiteSpace(source.FtpPassword),
-            HasSftpCredentials = !string.IsNullOrWhiteSpace(source.SftpPassword) || !string.IsNullOrWhiteSpace(source.SftpPrivateKey)
+            HasSftpCredentials = !string.IsNullOrWhiteSpace(source.SftpPassword) || !string.IsNullOrWhiteSpace(source.SftpPrivateKey),
+            HasCloudreveCredentials = !string.IsNullOrWhiteSpace(source.CloudreveEmail) || !string.IsNullOrWhiteSpace(source.CloudrevePassword)
         };
 
         return clone;

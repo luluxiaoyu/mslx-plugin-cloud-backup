@@ -10,7 +10,8 @@ public enum CloudStorageProviderType
     S3Compatible,
     WebDAV,
     FTP,
-    SFTP
+    SFTP,
+    CloudreveV4
 }
 
 /// <summary>
@@ -55,6 +56,13 @@ public class CloudStorageProfile
     public string? SftpPassphrase { get; set; }
     public string? SftpBasePath { get; set; } = "/";
 
+    // ====== Cloudreve V4 协议 ======
+    public string? CloudreveUrl { get; set; }
+    public string? CloudreveEmail { get; set; }
+    public string? CloudrevePassword { get; set; }
+    public string? CloudrevePolicyId { get; set; }
+    public string? CloudreveBasePath { get; set; } = "/";
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
@@ -62,6 +70,7 @@ public class CloudStorageProfile
     public bool HasWebDavCredentials { get; set; }
     public bool HasFtpCredentials { get; set; }
     public bool HasSftpCredentials { get; set; }
+    public bool HasCloudreveCredentials { get; set; }
 }
 
 /// <summary>

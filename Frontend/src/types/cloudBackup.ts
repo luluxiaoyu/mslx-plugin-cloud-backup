@@ -1,10 +1,11 @@
-export type CloudStorageProviderType = 'S3Compatible' | 'WebDAV' | 'FTP' | 'SFTP';
+export type CloudStorageProviderType = 'S3Compatible' | 'WebDAV' | 'FTP' | 'SFTP' | 'CloudreveV4';
 export type CloudSyncTargetMode = 'RegularOnly' | 'GfsOnly' | 'Both';
 
 export const normalizeProviderType = (type: any): CloudStorageProviderType => {
   if (type === 'WebDAV' || type === 1 || type === '1') return 'WebDAV';
   if (type === 'FTP' || type === 2 || type === '2') return 'FTP';
   if (type === 'SFTP' || type === 3 || type === '3') return 'SFTP';
+  if (type === 'CloudreveV4' || type === 4 || type === '4') return 'CloudreveV4';
   return 'S3Compatible';
 };
 
@@ -52,6 +53,13 @@ export interface CloudStorageProfile {
   sftpPassphrase?: string;
   sftpBasePath?: string;
 
+  // Cloudreve
+  cloudreveUrl?: string;
+  cloudreveEmail?: string;
+  cloudrevePassword?: string;
+  cloudrevePolicyId?: string;
+  cloudreveBasePath?: string;
+
   createdAt?: string;
   updatedAt?: string;
 
@@ -59,6 +67,7 @@ export interface CloudStorageProfile {
   hasWebDavCredentials?: boolean;
   hasFtpCredentials?: boolean;
   hasSftpCredentials?: boolean;
+  hasCloudreveCredentials?: boolean;
 }
 
 export interface InstanceCloudSyncConfig {

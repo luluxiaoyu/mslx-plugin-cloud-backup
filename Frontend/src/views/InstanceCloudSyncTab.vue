@@ -364,7 +364,7 @@ const columns = [
                 v-for="p in userProfiles"
                 :key="p.id"
                 :value="p.id"
-                :label="`${p.name} (${normalizeProviderType(p.providerType) === 'S3Compatible' ? 'S3 兼容' : normalizeProviderType(p.providerType) === 'WebDAV' ? 'WebDAV' : normalizeProviderType(p.providerType) === 'SFTP' ? 'SFTP (SSH)' : 'FTP / FTPS'})`"
+                :label="`${p.name} (${normalizeProviderType(p.providerType) === 'S3Compatible' ? 'S3 兼容' : normalizeProviderType(p.providerType) === 'WebDAV' ? 'WebDAV' : normalizeProviderType(p.providerType) === 'CloudreveV4' ? 'Cloudreve v4' : normalizeProviderType(p.providerType) === 'SFTP' ? 'SFTP (SSH)' : 'FTP / FTPS'})`"
               />
             </t-select>
 

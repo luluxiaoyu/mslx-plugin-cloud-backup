@@ -10,7 +10,8 @@ public static class StorageProviderFactory
         [CloudStorageProviderType.S3Compatible] = new S3StorageProvider(),
         [CloudStorageProviderType.WebDAV] = new WebDavStorageProvider(),
         [CloudStorageProviderType.FTP] = new FtpStorageProvider(),
-        [CloudStorageProviderType.SFTP] = new SftpStorageProvider()
+        [CloudStorageProviderType.SFTP] = new SftpStorageProvider(),
+        [CloudStorageProviderType.CloudreveV4] = new CloudreveStorageProvider()
     };
 
     public static ICloudStorageProvider GetProvider(CloudStorageProviderType type)

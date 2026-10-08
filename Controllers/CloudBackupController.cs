@@ -81,6 +81,8 @@ public class CloudBackupController : ControllerBase
             if (string.IsNullOrWhiteSpace(profile.SftpPrivateKey)) profile.SftpPrivateKey = existing.SftpPrivateKey;
             if (string.IsNullOrWhiteSpace(profile.SftpPassphrase)) profile.SftpPassphrase = existing.SftpPassphrase;
 
+            if (string.IsNullOrWhiteSpace(profile.CloudrevePassword)) profile.CloudrevePassword = existing.CloudrevePassword;
+
             profile.CreatedAt = existing.CreatedAt;
             profile.UpdatedAt = DateTime.UtcNow;
             config.Profiles[existingIndex] = profile;
@@ -161,6 +163,8 @@ public class CloudBackupController : ControllerBase
                 if (string.IsNullOrWhiteSpace(profile.SftpPassword)) profile.SftpPassword = existing.SftpPassword;
                 if (string.IsNullOrWhiteSpace(profile.SftpPrivateKey)) profile.SftpPrivateKey = existing.SftpPrivateKey;
                 if (string.IsNullOrWhiteSpace(profile.SftpPassphrase)) profile.SftpPassphrase = existing.SftpPassphrase;
+
+                if (string.IsNullOrWhiteSpace(profile.CloudrevePassword)) profile.CloudrevePassword = existing.CloudrevePassword;
             }
         }
 
@@ -210,6 +214,7 @@ public class CloudBackupController : ControllerBase
                 CloudStorageProviderType.WebDAV => !string.IsNullOrWhiteSpace(profile.WebDavUrl) ? new Uri(profile.WebDavUrl).Host : null,
                 CloudStorageProviderType.FTP => profile.FtpHost,
                 CloudStorageProviderType.SFTP => profile.SftpHost,
+                CloudStorageProviderType.CloudreveV4 => !string.IsNullOrWhiteSpace(profile.CloudreveUrl) ? new Uri(profile.CloudreveUrl).Host : null,
                 _ => null
             };
         }

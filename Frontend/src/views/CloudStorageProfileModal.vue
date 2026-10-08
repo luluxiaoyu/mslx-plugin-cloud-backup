@@ -232,6 +232,11 @@ const handleSave = async () => {
       MessagePlugin.warning('请输入 SFTP 主机地址');
       return;
     }
+  } else if (currentForm.value.providerType === 'CloudreveV4') {
+    if (!currentForm.value.cloudreveUrl || !currentForm.value.cloudreveEmail) {
+      MessagePlugin.warning('请输入 Cloudreve 服务地址与登录账号');
+      return;
+    }
   }
 
   saving.value = true;
@@ -300,12 +305,15 @@ const handleSave = async () => {
                         ? 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400'
                         : normalizeProviderType(item.providerType) === 'WebDAV'
                           ? 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 dark:text-emerald-400'
-                          : normalizeProviderType(item.providerType) === 'SFTP'
-                            ? 'bg-purple-50 text-purple-600 dark:bg-purple-950/40 dark:text-purple-400'
-                            : 'bg-amber-50 text-amber-600 dark:bg-amber-950/40 dark:text-amber-400'"
+                          : normalizeProviderType(item.providerType) === 'CloudreveV4'
+                            ? 'bg-indigo-50 text-indigo-600 dark:bg-indigo-950/40 dark:text-indigo-400'
+                            : normalizeProviderType(item.providerType) === 'SFTP'
+                              ? 'bg-purple-50 text-purple-600 dark:bg-purple-950/40 dark:text-purple-400'
+                              : 'bg-amber-50 text-amber-600 dark:bg-amber-950/40 dark:text-amber-400'"
                     >
                       <cloud-icon v-if="normalizeProviderType(item.providerType) === 'S3Compatible'" />
                       <hard-drive-icon v-else-if="normalizeProviderType(item.providerType) === 'WebDAV'" />
+                      <server-icon v-else-if="normalizeProviderType(item.providerType) === 'CloudreveV4'" />
                       <terminal-icon v-else-if="normalizeProviderType(item.providerType) === 'SFTP'" />
                       <server-icon v-else />
                     </div>
@@ -317,10 +325,10 @@ const handleSave = async () => {
                         <t-tag
                           size="small"
                           variant="light"
-                          :theme="normalizeProviderType(item.providerType) === 'S3Compatible' ? 'primary' : normalizeProviderType(item.providerType) === 'WebDAV' ? 'success' : normalizeProviderType(item.providerType) === 'SFTP' ? 'danger' : 'warning'"
+                          :theme="normalizeProviderType(item.providerType) === 'S3Compatible' ? 'primary' : normalizeProviderType(item.providerType) === 'WebDAV' ? 'success' : normalizeProviderType(item.providerType) === 'CloudreveV4' ? 'primary' : normalizeProviderType(item.providerType) === 'SFTP' ? 'danger' : 'warning'"
                           class="!text-[10px] !h-4.5 !leading-4.5 !px-2 !inline-flex items-center justify-center text-center font-medium shrink-0 !w-auto"
                         >
-                          {{ normalizeProviderType(item.providerType) === 'S3Compatible' ? 'S3 兼容' : normalizeProviderType(item.providerType) === 'WebDAV' ? 'WebDAV' : normalizeProviderType(item.providerType) === 'SFTP' ? 'SFTP (SSH)' : 'FTP / FTPS' }}
+                          {{ normalizeProviderType(item.providerType) === 'S3Compatible' ? 'S3 兼容' : normalizeProviderType(item.providerType) === 'WebDAV' ? 'WebDAV' : normalizeProviderType(item.providerType) === 'CloudreveV4' ? 'Cloudreve v4' : normalizeProviderType(item.providerType) === 'SFTP' ? 'SFTP (SSH)' : 'FTP / FTPS' }}
                         </t-tag>
                       </div>
                     </div>
@@ -343,6 +351,9 @@ const handleSave = async () => {
                   </div>
                   <div v-else-if="normalizeProviderType(item.providerType) === 'WebDAV'" class="truncate">
                     {{ item.webDavUrl }}
+                  </div>
+                  <div v-else-if="normalizeProviderType(item.providerType) === 'CloudreveV4'" class="truncate">
+                    {{ item.cloudreveUrl }} ({{ item.cloudreveEmail }})
                   </div>
                   <div v-else-if="normalizeProviderType(item.providerType) === 'SFTP'" class="truncate">
                     {{ item.sftpHost }}:{{ item.sftpPort }} ({{ item.sftpAuthType === 'PrivateKey' ? '私钥认证' : '密码认证' }})
@@ -389,6 +400,7 @@ const handleSave = async () => {
               <t-radio-button value="WebDAV">WebDAV 网盘</t-radio-button>
               <t-radio-button value="FTP">FTP / FTPS</t-radio-button>
               <t-radio-button value="SFTP">SFTP (SSH)</t-radio-button>
+              <t-radio-button value="CloudreveV4">Cloudreve v4</t-radio-button>
             </t-radio-group>
           </div>
 
@@ -533,7 +545,7 @@ const handleSave = async () => {
           </template>
 
           <!-- SFTP (SSH) 字段 -->
-          <template v-else>
+          <template v-else-if="currentForm.providerType === 'SFTP'">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">SSH 主机地址 <span class="text-red-500">*</span></span>
               <t-input v-model="currentForm.sftpHost" placeholder="例如：192.168.1.100 或 vps.example.com" class="flex-1" />
@@ -619,6 +631,41 @@ const handleSave = async () => {
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
               <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">基础存放目录</span>
               <t-input v-model="currentForm.sftpBasePath" placeholder="默认 /，如 /backups 或 /home/user/backups" class="flex-1" />
+            </div>
+          </template>
+
+          <!-- Cloudreve v4 字段 -->
+          <template v-else-if="currentForm.providerType === 'CloudreveV4'">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">服务地址 <span class="text-red-500">*</span></span>
+              <t-input v-model="currentForm.cloudreveUrl" placeholder="例如：https://pan.example.com" class="flex-1" />
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">登录账号 / 邮箱 <span class="text-red-500">*</span></span>
+              <t-input v-model="currentForm.cloudreveEmail" placeholder="例如：admin@example.com" class="flex-1" />
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">登录密码 <span class="text-red-500">*</span></span>
+              <t-input
+                v-model="currentForm.cloudrevePassword"
+                type="password"
+                name="cloud_storage_cloudreve_pass"
+                autocomplete="new-password"
+                :placeholder="currentForm.hasCloudreveCredentials ? '已加密存储（若不修改请留空）' : 'Cloudreve 登录密码'"
+                class="flex-1"
+              />
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">存储策略 ID</span>
+              <t-input v-model="currentForm.cloudrevePolicyId" placeholder="可选，留空使用系统默认策略" class="flex-1" />
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="text-xs font-medium text-[var(--td-text-color-primary)] w-32 shrink-0">基础存放目录</span>
+              <t-input v-model="currentForm.cloudreveBasePath" placeholder="默认 /MSLX-Backups" class="flex-1" />
             </div>
           </template>
 
