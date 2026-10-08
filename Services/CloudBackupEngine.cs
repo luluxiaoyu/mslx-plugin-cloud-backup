@@ -373,6 +373,26 @@ public class CloudBackupEngine
                     foreach (var (localPath, tier, gfsFileName) in gfsArchives)
                     {
                         string remoteGfsFile = GetRemoteGfsPath(syncConfig.RemotePathPattern, e.InstanceId, serverName, tier, gfsFileName, e.Timestamp);
+                        string remoteTierDir = string.IsNullOrEmpty(invariantBase) ? $"gfs-archives/{tier}" : $"{invariantBase}/gfs-archives/{tier}";
+
+                        // 远端防重传幂等检查：若远端已存在同名且大小一致的文件，直接跳过上传
+                        try
+                        {
+                            long localSize = new FileInfo(localPath).Length;
+                            var existingFiles = await provider.ListFilesAsync(profile, remoteTierDir);
+                            var exist = existingFiles.FirstOrDefault(f => f.FileName.Equals(gfsFileName, StringComparison.OrdinalIgnoreCase));
+                            if (exist != null && (exist.SizeBytes == localSize || exist.SizeBytes > 0))
+                            {
+                                SDK.MSLX.Logger.Info($"[CloudBackup] 远端已存在相同 GFS {tier} 归档 ({gfsFileName})，自动跳过重复上传。");
+                                anyUploadSuccess = true;
+                                continue;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            SDK.MSLX.Logger.Debug($"[CloudBackup] 检查远端归档文件是否存在异常: {ex.Message}");
+                        }
+
                         SDK.MSLX.Logger.Info($"[CloudBackup] 正在上传 GFS {tier} 归档: {gfsFileName} -> {remoteGfsFile}");
 
                         try
@@ -399,7 +419,6 @@ public class CloudBackupEngine
 
                                 if (keepCount > 0)
                                 {
-                                    string remoteTierDir = string.IsNullOrEmpty(invariantBase) ? $"gfs-archives/{tier}" : $"{invariantBase}/gfs-archives/{tier}";
                                     await PurgeRemoteBackupsAsync(provider, profile, remoteTierDir, keepCount, excludeGfsArchives: false);
                                 }
 

@@ -85,15 +85,29 @@ public static class GfsDetectorService
 
             var matchedFiles = files.Where(f =>
             {
-                // 文件名标签匹配
-                bool tagMatched = isTagMatch(f);
+                // 1. 文件名标签必须符合对应层级（日/周/月）
+                if (!isTagMatch(f)) return false;
 
-                // 时间窗口匹配（UTC 时间差 300 秒以内）
+                // 2. 检查文件物理修改/创建时间是否在本次备份窗口内（300 秒以内）
                 double secDiffWrite = Math.Abs((f.LastWriteTimeUtc - backupUtc).TotalSeconds);
                 double secDiffCreate = Math.Abs((f.CreationTimeUtc - backupUtc).TotalSeconds);
-                bool timeMatched = secDiffWrite < 300 || secDiffCreate < 300;
+                if (secDiffWrite < 300 || secDiffCreate < 300)
+                {
+                    return true;
+                }
 
-                return tagMatched || timeMatched;
+                // 3. 结合文件名提取的精确时间戳进行二次校验（针对跨盘或硬链接继承时间属性的情况）
+                var nameTime = BackupFilenameParser.ExtractTimestamp(f.Name);
+                if (nameTime.HasValue)
+                {
+                    double secDiffName = Math.Abs((nameTime.Value - localTime).TotalSeconds);
+                    if (secDiffName < 300)
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
             })
             .OrderByDescending(f => f.LastWriteTimeUtc)
             .ToList();
