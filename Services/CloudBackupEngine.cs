@@ -375,17 +375,32 @@ public class CloudBackupEngine
                         string remoteGfsFile = GetRemoteGfsPath(syncConfig.RemotePathPattern, e.InstanceId, serverName, tier, gfsFileName, e.Timestamp);
                         string remoteTierDir = string.IsNullOrEmpty(invariantBase) ? $"gfs-archives/{tier}" : $"{invariantBase}/gfs-archives/{tier}";
 
-                        // 远端防重传幂等检查：若远端已存在同名且大小一致的文件，直接跳过上传
+                        // 远端防重传与未完成文件完整性核验
                         try
                         {
                             long localSize = new FileInfo(localPath).Length;
                             var existingFiles = await provider.ListFilesAsync(profile, remoteTierDir);
                             var exist = existingFiles.FirstOrDefault(f => f.FileName.Equals(gfsFileName, StringComparison.OrdinalIgnoreCase));
-                            if (exist != null && (exist.SizeBytes == localSize || exist.SizeBytes > 0))
+                            if (exist != null)
                             {
-                                SDK.MSLX.Logger.Info($"[CloudBackup] 远端已存在相同 GFS {tier} 归档 ({gfsFileName})，自动跳过重复上传。");
-                                anyUploadSuccess = true;
-                                continue;
+                                if (exist.SizeBytes == localSize && localSize > 0)
+                                {
+                                    SDK.MSLX.Logger.Info($"[CloudBackup] 远端已存在完整且相同的 GFS {tier} 归档 ({gfsFileName}, {exist.FormattedSize})，自动跳过重复上传。");
+                                    anyUploadSuccess = true;
+                                    continue;
+                                }
+                                else
+                                {
+                                    SDK.MSLX.Logger.Warn($"[CloudBackup] 探测到远端存在未完成/损坏的 GFS 归档 ({gfsFileName}, 远端: {exist.SizeBytes} 字节, 本地: {localSize} 字节)，正在清理并重新上传...");
+                                    try
+                                    {
+                                        await provider.DeleteFileAsync(profile, remoteGfsFile);
+                                    }
+                                    catch (Exception delEx)
+                                    {
+                                        SDK.MSLX.Logger.Warn($"[CloudBackup] 清理远端未完成归档失败: {delEx.Message}");
+                                    }
+                                }
                             }
                         }
                         catch (Exception ex)
@@ -462,17 +477,56 @@ public class CloudBackupEngine
             {
                 if (File.Exists(sourceFile))
                 {
-                    SDK.MSLX.Logger.Info($"[CloudBackup] 正在上传常规定时备份: {fileName} -> {remoteFilePath}");
-                    bool regularSuccess = await UploadWithBackgroundTaskAsync(
-                        provider,
-                        profile,
-                        sourceFile,
-                        remoteFilePath,
-                        $"同步云端备份: {serverName}",
-                        fileName,
-                        e.InstanceId,
-                        syncConfig.OwnerUserId ?? ""
-                    );
+                    bool skipUpload = false;
+                    long localSize = new FileInfo(sourceFile).Length;
+
+                    // 远端文件完整性与防重传检查
+                    try
+                    {
+                        var existingFiles = await provider.ListFilesAsync(profile, remoteDir);
+                        var exist = existingFiles.FirstOrDefault(f => f.FileName.Equals(fileName, StringComparison.OrdinalIgnoreCase));
+                        if (exist != null)
+                        {
+                            if (exist.SizeBytes == localSize && localSize > 0)
+                            {
+                                SDK.MSLX.Logger.Info($"[CloudBackup] 远端已存在完整且相同的常规备份 ({fileName}, {exist.FormattedSize})，自动跳过重复上传。");
+                                anyUploadSuccess = true;
+                                skipUpload = true;
+                            }
+                            else
+                            {
+                                SDK.MSLX.Logger.Warn($"[CloudBackup] 探测到远端存在未完成/损坏的备份文件 ({fileName}, 远端: {exist.SizeBytes} 字节, 本地: {localSize} 字节)，正在清理并重新上传...");
+                                try
+                                {
+                                    await provider.DeleteFileAsync(profile, remoteFilePath);
+                                }
+                                catch (Exception delEx)
+                                {
+                                    SDK.MSLX.Logger.Warn($"[CloudBackup] 清理远端残缺文件失败: {delEx.Message}");
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        SDK.MSLX.Logger.Debug($"[CloudBackup] 检查远端常规备份文件异常: {ex.Message}");
+                    }
+
+                    bool regularSuccess = skipUpload;
+                    if (!skipUpload)
+                    {
+                        SDK.MSLX.Logger.Info($"[CloudBackup] 正在上传常规定时备份: {fileName} -> {remoteFilePath}");
+                        regularSuccess = await UploadWithBackgroundTaskAsync(
+                            provider,
+                            profile,
+                            sourceFile,
+                            remoteFilePath,
+                            $"同步云端备份: {serverName}",
+                            fileName,
+                            e.InstanceId,
+                            syncConfig.OwnerUserId ?? ""
+                        );
+                    }
                     if (regularSuccess)
                     {
                         anyUploadSuccess = true;
