@@ -21,28 +21,131 @@ public class CloudreveStorageProvider : ICloudStorageProvider
     private class CloudreveSessionCache
     {
         public string Token { get; set; } = string.Empty;
+        public string RefreshToken { get; set; } = string.Empty;
         public DateTime ExpiresAt { get; set; }
     }
 
     private static readonly Dictionary<string, CloudreveSessionCache> _sessions = new();
     private static readonly object _sessionLock = new();
 
-    private async Task<string> GetTokenAsync(CloudStorageProfile profile, CancellationToken ct)
+    private static void InvalidateToken(string profileId)
     {
         lock (_sessionLock)
         {
-            if (_sessions.TryGetValue(profile.Id, out var cache))
+            _sessions.Remove(profileId);
+        }
+    }
+
+    private static bool IsLoginRequired(HttpResponseMessage res, JsonDocument? doc = null, string? rawBody = null)
+    {
+        if (res.StatusCode == System.Net.HttpStatusCode.Unauthorized || res.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            return true;
+
+        if (doc != null && doc.RootElement.TryGetProperty("code", out var codeEl))
+        {
+            int code = codeEl.GetInt32();
+            if (code == 401 || code == 40101 || code == 40001 || code == 40020)
+                return true;
+
+            var msg = doc.RootElement.TryGetProperty("msg", out var m) ? m.GetString() : "";
+            if (!string.IsNullOrEmpty(msg) && (msg.Contains("Login required", StringComparison.OrdinalIgnoreCase) ||
+                                               msg.Contains("未登录", StringComparison.OrdinalIgnoreCase) ||
+                                               (msg.Contains("token", StringComparison.OrdinalIgnoreCase) && msg.Contains("expired", StringComparison.OrdinalIgnoreCase))))
             {
-                if (cache.ExpiresAt > DateTime.UtcNow.AddMinutes(5))
-                {
-                    return cache.Token;
-                }
+                return true;
             }
         }
 
+        if (!string.IsNullOrEmpty(rawBody) && (rawBody.Contains("Login required", StringComparison.OrdinalIgnoreCase) ||
+                                               rawBody.Contains("未登录", StringComparison.OrdinalIgnoreCase)))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    private async Task<string> GetTokenAsync(CloudStorageProfile profile, CancellationToken ct, bool forceRefresh = false)
+    {
         var baseUrl = profile.CloudreveUrl?.TrimEnd('/');
         if (string.IsNullOrEmpty(baseUrl))
             throw new Exception("Cloudreve 服务地址未配置");
+
+        if (!forceRefresh)
+        {
+            lock (_sessionLock)
+            {
+                if (_sessions.TryGetValue(profile.Id, out var cache))
+                {
+                    if (cache.ExpiresAt > DateTime.UtcNow.AddMinutes(5))
+                    {
+                        return cache.Token;
+                    }
+                }
+            }
+        }
+        else
+        {
+            InvalidateToken(profile.Id);
+        }
+
+        // 尝试使用 RefreshToken 刷新会话
+        string? existingRefreshToken = null;
+        lock (_sessionLock)
+        {
+            if (_sessions.TryGetValue(profile.Id, out var cache) && !string.IsNullOrEmpty(cache.RefreshToken))
+            {
+                existingRefreshToken = cache.RefreshToken;
+            }
+        }
+
+        if (!forceRefresh && !string.IsNullOrEmpty(existingRefreshToken))
+        {
+            try
+            {
+                var refreshReq = new HttpRequestMessage(HttpMethod.Post, $"{baseUrl}/api/v4/session/token/refresh");
+                refreshReq.Content = JsonContent.Create(new { refresh_token = existingRefreshToken });
+                var refreshRes = await _httpClient.SendAsync(refreshReq, ct);
+                if (refreshRes.IsSuccessStatusCode)
+                {
+                    var refreshDoc = JsonDocument.Parse(await refreshRes.Content.ReadAsStringAsync(ct));
+                    if (refreshDoc.RootElement.TryGetProperty("code", out var code) && code.GetInt32() == 0)
+                    {
+                        var data = refreshDoc.RootElement.GetProperty("data");
+                        var tokenObj = data.GetProperty("token");
+                        var newAccessToken = tokenObj.GetProperty("access_token").GetString() ?? "";
+                        var newRefreshToken = tokenObj.TryGetProperty("refresh_token", out var rEl) ? rEl.GetString() ?? "" : existingRefreshToken;
+
+                        long expiresIn = 7200;
+                        if (tokenObj.TryGetProperty("expires_in", out var expEl) && expEl.GetInt64() > 0)
+                        {
+                            expiresIn = expEl.GetInt64();
+                        }
+
+                        lock (_sessionLock)
+                        {
+                            _sessions[profile.Id] = new CloudreveSessionCache
+                            {
+                                Token = newAccessToken,
+                                RefreshToken = newRefreshToken,
+                                ExpiresAt = DateTime.UtcNow.AddSeconds(Math.Max(300, expiresIn - 300))
+                            };
+                        }
+                        return newAccessToken;
+                    }
+                }
+            }
+            catch
+            {
+                // RefreshToken 异常则回退至密码登录
+            }
+        }
+
+        // 账号密码登录
+        if (string.IsNullOrWhiteSpace(profile.CloudreveEmail) || string.IsNullOrWhiteSpace(profile.CloudrevePassword))
+        {
+            throw new Exception("Cloudreve 账号或密码为空，无法执行登录鉴权");
+        }
 
         var loginReq = new HttpRequestMessage(HttpMethod.Post, $"{baseUrl}/api/v4/session/token");
         loginReq.Content = JsonContent.Create(new
@@ -65,19 +168,28 @@ public class CloudreveStorageProvider : ICloudStorageProvider
             throw new Exception($"Cloudreve 登录失败: {msg}");
         }
 
-        var data = resDoc.RootElement.GetProperty("data");
-        var token = data.GetProperty("token").GetProperty("access_token").GetString() ?? "";
+        var resData = resDoc.RootElement.GetProperty("data");
+        var resTokenObj = resData.GetProperty("token");
+        var accessToken = resTokenObj.GetProperty("access_token").GetString() ?? "";
+        var refreshToken = resTokenObj.TryGetProperty("refresh_token", out var rfEl) ? rfEl.GetString() ?? "" : "";
+
+        long expiresInSeconds = 7200;
+        if (resTokenObj.TryGetProperty("expires_in", out var expEl2) && expEl2.GetInt64() > 0)
+        {
+            expiresInSeconds = expEl2.GetInt64();
+        }
 
         lock (_sessionLock)
         {
             _sessions[profile.Id] = new CloudreveSessionCache
             {
-                Token = token,
-                ExpiresAt = DateTime.UtcNow.AddHours(2)
+                Token = accessToken,
+                RefreshToken = refreshToken,
+                ExpiresAt = DateTime.UtcNow.AddSeconds(Math.Max(300, expiresInSeconds - 300))
             };
         }
 
-        return token;
+        return accessToken;
     }
 
     private string BuildCloudreveUri(string basePath, string relativePath)
@@ -95,7 +207,7 @@ public class CloudreveStorageProvider : ICloudStorageProvider
         var sw = Stopwatch.StartNew();
         try
         {
-            var token = await GetTokenAsync(profile, ct);
+            var token = await GetTokenAsync(profile, ct, forceRefresh: true);
             var baseUrl = profile.CloudreveUrl?.TrimEnd('/');
 
             var req = new HttpRequestMessage(HttpMethod.Get, $"{baseUrl}/api/v4/user/me");
@@ -140,7 +252,20 @@ public class CloudreveStorageProvider : ICloudStorageProvider
                 type = "folder",
                 err_on_conflict = false
             });
-            await _httpClient.SendAsync(createDirReq, ct);
+            var dirRes = await _httpClient.SendAsync(createDirReq, ct);
+            if (dirRes.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+            {
+                token = await GetTokenAsync(profile, ct, forceRefresh: true);
+                var retryDirReq = new HttpRequestMessage(HttpMethod.Post, $"{baseUrl}/api/v4/file/create");
+                retryDirReq.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                retryDirReq.Content = JsonContent.Create(new
+                {
+                    uri = dirUri,
+                    type = "folder",
+                    err_on_conflict = false
+                });
+                await _httpClient.SendAsync(retryDirReq, ct);
+            }
         }
 
         // 2. 发起上传会话
@@ -164,9 +289,33 @@ public class CloudreveStorageProvider : ICloudStorageProvider
         initReq.Content = JsonContent.Create(initPayload);
 
         var initRes = await _httpClient.SendAsync(initReq, ct);
-        initRes.EnsureSuccessStatusCode();
+        var initStr = await initRes.Content.ReadAsStringAsync(ct);
+        JsonDocument initResDoc;
+        try
+        {
+            initResDoc = JsonDocument.Parse(initStr);
+        }
+        catch
+        {
+            initRes.EnsureSuccessStatusCode();
+            throw;
+        }
 
-        var initResDoc = JsonDocument.Parse(await initRes.Content.ReadAsStringAsync(ct));
+        if (IsLoginRequired(initRes, initResDoc, initStr))
+        {
+            SDK.MSLX.Logger.Warn($"[CloudBackup] Cloudreve 鉴权已失效，正在自动重新登录并刷新凭据...");
+            token = await GetTokenAsync(profile, ct, forceRefresh: true);
+
+            var retryReq = new HttpRequestMessage(HttpMethod.Put, $"{baseUrl}/api/v4/file/upload");
+            retryReq.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            retryReq.Content = JsonContent.Create(initPayload);
+
+            initRes = await _httpClient.SendAsync(retryReq, ct);
+            initStr = await initRes.Content.ReadAsStringAsync(ct);
+            initResDoc = JsonDocument.Parse(initStr);
+        }
+
+        initRes.EnsureSuccessStatusCode();
         if (initResDoc.RootElement.TryGetProperty("code", out var codeEl) && codeEl.GetInt32() != 0)
         {
             var msg = initResDoc.RootElement.TryGetProperty("msg", out var m) ? m.GetString() : "无法创建上传会话";
@@ -443,9 +592,21 @@ public class CloudreveStorageProvider : ICloudStorageProvider
         req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
         var res = await _httpClient.SendAsync(req, ct);
-        if (!res.IsSuccessStatusCode) return new List<RemoteBackupItem>();
+        var resStr = await res.Content.ReadAsStringAsync(ct);
+        JsonDocument? doc = null;
+        try { doc = JsonDocument.Parse(resStr); } catch { }
 
-        var doc = JsonDocument.Parse(await res.Content.ReadAsStringAsync(ct));
+        if (IsLoginRequired(res, doc, resStr))
+        {
+            token = await GetTokenAsync(profile, ct, forceRefresh: true);
+            req = new HttpRequestMessage(HttpMethod.Get, $"{baseUrl}/api/v4/file?uri={Uri.EscapeDataString(dirUri)}&page=0&page_size=1000");
+            req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            res = await _httpClient.SendAsync(req, ct);
+            resStr = await res.Content.ReadAsStringAsync(ct);
+            try { doc = JsonDocument.Parse(resStr); } catch { }
+        }
+
+        if (!res.IsSuccessStatusCode || doc == null) return new List<RemoteBackupItem>();
         if (doc.RootElement.TryGetProperty("code", out var codeEl) && codeEl.GetInt32() != 0)
         {
             return new List<RemoteBackupItem>();
@@ -506,9 +667,27 @@ public class CloudreveStorageProvider : ICloudStorageProvider
         });
 
         var res = await _httpClient.SendAsync(req, ct);
-        if (!res.IsSuccessStatusCode) return false;
+        var resStr = await res.Content.ReadAsStringAsync(ct);
+        JsonDocument? doc = null;
+        try { doc = JsonDocument.Parse(resStr); } catch { }
 
-        var doc = JsonDocument.Parse(await res.Content.ReadAsStringAsync(ct));
+        if (IsLoginRequired(res, doc, resStr))
+        {
+            token = await GetTokenAsync(profile, ct, forceRefresh: true);
+            req = new HttpRequestMessage(HttpMethod.Delete, $"{baseUrl}/api/v4/file");
+            req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            req.Content = JsonContent.Create(new
+            {
+                uris = new[] { fileUri },
+                unlink = false,
+                skip_soft_delete = true
+            });
+            res = await _httpClient.SendAsync(req, ct);
+            resStr = await res.Content.ReadAsStringAsync(ct);
+            try { doc = JsonDocument.Parse(resStr); } catch { }
+        }
+
+        if (!res.IsSuccessStatusCode || doc == null) return false;
         return doc.RootElement.TryGetProperty("code", out var code) && code.GetInt32() == 0;
     }
 }
